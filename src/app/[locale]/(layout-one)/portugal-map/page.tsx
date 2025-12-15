@@ -99,7 +99,7 @@ export default async function Page() {
               <div className="">
                 <SearchInput
                   placeholder="e.g Braga"
-                  className="placeholder:text-gray-500 placeholder:text-sm"
+                  className="placeholder:text-gray-500 text-gray-800 placeholder:text-sm"
                 />
               </div>
             </div>

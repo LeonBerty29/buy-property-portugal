@@ -8,7 +8,7 @@ export default function LayoutOne({
 }>) {
   return (
     <>
-      <NavBar colorChange={true} />
+      <NavBar colorChange={false} />
       {children}
       <Footer />
     </>
