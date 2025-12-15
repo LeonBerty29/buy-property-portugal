@@ -17,10 +17,17 @@ import { HomepageSearchEngine } from "@/components/search/homepage-search-engine
 import { HomepageSearchResult } from "@/components/search/homepage-search-result";
 import { PropertySearchParams } from "@/types/property";
 import { FooterPropertiesLink } from "@/components/layout/footer-properties-link";
-import { BASE_URL, EAV_TWITTER_CREATOR_HANDLE, GEO_POSITION, WEBSITE_NAME } from "@/config/constants";
+import {
+  BASE_URL,
+  EAV_TWITTER_CREATOR_HANDLE,
+  GEO_POSITION,
+  WEBSITE_NAME,
+} from "@/config/constants";
 import { routing } from "@/i18n/routing";
 import { homeMetadata } from "@/seo-metadata/home-page";
 import { Metadata } from "next";
+import { SearchInput } from "@/components/search/search-input";
+import MapSelection from "../(layout-one)/portugal-map/map-selection";
 
 type Params = {
   [x: string]: string | string[];
@@ -140,6 +147,49 @@ export default async function Home(props: PageProps) {
 
   return (
     <div className="w-full">
+      <div className="min-h-screen from-slate-900 to-slate-800 p-4 md:p-8">
+        <div className="2xl:container mx-auto pt-14">
+          <div className="grid lg:grid-cols-5 items-start bg-gray-100 rounded-2xl">
+            {/* Sticky Map Section with Custom Scrollbar */}
+            <div
+              className="lg:col-span-2 space-y-4 lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-2
+                                [&::-webkit-scrollbar]:w-1.5 
+                                [&::-webkit-scrollbar-track]:bg-slate-100 
+                                [&::-webkit-scrollbar-track]:rounded-full
+                                [&::-webkit-scrollbar-thumb]:bg-slate-300 
+                                [&::-webkit-scrollbar-thumb]:rounded-full
+                                [&::-webkit-scrollbar-thumb]:hover:bg-slate-400"
+            >
+              <MapSelection />
+              {/* <DistrictList /> */}
+            </div>
+
+            {/* Scrollable Properties Section */}
+            <div className="lg:col-span-3 h-full p-6 lg:p-10">
+              {/* <Suspense fallback={<PropertiesGridSkeleton />} key={suspenseKey}>
+                    <PropertiesList apiParams={apiParams} />
+                  </Suspense> */}
+              <div className="h-full flex flex-col justify-center">
+                <h1 className="text-4xl font-bold mb-6">
+                  Find properties for sale in Portugal
+                </h1>
+                <p className="font-semibold text-base text-gray-600 mb-4">
+                  Search for regions, cities or towns in Portugal
+                  {/* <br />or use our map
+                      to easily select a district of interest */}
+                </p>
+                <div className="">
+                  <SearchInput
+                    placeholder="e.g Braga"
+                    className="placeholder:text-gray-500 text-gray-800 placeholder:text-sm"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <HeroSection>
         {/* <HeroSearch /> */}
         <HomepageSearchEngine searchParams={searchParams} />

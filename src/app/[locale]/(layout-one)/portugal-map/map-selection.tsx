@@ -17,36 +17,9 @@ export default function MapSelection() {
   const [selectedDistricts, setSelectedDistricts] = useState<string[]>([]);
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null);
 
-  // Function to get district abbreviations
-  const getDistrictAbbreviation = (districtName: string): string => {
-    const abbreviations: { [key: string]: string } = {
-      "Viana do Castelo": "VC",
-      Braga: "BRG",
-      Porto: "PRT",
-      "Vila Real": "VR",
-      Bragança: "BRG",
-      Aveiro: "AVR",
-      Viseu: "VIS",
-      Guarda: "GRD",
-      Coimbra: "CBR",
-      "Castelo Branco": "CB",
-      Leiria: "LRA",
-      Santarém: "STR",
-      Portalegre: "PTL",
-      Lisboa: "LSB",
-      Setúbal: "STB",
-      Évora: "EVR",
-      Beja: "BJA",
-      Faro: "FAO",
-    };
-    return (
-      abbreviations[districtName] || districtName.substring(0, 3).toUpperCase()
-    );
-  };
-
-  // Function to get label position (center of bounding box)
-  const getLabelPosition = (pathD: string) => {
-    // Simple approximation - extract numbers from path and find center
+  // Function to get custom district name positions
+  const getDistrictNamePosition = (districtName: string, pathD: string) => {
+    // Calculate the center of bounding box as fallback
     const numbers = pathD.match(/[\d.]+/g)?.map(Number) || [];
     if (numbers.length < 2) return { x: 0, y: 0 };
 
@@ -58,10 +31,80 @@ export default function MapSelection() {
     const minY = Math.min(...yCoords);
     const maxY = Math.max(...yCoords);
 
-    return {
-      x: (minX + maxX) / 2,
-      y: (minY + maxY) / 2,
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+
+    // Custom positions for specific districts
+    // Adjust these offset values based on your map's needs
+    const customPositions: {
+      [key: string]: {
+        offsetX?: number;
+        offsetY?: number;
+        positionY?: "top" | "bottom" | "center";
+        positionX?: "left" | "right" | "center";
+      };
+    } = {
+      "Viana do Castelo": { positionX: "left", offsetX: -10, positionY: "center", offsetY: -2 },
+      Braga: { positionY: "center", positionX: "left", offsetX: -2 },
+      Porto: { positionY: "center", positionX: "left", offsetX: -1 },
+      "Vila Real": { positionY: "center" },
+      Bragança: { positionY: "center", positionX: "right", offsetX: -1 },
+      Aveiro: {
+        positionX: "left",
+        offsetX: -3,
+        positionY: "center",
+        offsetY: 3,
+      },
+      Viseu: { positionY: "center" },
+      Guarda: { positionX: "right", offsetX: -3, positionY: "center" },
+      Coimbra: { positionY: "center" },
+      "Castelo Branco": {
+        positionX: "right",
+        offsetX: -3,
+        positionY: "bottom",
+        offsetY: -10,
+      },
+      Leiria: { positionY: "top", offsetY: 5 },
+      Santarém: { positionY: "bottom", offsetY: -10 },
+      Portalegre: {
+        positionX: "right",
+        offsetX: -3,
+        positionY: "top",
+        offsetY: 18,
+      },
+      Lisboa: { positionX: "left", offsetX: -3, positionY: "center" },
+      Setúbal: { positionY: "bottom", offsetY: -10 },
+      Évora: { positionY: "center" },
+      Beja: { positionY: "center" },
+      Faro: { positionY: "bottom", offsetY: -4 },
     };
+
+    const config = customPositions[districtName] || {
+      positionY: "center",
+      positionX: "center",
+    };
+    let x = centerX;
+    let y = centerY;
+
+    // Apply X-axis position-based adjustments
+    if (config.positionX === "left") {
+      x = minX + 10 + (config.offsetX || 0);
+    } else if (config.positionX === "right") {
+      x = maxX - 10 + (config.offsetX || 0);
+    } else {
+      x = centerX + (config.offsetX || 0);
+    }
+
+    // Apply Y-axis position-based adjustments
+    if (config.positionY === "top") {
+      y = minY + 10 + (config.offsetY || 0);
+    } else if (config.positionY === "bottom") {
+      y = maxY - 10 + (config.offsetY || 0);
+    } else {
+      y = centerY + (config.offsetY || 0);
+    }
+
+    return { x, y };
   };
 
   useEffect(() => {
@@ -143,48 +186,62 @@ export default function MapSelection() {
               </filter>
             </defs>
 
+            {/* Render all paths first */}
             {pathData.map((district) => {
               const isSelected = selectedDistricts.includes(district.name);
-              const labelPos = getLabelPosition(district.d);
 
               return (
-                <g key={district.name}>
-                  <Tooltip open={hoveredDistrict === district.name}>
-                    <TooltipTrigger asChild>
-                      <path
-                        d={district.d}
-                        style={getDistrictStyle(district)}
-                        onMouseEnter={() => setHoveredDistrict(district.name)}
-                        onMouseLeave={() => setHoveredDistrict(null)}
-                        onClick={() => handleDistrictClick(district.name)}
-                        filter={
-                          isSelected ? "url(#selected-glow)" : "url(#shadow)"
-                        }
-                      />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="font-semibold">{district.name}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                  <text
-                    x={labelPos.x}
-                    y={labelPos.y}
-                    textAnchor="middle"
-                    className="text-[8px] font-normal pointer-events-none select-none"
-                    fill={
-                      isSelected || hoveredDistrict === district.name
-                        ? "#ffffff"
-                        : "#1e293b"
-                    }
-                    style={{
-                      textShadow: "0 1px 3px rgba(0,0,0,0.6)",
-                      fontWeight: isSelected ? "bold" : "700",
-                      letterSpacing: "0.5px",
-                    }}
-                  >
-                    {getDistrictAbbreviation(district.name)}
-                  </text>
-                </g>
+                <Tooltip
+                  key={district.name}
+                  open={hoveredDistrict === district.name}
+                >
+                  <TooltipTrigger asChild>
+                    <path
+                      d={district.d}
+                      style={getDistrictStyle(district)}
+                      onMouseEnter={() => setHoveredDistrict(district.name)}
+                      onMouseLeave={() => setHoveredDistrict(null)}
+                      onClick={() => handleDistrictClick(district.name)}
+                      filter={
+                        isSelected ? "url(#selected-glow)" : "url(#shadow)"
+                      }
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="font-semibold">{district.name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              );
+            })}
+
+            {/* Render all text labels on top */}
+            {pathData.map((district) => {
+              const isSelected = selectedDistricts.includes(district.name);
+              const labelPos = getDistrictNamePosition(
+                district.name,
+                district.d
+              );
+
+              return (
+                <text
+                  key={`label-${district.name}`}
+                  x={labelPos.x}
+                  y={labelPos.y}
+                  textAnchor="middle"
+                  className="text-[8px] font-normal pointer-events-none select-none"
+                  fill={
+                    isSelected || hoveredDistrict === district.name
+                      ? "#ffffff"
+                      : "#1e293b"
+                  }
+                  style={{
+                    textShadow: "0 1px 3px rgba(0,0,0,0.6)",
+                    fontWeight: isSelected ? "bold" : "700",
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  {district.name}
+                </text>
               );
             })}
           </svg>

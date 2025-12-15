@@ -1,84 +1,163 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { ChevronDown, ChevronUp, Filter, X } from "lucide-react";
 import React from "react";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
-import { useTranslations } from "next-intl";
+import { Filter, X, Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
+import { useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
 
 interface CollapsibleFiltersProps {
-  children: React.ReactNode;
-  visibleCount?: number;
+  children?: React.ReactNode;
 }
 
-export const CollapsibleFilters = ({
-  children,
-  visibleCount = 4,
-}: CollapsibleFiltersProps) => {
-  const t = useTranslations("collapsibleFilters");
-  const [showAll, setShowAll] = useState(false);
-  const [isFixed, setIsFixed] = useState(false);
+const DISTRICTS = [
+  "All Districts",
+  "Aveiro",
+  "Beja",
+  "Braga",
+  "Bragança",
+  "Castelo Branco",
+  "Coimbra",
+  "Évora",
+  "Faro",
+  "Guarda",
+  "Leiria",
+  "Lisboa",
+  "Portalegre",
+  "Porto",
+  "Santarém",
+  "Setúbal",
+  "Viana do Castelo",
+  "Vila Real",
+  "Viseu",
+];
+
+const PROPERTY_TYPES = [
+  "House Types",
+  "Apartment",
+  "House",
+  "Villa",
+  "Townhouse",
+  "Studio",
+  "Penthouse",
+  "Land",
+];
+
+const PRICE_RANGES = [
+  "Any Price",
+  "Under €100,000",
+  "€100,000 - €200,000",
+  "€200,000 - €300,000",
+  "€300,000 - €500,000",
+  "€500,000 - €1,000,000",
+  "Over €1,000,000",
+];
+
+const BEDROOMS = ["Any", "1", "2", "3", "4", "5+"];
+const BATHROOMS = ["Any", "1", "2", "3", "4+"];
+
+export const CollapsibleFilters = ({ children }: CollapsibleFiltersProps) => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  // Initialize state from URL params
+  const [searchQuery, setSearchQuery] = useState(
+    searchParams.get("search") || ""
+  );
+  const [selectedDistrict, setSelectedDistrict] = useState(
+    searchParams.get("district") || "All Districts"
+  );
+  const [selectedType, setSelectedType] = useState(
+    searchParams.get("type") || "House Types"
+  );
+  const [selectedPrice, setSelectedPrice] = useState(
+    searchParams.get("price") || "Any Price"
+  );
+  const [selectedBedrooms, setSelectedBedrooms] = useState(
+    searchParams.get("min_bedroom") || "Any"
+  );
+  const [selectedBathrooms, setSelectedBathrooms] = useState(
+    searchParams.get("min_bathroom") || "Any"
+  );
+
   const [isMobile, setIsMobile] = useState(false);
-  const [isTablet, setIsTablet] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const [originalTop, setOriginalTop] = useState<number>(0);
-  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const childrenArray = React.Children.toArray(children);
+  // Function to update URL params
+  const updateURLParams = (updates: Record<string, string | null>) => {
+    const params = new URLSearchParams(searchParams.toString());
 
-  // Determine visible count based on screen size
-  const getVisibleCount = () => {
-    if (isMobile) return 0; // Mobile uses sheet, so no visible filters in main layout
-    if (isTablet) return 2; // md breakpoint shows 2
-    return visibleCount; // lg+ breakpoint shows 4 (or custom visibleCount)
-  };
-
-  const currentVisibleCount = getVisibleCount();
-  const visibleFilters = childrenArray.slice(0, currentVisibleCount);
-  const hiddenFilters = childrenArray.slice(currentVisibleCount);
-
-  // Click handler to toggle showing all filters
-  const handleToggleFilters = () => {
-    if (!isMobile) {
-      setShowAll(!showAll);
-    }
-  };
-
-  // Mouse enter handler - wait 150ms then open menu
-  const handleMouseEnter = () => {
-    if (!isMobile && hiddenFilters.length > 0) {
-      // Clear any existing timeout
-      if (hoverTimeoutRef.current) {
-        clearTimeout(hoverTimeoutRef.current);
+    Object.entries(updates).forEach(([key, value]) => {
+      if (
+        value &&
+        value !== "Any" &&
+        value !== "All Districts" &&
+        value !== "House Types" &&
+        value !== "Any Price"
+      ) {
+        params.set(key, value);
+      } else {
+        params.delete(key);
       }
+    });
 
-      // Set new timeout to open menu after 150ms
-      hoverTimeoutRef.current = setTimeout(() => {
-        setShowAll(true);
-      }, 150);
-    }
+    // Convert URLSearchParams to plain object
+    const queryObject: Record<string, string> = {};
+    params.forEach((value, key) => {
+      queryObject[key] = value;
+    });
+
+    router.replace({
+      pathname: "/properties",
+      query: queryObject, // Now it's a plain object, not URLSearchParams
+    });
   };
 
-  // Mouse leave handler - immediately collapse menu
-  const handleMouseLeave = () => {
-    if (!isMobile) {
-      // Clear the timeout if mouse leaves before 150ms
-      if (hoverTimeoutRef.current) {
-        clearTimeout(hoverTimeoutRef.current);
-        hoverTimeoutRef.current = null;
-      }
+  const handleSearch = () => {
+    updateURLParams({ search: searchQuery });
+  };
 
-      // Collapse the menu immediately
-      setShowAll(false);
-    }
+  const handleDistrictChange = (value: string) => {
+    setSelectedDistrict(value);
+    updateURLParams({ district: value });
+  };
+
+  const handleTypeChange = (value: string) => {
+    setSelectedType(value);
+    updateURLParams({ type: value });
+  };
+
+  const handlePriceChange = (value: string) => {
+    setSelectedPrice(value);
+    updateURLParams({ price: value });
+  };
+
+  const handleBedroomsChange = (value: string) => {
+    setSelectedBedrooms(value);
+    updateURLParams({ min_bedrooms: value });
+  };
+
+  const handleBathroomsChange = (value: string) => {
+    setSelectedBathrooms(value);
+    updateURLParams({ min_bathrooms: value });
   };
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const width = window.innerWidth;
-      setIsMobile(width < 768); // Below md breakpoint
-      setIsTablet(width >= 768 && width < 1024); // md to lg breakpoint
+      setIsMobile(window.innerWidth < 768);
     };
 
     checkScreenSize();
@@ -87,20 +166,17 @@ export const CollapsibleFilters = ({
   }, []);
 
   useEffect(() => {
+    if (isMobile) return;
+
     const handleScroll = () => {
-      if (!containerRef.current || originalTop === 0 || isMobile) return;
+      if (!containerRef.current || originalTop === 0) return;
 
       const scrollY = window.scrollY;
-      const triggerPoint = originalTop - 64; // Point where it should become fixed
+      const triggerPoint = originalTop - 64;
 
-      const shouldBeFixed = scrollY >= triggerPoint;
-
-      if (shouldBeFixed !== isFixed) {
-        setIsFixed(shouldBeFixed);
-      }
+      setIsFixed(scrollY >= triggerPoint);
     };
 
-    // Set initial position
     if (containerRef.current && originalTop === 0) {
       const rect = containerRef.current.getBoundingClientRect();
       setOriginalTop(rect.top + window.scrollY);
@@ -108,183 +184,309 @@ export const CollapsibleFilters = ({
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isFixed, originalTop, isMobile]);
+  }, [originalTop, isMobile]);
 
-  // Cleanup timeout on unmount
-  useEffect(() => {
-    return () => {
-      if (hoverTimeoutRef.current) {
-        clearTimeout(hoverTimeoutRef.current);
-      }
-    };
-  }, []);
+  // Mobile View
+  if (isMobile) {
+    return (
+      <>
+        {/* Filter Toggle Button */}
+        <div className="fixed top-16 right-6 z-[20]">
+          <Button
+            onClick={() => setShowMobileFilters(!showMobileFilters)}
+            variant="outline"
+            size="sm"
+            className="bg-blue-50 border-amber-200 shadow-md hover:shadow-lg"
+          >
+            {showMobileFilters ? (
+              <X className="w-4 h-4 mr-2" />
+            ) : (
+              <Filter className="w-4 h-4 mr-2" />
+            )}
+            Filters
+          </Button>
+        </div>
 
-  // Sticky Trigger Component (when hidden)
-  const StickyTrigger = () => (
-    <div className="fixed top-16 right-6 sm:right-8 md:right-10 lg:right-14 z-[12]">
-      <button
-        onClick={() => setIsHidden(false)}
-        className="flex items-center gap-2 px-3 py-2 bg-amber-50 border border-amber-50 rounded-md shadow-md hover:shadow-lg transition-all hover:bg-gray-50"
-      >
-        <Filter className="w-4 h-4" />
-        <span className="text-sm font-medium">{t("filters")}</span>
-      </button>
-    </div>
-  );
+        {/* Mobile Filters Drawer */}
+        {showMobileFilters && (
+          <>
+            {/* Backdrop */}
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 z-[30]"
+              onClick={() => setShowMobileFilters(false)}
+            />
 
-  // Desktop/Tablet Filter Layout
-  const DesktopFilters = () => (
+            {/* Filters Panel */}
+            <div className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white shadow-xl z-[40] overflow-y-auto">
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-lg font-semibold">Filters</h2>
+                  <Button
+                    onClick={() => setShowMobileFilters(false)}
+                    variant="ghost"
+                    size="sm"
+                  >
+                    <X className="w-5 h-5" />
+                  </Button>
+                </div>
+
+                <div className="space-y-4">
+                  {/* Search Box */}
+                  <div className="space-y-2">
+                    <Label>Search</Label>
+                    <div className="relative">
+                      <Input
+                        type="text"
+                        placeholder="Search properties..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyPress={(e) => e.key === "Enter" && handleSearch()}
+                        className="pr-10"
+                      />
+                      <Button
+                        onClick={handleSearch}
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8 p-0"
+                      >
+                        <Search className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* District Select */}
+                  <div className="space-y-2">
+                    <Label>District</Label>
+                    <Select
+                      value={selectedDistrict}
+                      onValueChange={handleDistrictChange}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {DISTRICTS.map((district) => (
+                          <SelectItem key={district} value={district}>
+                            {district}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Property Type */}
+                  <div className="space-y-2">
+                    <Label>Property Type</Label>
+                    <Select
+                      value={selectedType}
+                      onValueChange={handleTypeChange}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {PROPERTY_TYPES.map((type) => (
+                          <SelectItem key={type} value={type}>
+                            {type}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Price Range */}
+                  <div className="space-y-2">
+                    <Label>Price Range</Label>
+                    <Select
+                      value={selectedPrice}
+                      onValueChange={handlePriceChange}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {PRICE_RANGES.map((range) => (
+                          <SelectItem key={range} value={range}>
+                            {range}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Bedrooms */}
+                  <div className="space-y-2">
+                    <Label>Bedrooms</Label>
+                    <Select
+                      value={selectedBedrooms}
+                      onValueChange={handleBedroomsChange}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {BEDROOMS.map((num) => (
+                          <SelectItem key={num} value={num}>
+                            {num}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Bathrooms */}
+                  <div className="space-y-2">
+                    <Label>Bathrooms</Label>
+                    <Select
+                      value={selectedBathrooms}
+                      onValueChange={handleBathroomsChange}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {BATHROOMS.map((num) => (
+                          <SelectItem key={num} value={num}>
+                            {num}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {children}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </>
+    );
+  }
+
+  // Desktop View - Becomes Fixed on Scroll
+  return (
     <>
-      {/* Show sticky trigger when hidden and fixed */}
-      {isFixed && isHidden && !isMobile && <StickyTrigger />}
-
-      {/* Placeholder div to maintain layout when fixed */}
-      {isFixed && !isMobile && !isHidden && (
+      {/* Placeholder to maintain layout when fixed */}
+      {isFixed && (
         <div
-          className="2xl:container px-6 sm:px-8 md:px-10 lg:px-14 mx-auto pt-6 bg-transparent"
+          className="px-6 sm:px-8 md:px-10 lg:px-14 py-4 bg-transparent"
           style={{ height: containerRef.current?.offsetHeight || "auto" }}
         />
       )}
 
       <div
         ref={containerRef}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         className={`
-          z-[11] 2xl:container px-6 sm:px-8 md:px-10 lg:px-14 mx-auto pt-8 bg-amber-50 hidden md:block
-          ${
-            isFixed && !isMobile && !isHidden
-              ? "fixed top-16 left-0 right-0"
-              : ""
-          }
-          ${isFixed && isHidden ? "hidden" : ""}
+          z-[50] px-6 sm:px-8 md:px-10 lg:px-14 py-4 bg-blue-50
+          ${isFixed ? "fixed top-16 left-0 right-0" : ""}
         `}
       >
-        {isFixed && !isMobile && !isHidden && (
-          <div>
-            {/* Hide button - only shown when fixed */}
-            <div className="flex justify-start mb-4 absolute right-6 top-1.5 lg:top-2.5 ">
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button
-                    onClick={() => setIsHidden(true)}
-                    className="flex items-center gap-2 px-1 py-1.5 text-xs font-bold text-gray-600 bg-transparent border-none hover:text-primary transition-colors"
-                  >
-                    <X className="w-4 h-4" strokeWidth={3} />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent className="text-white bg-primary">
-                  <p>{t("minimizeFilters")}</p>
-                </TooltipContent>
-              </Tooltip>
-            </div>
-
-            {/* Content wrapper when fixed */}
-            <div className="w-full">
-              {/* Always visible filters */}
-              <div
-                className={`grid gap-4 ${
-                  isTablet ? "grid-cols-2" : "lg:grid-cols-4"
-                }`}
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4">
+            {/* Search Box */}
+            <div className="relative lg:col-span-2">
+              <Input
+                type="text"
+                placeholder="Search properties..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyPress={(e) => e.key === "Enter" && handleSearch()}
+                className="pr-10"
+              />
+              <Button
+                onClick={handleSearch}
+                variant="ghost"
+                size="sm"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8 p-0"
               >
-                {visibleFilters}
-              </div>
-
-              {/* Conditionally visible filters */}
-              {showAll && hiddenFilters.length > 0 && (
-                <div
-                  className={`grid gap-4 mt-4 ${
-                    isTablet ? "grid-cols-2" : "lg:grid-cols-4"
-                  }`}
-                >
-                  {hiddenFilters}
-                </div>
-              )}
-
-              {/* Toggle button */}
-              {hiddenFilters.length > 0 && (
-                <div className="flex justify-center mt-2 pb-1">
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <button
-                        onClick={handleToggleFilters}
-                        className="flex items-center gap-2 px-0 py-0 text-sm font-medium text-gray-700 bg-transparent border-none rounded-md transition-colors hover:text-gray-900"
-                      >
-                        {showAll ? (
-                          <>
-                            <ChevronUp className="w-6 h-6" />
-                            {/* <span>{t("showLess")}</span> */}
-                          </>
-                        ) : (
-                          <>
-                            <ChevronDown className="w-6 h-6" />
-                            {/* <span>{t("moreFilters")}</span> */}
-                          </>
-                        )}
-                      </button>
-                    </TooltipTrigger>
-                    <TooltipContent className="text-white bg-primary">
-                      <p>{showAll ? t("showLess") : t("moreFilters")}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </div>
-              )}
+                <Search className="w-4 h-4" />
+              </Button>
             </div>
-          </div>
-        )}
 
-        {!isFixed && (
-          <>
-            {/* Always visible filters */}
-            <div
-              className={`grid gap-4 ${
-                isTablet ? "grid-cols-2" : "lg:grid-cols-4"
-              }`}
+            {/* District Select */}
+            <Select
+              value={selectedDistrict}
+              onValueChange={handleDistrictChange}
             >
-              {visibleFilters}
-            </div>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="District" />
+              </SelectTrigger>
+              <SelectContent>
+                {DISTRICTS.map((district) => (
+                  <SelectItem key={district} value={district}>
+                    {district}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
 
-            {/* Conditionally visible filters */}
-            {showAll && hiddenFilters.length > 0 && (
-              <div
-                className={`grid gap-4 mt-4 ${
-                  isTablet ? "grid-cols-2" : "lg:grid-cols-4"
-                }`}
-              >
-                {hiddenFilters}
-              </div>
-            )}
+            {/* Property Type */}
+            <Select value={selectedType} onValueChange={handleTypeChange}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Property Type" />
+              </SelectTrigger>
+              <SelectContent>
+                {PROPERTY_TYPES.map((type) => (
+                  <SelectItem key={type} value={type}>
+                    {type}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
 
-            {/* Toggle button */}
-            {hiddenFilters.length > 0 && (
-              <div className="flex justify-center mt-2">
-                <button
-                  onClick={handleToggleFilters}
-                  className="flex items-center gap-2 px-0 py-0 text-sm font-medium text-gray-700 bg-transparent border-none rounded-md transition-colors hover:text-gray-900"
-                >
-                  {showAll ? (
-                    <>
-                      <ChevronUp className="w-6 h-6" />
-                      {/* <span>{t("showLess")}</span> */}
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="w-6 h-6" />
-                      {/* <span>{t("moreFilters")}</span> */}
-                    </>
-                  )}
-                </button>
-              </div>
-            )}
-          </>
-        )}
+            {/* Price Range */}
+            <Select value={selectedPrice} onValueChange={handlePriceChange}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Price Range" />
+              </SelectTrigger>
+              <SelectContent>
+                {PRICE_RANGES.map((range) => (
+                  <SelectItem key={range} value={range}>
+                    {range}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Bedrooms */}
+            <Select
+              value={selectedBedrooms}
+              onValueChange={handleBedroomsChange}
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Bedrooms" />
+              </SelectTrigger>
+              <SelectContent>
+                {BEDROOMS.map((num) => (
+                  <SelectItem key={num} value={num}>
+                    {num === "Any" ? "Any Bedrooms" : `${num} Bed`}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Bathrooms */}
+            <Select
+              value={selectedBathrooms}
+              onValueChange={handleBathroomsChange}
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Bathrooms" />
+              </SelectTrigger>
+              <SelectContent>
+                {BATHROOMS.map((num) => (
+                  <SelectItem key={num} value={num}>
+                    {num === "Any" ? "Any Bathrooms" : `${num} Bath`}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {children && <div className="mt-4">{children}</div>}
+        </div>
       </div>
-    </>
-  );
-
-  return (
-    <>
-      <DesktopFilters />
     </>
   );
 };
