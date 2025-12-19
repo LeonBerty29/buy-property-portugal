@@ -2,15 +2,15 @@ export const annotationsMetadata = {
   en: {
     title: "Your Property Annotations",
     description:
-      "View and manage your property annotations. Keep track of your notes, comments, and observations on luxury properties in the Algarve.",
+      "View and manage your property annotations. Keep track of your notes, comments, and observations on luxury properties in the Portugal.",
     ogTitle: "Your Property Annotations - Buy Property Portugal",
     ogDescription:
-      "Access and manage your personal notes, comments, and observations on luxury properties in the Algarve. Keep all your property annotations organized in one place.",
+      "Access and manage your personal notes, comments, and observations on luxury properties in the Portugal. Keep all your property annotations organized in one place.",
     keywords: [
       "property annotations",
       "property notes",
       "saved property notes",
-      "algarve property annotations",
+      "Portugal property annotations",
       "luxury property notes",
       "property comments",
       "real estate notes",
@@ -28,15 +28,15 @@ export const annotationsMetadata = {
   fr: {
     title: "Vos Annotations de Propriétés",
     description:
-      "Consultez et gérez vos annotations de propriétés. Suivez vos notes, commentaires et observations sur les propriétés de luxe dans l'Algarve.",
+      "Consultez et gérez vos annotations de propriétés. Suivez vos notes, commentaires et observations sur les propriétés de luxe dans l'Portugal.",
     ogTitle: "Vos Annotations de Propriétés - Buy Property Portugal",
     ogDescription:
-      "Accédez et gérez vos notes personnelles, commentaires et observations sur les propriétés de luxe dans l'Algarve. Gardez toutes vos annotations organisées en un seul endroit.",
+      "Accédez et gérez vos notes personnelles, commentaires et observations sur les propriétés de luxe dans l'Portugal. Gardez toutes vos annotations organisées en un seul endroit.",
     keywords: [
       "annotations propriétés",
       "notes propriétés",
       "notes propriétés sauvegardées",
-      "annotations propriétés algarve",
+      "annotations propriétés Portugal",
       "notes propriétés luxe",
       "commentaires propriétés",
       "notes immobilier",
@@ -56,15 +56,15 @@ export const annotationsMetadata = {
   de: {
     title: "Ihre Immobilienanmerkungen",
     description:
-      "Zeigen Sie Ihre Immobilienanmerkungen an und verwalten Sie diese. Verfolgen Sie Ihre Notizen, Kommentare und Beobachtungen zu Luxusimmobilien in der Algarve.",
+      "Zeigen Sie Ihre Immobilienanmerkungen an und verwalten Sie diese. Verfolgen Sie Ihre Notizen, Kommentare und Beobachtungen zu Luxusimmobilien in der Portugal.",
     ogTitle: "Ihre Immobilienanmerkungen - Buy Property Portugal",
     ogDescription:
-      "Greifen Sie auf Ihre persönlichen Notizen, Kommentare und Beobachtungen zu Luxusimmobilien in der Algarve zu und verwalten Sie diese. Halten Sie alle Ihre Immobilienanmerkungen an einem Ort organisiert.",
+      "Greifen Sie auf Ihre persönlichen Notizen, Kommentare und Beobachtungen zu Luxusimmobilien in der Portugal zu und verwalten Sie diese. Halten Sie alle Ihre Immobilienanmerkungen an einem Ort organisiert.",
     keywords: [
       "immobilienanmerkungen",
       "immobiliennotizen",
       "gespeicherte immobiliennotizen",
-      "algarve immobilienanmerkungen",
+      "Portugal immobilienanmerkungen",
       "luxusimmobilien notizen",
       "immobilienkommentare",
       "immobilien notizen",
@@ -83,15 +83,15 @@ export const annotationsMetadata = {
   pt: {
     title: "As Suas Anotações de Propriedades",
     description:
-      "Visualize e gira as suas anotações de propriedades. Acompanhe as suas notas, comentários e observações sobre propriedades de luxo no Algarve.",
+      "Visualize e gira as suas anotações de propriedades. Acompanhe as suas notas, comentários e observações sobre propriedades de luxo no Portugal.",
     ogTitle: "As Suas Anotações de Propriedades - Buy Property Portugal",
     ogDescription:
-      "Aceda e gira as suas notas pessoais, comentários e observações sobre propriedades de luxo no Algarve. Mantenha todas as suas anotações organizadas num só lugar.",
+      "Aceda e gira as suas notas pessoais, comentários e observações sobre propriedades de luxo no Portugal. Mantenha todas as suas anotações organizadas num só lugar.",
     keywords: [
       "anotações propriedades",
       "notas propriedades",
       "notas propriedades guardadas",
-      "anotações propriedades algarve",
+      "anotações propriedades Portugal",
       "notas propriedades luxo",
       "comentários propriedades",
       "notas imobiliário",
@@ -111,15 +111,15 @@ export const annotationsMetadata = {
   nl: {
     title: "Uw Vastgoedaantekeningen",
     description:
-      "Bekijk en beheer uw vastgoedaantekeningen. Houd uw notities, opmerkingen en observaties over luxe vastgoed in de Algarve bij.",
+      "Bekijk en beheer uw vastgoedaantekeningen. Houd uw notities, opmerkingen en observaties over luxe vastgoed in de Portugal bij.",
     ogTitle: "Uw Vastgoedaantekeningen - Buy Property Portugal",
     ogDescription:
-      "Toegang tot en beheer van uw persoonlijke notities, opmerkingen en observaties over luxe vastgoed in de Algarve. Houd al uw vastgoedaantekeningen georganiseerd op één plek.",
+      "Toegang tot en beheer van uw persoonlijke notities, opmerkingen en observaties over luxe vastgoed in de Portugal. Houd al uw vastgoedaantekeningen georganiseerd op één plek.",
     keywords: [
       "vastgoedaantekeningen",
       "vastgoednotities",
       "opgeslagen vastgoednotities",
-      "algarve vastgoedaantekeningen",
+      "Portugal vastgoedaantekeningen",
       "luxe vastgoed notities",
       "vastgoed opmerkingen",
       "vastgoed notities",
@@ -166,15 +166,15 @@ export const annotationsMetadata = {
   sv: {
     title: "Dina Fastighetsanteckningar",
     description:
-      "Visa och hantera dina fastighetsanteckningar. Håll koll på dina anteckningar, kommentarer och observationer om lyxfastigheter i Algarve.",
+      "Visa och hantera dina fastighetsanteckningar. Håll koll på dina anteckningar, kommentarer och observationer om lyxfastigheter i Portugal.",
     ogTitle: "Dina Fastighetsanteckningar - Buy Property Portugal",
     ogDescription:
-      "Få tillgång till och hantera dina personliga anteckningar, kommentarer och observationer om lyxfastigheter i Algarve. Håll alla dina fastighetsanteckningar organiserade på ett ställe.",
+      "Få tillgång till och hantera dina personliga anteckningar, kommentarer och observationer om lyxfastigheter i Portugal. Håll alla dina fastighetsanteckningar organiserade på ett ställe.",
     keywords: [
       "fastighetsanteckningar",
       "fastighetsnoteringar",
       "sparade fastighetsnoteringar",
-      "algarve fastighetsanteckningar",
+      "Portugal fastighetsanteckningar",
       "lyxfastighet noteringar",
       "fastighet kommentarer",
       "fastighet anteckningar",

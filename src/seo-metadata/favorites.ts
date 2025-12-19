@@ -1,149 +1,149 @@
 export const favoritesMetadata = {
   en: {
-    title: "My Favorite Properties - Saved Luxury Villas in the Algarve",
+    title: "My Favorite Properties - Saved Luxury Villas in the Portugal",
     description:
-      "View and manage your saved favorite luxury properties in the Algarve, Portugal. Access your personalized collection of villas and estates in Carvoeiro, Vale do Lobo, Quinta do Lago, and the Golden Triangle.",
+      "View and manage your saved favorite luxury properties in the Portugal, Portugal. Access your personalized collection of villas and estates in Carvoeiro, Vale do Lobo, Quinta do Lago, and the Golden Triangle.",
     keywords: [
-      "saved properties algarve",
+      "saved properties Portugal",
       "favorite villas portugal",
       "saved luxury properties",
-      "algarve property favorites",
+      "Portugal property favorites",
       "my saved properties",
-      "favorite algarve villas",
+      "favorite Portugal villas",
       "saved luxury estates portugal",
-      "property watchlist algarve",
+      "property watchlist Portugal",
       "saved properties golden triangle",
       "favorite properties carvoeiro",
       "vale do lobo saved properties",
       "quinta do lago favorites",
-      "my property collection algarve",
+      "my property collection Portugal",
       "saved villa listings portugal",
     ],
-    ogTitle: "My Favorite Properties - Saved Luxury Algarve Villas Collection",
+    ogTitle: "My Favorite Properties - Saved Luxury Portugal Villas Collection",
     classification:
       "User favorites, Saved properties, Property collection, Personal property list",
     category:
       "User account, Saved items, Favorites list, Property management, User collection",
     dcTitle:
-      "Saved favorite properties Algarve, User property collection Portugal, Personal villa watchlist Golden Triangle",
+      "Saved favorite properties Portugal, User property collection Portugal, Personal villa watchlist Golden Triangle",
   },
   fr: {
-    title: "Mes Propriétés Favorites - Villas de Luxe Sauvegardées en Algarve",
+    title: "Mes Propriétés Favorites - Villas de Luxe Sauvegardées en Portugal",
     description:
-      "Consultez et gérez vos propriétés de luxe favorites sauvegardées en Algarve, Portugal. Accédez à votre collection personnalisée de villas et domaines à Carvoeiro, Vale do Lobo, Quinta do Lago et le Triangle d'Or.",
+      "Consultez et gérez vos propriétés de luxe favorites sauvegardées en Portugal, Portugal. Accédez à votre collection personnalisée de villas et domaines à Carvoeiro, Vale do Lobo, Quinta do Lago et le Triangle d'Or.",
     keywords: [
-      "propriétés sauvegardées algarve",
+      "propriétés sauvegardées Portugal",
       "villas favorites portugal",
       "propriétés luxe sauvegardées",
-      "favoris propriétés algarve",
+      "favoris propriétés Portugal",
       "mes propriétés sauvegardées",
-      "villas favorites algarve",
+      "villas favorites Portugal",
       "domaines luxe sauvegardés portugal",
-      "liste surveillance propriétés algarve",
+      "liste surveillance propriétés Portugal",
       "propriétés sauvegardées triangle d'or",
       "propriétés favorites carvoeiro",
       "propriétés sauvegardées vale do lobo",
       "favoris quinta do lago",
-      "ma collection propriétés algarve",
+      "ma collection propriétés Portugal",
       "annonces villas sauvegardées portugal",
     ],
     ogTitle:
-      "Mes Propriétés Favorites - Collection de Villas de Luxe en Algarve",
+      "Mes Propriétés Favorites - Collection de Villas de Luxe en Portugal",
     classification:
       "Favoris utilisateur, Propriétés sauvegardées, Collection de propriétés, Liste propriétés personnelle",
     category:
       "Compte utilisateur, Éléments sauvegardés, Liste de favoris, Gestion de propriétés, Collection utilisateur",
     dcTitle:
-      "Propriétés favorites sauvegardées Algarve, Collection propriétés utilisateur Portugal, Liste surveillance villas Triangle d'Or",
+      "Propriétés favorites sauvegardées Portugal, Collection propriétés utilisateur Portugal, Liste surveillance villas Triangle d'Or",
   },
   de: {
     title:
-      "Meine Lieblingsimmobilien - Gespeicherte Luxusvillen in der Algarve",
+      "Meine Lieblingsimmobilien - Gespeicherte Luxusvillen in der Portugal",
     description:
-      "Sehen und verwalten Sie Ihre gespeicherten Lieblings-Luxusimmobilien in der Algarve, Portugal. Greifen Sie auf Ihre persönliche Sammlung von Villen und Anwesen in Carvoeiro, Vale do Lobo, Quinta do Lago und dem Goldenen Dreieck zu.",
+      "Sehen und verwalten Sie Ihre gespeicherten Lieblings-Luxusimmobilien in der Portugal, Portugal. Greifen Sie auf Ihre persönliche Sammlung von Villen und Anwesen in Carvoeiro, Vale do Lobo, Quinta do Lago und dem Goldenen Dreieck zu.",
     keywords: [
-      "gespeicherte immobilien algarve",
+      "gespeicherte immobilien Portugal",
       "lieblingsvillas portugal",
       "gespeicherte luxusimmobilien",
-      "algarve immobilien favoriten",
+      "Portugal immobilien favoriten",
       "meine gespeicherten immobilien",
-      "lieblings algarve villen",
+      "lieblings Portugal villen",
       "gespeicherte luxusanwesen portugal",
-      "immobilien merkliste algarve",
+      "immobilien merkliste Portugal",
       "gespeicherte immobilien goldenes dreieck",
       "lieblingsimmobilien carvoeiro",
       "vale do lobo gespeicherte immobilien",
       "quinta do lago favoriten",
-      "meine immobiliensammlung algarve",
+      "meine immobiliensammlung Portugal",
       "gespeicherte villa angebote portugal",
     ],
     ogTitle:
-      "Meine Lieblingsimmobilien - Gespeicherte Luxusvillen Algarve Sammlung",
+      "Meine Lieblingsimmobilien - Gespeicherte Luxusvillen Portugal Sammlung",
     classification:
       "Benutzer-Favoriten, Gespeicherte Immobilien, Immobiliensammlung, Persönliche Immobilienliste",
     category:
       "Benutzerkonto, Gespeicherte Artikel, Favoritenliste, Immobilienverwaltung, Benutzersammlung",
     dcTitle:
-      "Gespeicherte Lieblingsimmobilien Algarve, Benutzer-Immobiliensammlung Portugal, Persönliche Villa-Merkliste Goldenes Dreieck",
+      "Gespeicherte Lieblingsimmobilien Portugal, Benutzer-Immobiliensammlung Portugal, Persönliche Villa-Merkliste Goldenes Dreieck",
   },
   pt: {
     title:
-      "As Minhas Propriedades Favoritas - Moradias de Luxo Guardadas no Algarve",
+      "As Minhas Propriedades Favoritas - Moradias de Luxo Guardadas no Portugal",
     description:
-      "Veja e gira as suas propriedades de luxo favoritas guardadas no Algarve, Portugal. Aceda à sua coleção personalizada de moradias e quintas em Carvoeiro, Vale do Lobo, Quinta do Lago e o Triângulo Dourado.",
+      "Veja e gira as suas propriedades de luxo favoritas guardadas no Portugal, Portugal. Aceda à sua coleção personalizada de moradias e quintas em Carvoeiro, Vale do Lobo, Quinta do Lago e o Triângulo Dourado.",
     keywords: [
-      "propriedades guardadas algarve",
+      "propriedades guardadas Portugal",
       "moradias favoritas portugal",
       "propriedades luxo guardadas",
-      "favoritos propriedades algarve",
+      "favoritos propriedades Portugal",
       "minhas propriedades guardadas",
-      "moradias favoritas algarve",
+      "moradias favoritas Portugal",
       "quintas luxo guardadas portugal",
-      "lista vigilância propriedades algarve",
+      "lista vigilância propriedades Portugal",
       "propriedades guardadas triângulo dourado",
       "propriedades favoritas carvoeiro",
       "propriedades guardadas vale do lobo",
       "favoritos quinta do lago",
-      "minha coleção propriedades algarve",
+      "minha coleção propriedades Portugal",
       "anúncios moradias guardados portugal",
     ],
     ogTitle:
-      "As Minhas Propriedades Favoritas - Coleção de Moradias de Luxo no Algarve",
+      "As Minhas Propriedades Favoritas - Coleção de Moradias de Luxo no Portugal",
     classification:
       "Favoritos do utilizador, Propriedades guardadas, Coleção de propriedades, Lista de propriedades pessoal",
     category:
       "Conta de utilizador, Itens guardados, Lista de favoritos, Gestão de propriedades, Coleção do utilizador",
     dcTitle:
-      "Propriedades favoritas guardadas Algarve, Coleção de propriedades do utilizador Portugal, Lista vigilância moradias Triângulo Dourado",
+      "Propriedades favoritas guardadas Portugal, Coleção de propriedades do utilizador Portugal, Lista vigilância moradias Triângulo Dourado",
   },
   nl: {
-    title: "Mijn Favoriete Eigendommen - Opgeslagen Luxe Villa's in de Algarve",
+    title: "Mijn Favoriete Eigendommen - Opgeslagen Luxe Villa's in de Portugal",
     description:
-      "Bekijk en beheer uw opgeslagen favoriete luxe eigendommen in de Algarve, Portugal. Toegang tot uw persoonlijke collectie villa's en landgoederen in Carvoeiro, Vale do Lobo, Quinta do Lago en de Gouden Driehoek.",
+      "Bekijk en beheer uw opgeslagen favoriete luxe eigendommen in de Portugal, Portugal. Toegang tot uw persoonlijke collectie villa's en landgoederen in Carvoeiro, Vale do Lobo, Quinta do Lago en de Gouden Driehoek.",
     keywords: [
-      "opgeslagen eigendommen algarve",
+      "opgeslagen eigendommen Portugal",
       "favoriete villa's portugal",
       "opgeslagen luxe eigendommen",
-      "algarve eigendom favorieten",
+      "Portugal eigendom favorieten",
       "mijn opgeslagen eigendommen",
-      "favoriete algarve villa's",
+      "favoriete Portugal villa's",
       "opgeslagen luxe landgoederen portugal",
-      "eigendom volglijst algarve",
+      "eigendom volglijst Portugal",
       "opgeslagen eigendommen gouden driehoek",
       "favoriete eigendommen carvoeiro",
       "vale do lobo opgeslagen eigendommen",
       "quinta do lago favorieten",
-      "mijn eigendom collectie algarve",
+      "mijn eigendom collectie Portugal",
       "opgeslagen villa aanbiedingen portugal",
     ],
     ogTitle:
-      "Mijn Favoriete Eigendommen - Opgeslagen Luxe Algarve Villa's Collectie",
+      "Mijn Favoriete Eigendommen - Opgeslagen Luxe Portugal Villa's Collectie",
     classification:
       "Gebruikersfavorieten, Opgeslagen eigendommen, Eigendom collectie, Persoonlijke eigendom lijst",
     category:
       "Gebruikersaccount, Opgeslagen items, Favorietenlijst, Eigendom beheer, Gebruikerscollectie",
     dcTitle:
-      "Opgeslagen favoriete eigendommen Algarve, Gebruikers eigendom collectie Portugal, Persoonlijke villa volglijst Gouden Driehoek",
+      "Opgeslagen favoriete eigendommen Portugal, Gebruikers eigendom collectie Portugal, Persoonlijke villa volglijst Gouden Driehoek",
   },
   ru: {
     title: "Мои Избранные Объекты - Сохраненные Роскошные Виллы в Алгарве",
@@ -174,32 +174,32 @@ export const favoritesMetadata = {
       "Сохраненные избранные объекты Алгарве, Коллекция объектов пользователя Португалия, Персональный список наблюдения вилл Золотой Треугольник",
   },
   se: {
-    title: "Mina Favoritfastigheter - Sparade Lyxvillor i Algarve",
+    title: "Mina Favoritfastigheter - Sparade Lyxvillor i Portugal",
     description:
-      "Visa och hantera dina sparade favoritlyxfastigheter i Algarve, Portugal. Få tillgång till din personliga samling av villor och herrgårdar i Carvoeiro, Vale do Lobo, Quinta do Lago och Gyllene Triangeln.",
+      "Visa och hantera dina sparade favoritlyxfastigheter i Portugal, Portugal. Få tillgång till din personliga samling av villor och herrgårdar i Carvoeiro, Vale do Lobo, Quinta do Lago och Gyllene Triangeln.",
     keywords: [
-      "sparade fastigheter algarve",
+      "sparade fastigheter Portugal",
       "favoritvillor portugal",
       "sparade lyxfastigheter",
-      "algarve fastighet favoriter",
+      "Portugal fastighet favoriter",
       "mina sparade fastigheter",
-      "favorit algarve villor",
+      "favorit Portugal villor",
       "sparade lyxherrgårdar portugal",
-      "fastighet bevakningslista algarve",
+      "fastighet bevakningslista Portugal",
       "sparade fastigheter gyllene triangeln",
       "favoritfastigheter carvoeiro",
       "vale do lobo sparade fastigheter",
       "quinta do lago favoriter",
-      "min fastighetssamling algarve",
+      "min fastighetssamling Portugal",
       "sparade villaannonser portugal",
     ],
-    ogTitle: "Mina Favoritfastigheter - Sparad Lyxvillor Algarve Samling",
+    ogTitle: "Mina Favoritfastigheter - Sparad Lyxvillor Portugal Samling",
     classification:
       "Användarfavoriter, Sparade fastigheter, Fastighetssamling, Personlig fastighetslista",
     category:
       "Användarkonto, Sparade objekt, Favoritlista, Fastighetshantering, Användarsamling",
     dcTitle:
-      "Sparade favoritfastigheter Algarve, Användarfastighetssamling Portugal, Personlig villa bevakningslista Gyllene Triangeln",
+      "Sparade favoritfastigheter Portugal, Användarfastighetssamling Portugal, Personlig villa bevakningslista Gyllene Triangeln",
   },
 } as const;
 

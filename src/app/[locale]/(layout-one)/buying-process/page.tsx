@@ -17,7 +17,7 @@ interface Props {
 }
 
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           secureUrl: `${BASE_URL}/images/buying-process/buying-process-finalize.png`,
           width: 1200,
           height: 630,
-          alt: "Buying Process - Algarve Property Purchase Guide",
+          alt: "Buying Process - Portugal Property Purchase Guide",
         },
       ],
     },
@@ -123,7 +123,7 @@ const BuyingProcessPage = async () => {
         <div className="flex gap-y-5 justify-between py-5 md:py-8 flex-wrap">
           <div className="w-full lg:w-[40%] lg:min-w-[unset]">
             <h1 className="text-2xl lg:text-3xl max-w-70 mb-6 font-semibold">
-              {t("buyingProcessInTheAlgarve")}
+              {t("buyingProcessInThePortugal")}
             </h1>
             <div className="pr-12 lg:px-0">
               <Image

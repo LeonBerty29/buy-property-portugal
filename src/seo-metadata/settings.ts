@@ -5,7 +5,7 @@ export const settingsMetadata = {
       "Manage your Buy Property Portugal account settings, update your profile information, adjust notification preferences, and customize your luxury property search experience.",
     ogTitle: "Account Settings - Buy Property Portugal",
     ogDescription:
-      "Manage your account settings and profile information. Update your preferences, notification settings, and personalize your luxury property search experience in the Algarve.",
+      "Manage your account settings and profile information. Update your preferences, notification settings, and personalize your luxury property search experience in the Portugal.",
     keywords: [
       "account settings",
       "profile management",
@@ -32,7 +32,7 @@ export const settingsMetadata = {
       "Gérez les paramètres de votre compte Buy Property Portugal, mettez à jour vos informations de profil, ajustez les préférences de notification et personnalisez votre expérience de recherche de propriétés de luxe.",
     ogTitle: "Paramètres du Compte - Buy Property Portugal",
     ogDescription:
-      "Gérez vos paramètres de compte et informations de profil. Mettez à jour vos préférences, paramètres de notification et personnalisez votre expérience de recherche de propriétés de luxe dans l'Algarve.",
+      "Gérez vos paramètres de compte et informations de profil. Mettez à jour vos préférences, paramètres de notification et personnalisez votre expérience de recherche de propriétés de luxe dans l'Portugal.",
     keywords: [
       "paramètres compte",
       "gestion profil",
@@ -60,7 +60,7 @@ export const settingsMetadata = {
       "Verwalten Sie Ihre Buy Property Portugal Kontoeinstellungen, aktualisieren Sie Ihre Profilinformationen, passen Sie Benachrichtigungseinstellungen an und personalisieren Sie Ihr Luxusimmobilien-Sucherlebnis.",
     ogTitle: "Kontoeinstellungen - Buy Property Portugal",
     ogDescription:
-      "Verwalten Sie Ihre Kontoeinstellungen und Profilinformationen. Aktualisieren Sie Ihre Präferenzen, Benachrichtigungseinstellungen und personalisieren Sie Ihr Luxusimmobilien-Sucherlebnis in der Algarve.",
+      "Verwalten Sie Ihre Kontoeinstellungen und Profilinformationen. Aktualisieren Sie Ihre Präferenzen, Benachrichtigungseinstellungen und personalisieren Sie Ihr Luxusimmobilien-Sucherlebnis in der Portugal.",
     keywords: [
       "kontoeinstellungen",
       "profilverwaltung",
@@ -87,7 +87,7 @@ export const settingsMetadata = {
       "Gira as definições da sua conta Buy Property Portugal, atualize as suas informações de perfil, ajuste as preferências de notificação e personalize a sua experiência de pesquisa de propriedades de luxo.",
     ogTitle: "Definições de Conta - Buy Property Portugal",
     ogDescription:
-      "Gira as suas definições de conta e informações de perfil. Atualize as suas preferências, definições de notificação e personalize a sua experiência de pesquisa de propriedades de luxo no Algarve.",
+      "Gira as suas definições de conta e informações de perfil. Atualize as suas preferências, definições de notificação e personalize a sua experiência de pesquisa de propriedades de luxo no Portugal.",
     keywords: [
       "definições conta",
       "gestão perfil",
@@ -114,7 +114,7 @@ export const settingsMetadata = {
       "Beheer uw Buy Property Portugal accountinstellingen, werk uw profielinformatie bij, pas meldingsvoorkeuren aan en personaliseer uw luxe vastgoed zoekervaring.",
     ogTitle: "Accountinstellingen - Buy Property Portugal",
     ogDescription:
-      "Beheer uw accountinstellingen en profielinformatie. Werk uw voorkeuren, meldingsinstellingen bij en personaliseer uw luxe vastgoed zoekervaring in de Algarve.",
+      "Beheer uw accountinstellingen en profielinformatie. Werk uw voorkeuren, meldingsinstellingen bij en personaliseer uw luxe vastgoed zoekervaring in de Portugal.",
     keywords: [
       "accountinstellingen",
       "profielbeheer",
@@ -169,7 +169,7 @@ export const settingsMetadata = {
       "Hantera dina Buy Property Portugal kontoinställningar, uppdatera din profilinformation, justera aviseringspreferenser och anpassa din lyxfastighet sökupplevelse.",
     ogTitle: "Kontoinställningar - Buy Property Portugal",
     ogDescription:
-      "Hantera dina kontoinställningar och profilinformation. Uppdatera dina preferenser, aviseringsinställningar och anpassa din lyxfastighet sökupplevelse i Algarve.",
+      "Hantera dina kontoinställningar och profilinformation. Uppdatera dina preferenser, aviseringsinställningar och anpassa din lyxfastighet sökupplevelse i Portugal.",
     keywords: [
       "kontoinställningar",
       "profilhantering",

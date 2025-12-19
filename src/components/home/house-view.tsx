@@ -29,7 +29,7 @@ const HouseView = ({ property }: { property: Property }) => {
         ) : (
           <Image
             src="/images/house-view.png"
-            alt="Algarve home"
+            alt="Portugal home"
             className=" h-full w-full object-cover"
             fill
           />

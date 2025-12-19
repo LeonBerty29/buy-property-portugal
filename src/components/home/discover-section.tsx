@@ -19,7 +19,7 @@ const DiscoverSection = async() => {
         <div className="text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-light text-primary mb-6 leading-tight">
             {t("discoverTheBest")} <br />
-            {t("propertiesInAlgarve")}
+            {t("propertiesInPortugal")}
           </h1>
           <p className="text-base text-black mb-8 max-w-md mx-auto">
             {t("discoverAmazingFeatures")}

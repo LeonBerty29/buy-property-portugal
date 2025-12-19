@@ -28,7 +28,7 @@ interface Props {
 
 const BLOGS_PER_PAGE = 12;
 
-// Geographic coordinates for Algarve
+// Geographic coordinates for Portugal
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;

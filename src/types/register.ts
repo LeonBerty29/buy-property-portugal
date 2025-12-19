@@ -2,18 +2,18 @@ export const registerMetadata = {
   en: {
     title: "Register - Create Your Account",
     description:
-      "Create your Buy Property Portugal account to save favorite properties, receive personalized property alerts, track inquiries, and get exclusive access to luxury real estate listings in the Algarve.",
+      "Create your Buy Property Portugal account to save favorite properties, receive personalized property alerts, track inquiries, and get exclusive access to luxury real estate listings in the Portugal.",
     keywords: [
       "Buy Property Portugal register",
-      "create account algarve properties",
+      "create account Portugal properties",
       "sign up luxury properties",
       "property alerts registration",
-      "algarve real estate account",
+      "Portugal real estate account",
       "client registration portal",
       "property buyer registration",
       "luxury villa account creation",
       "real estate client signup",
-      "save favorite properties algarve",
+      "save favorite properties Portugal",
     ],
     ogTitle: "Create Your Buy Property Portugal Account",
     classification:
@@ -28,18 +28,18 @@ export const registerMetadata = {
   fr: {
     title: "S'inscrire - Créer Votre Compte",
     description:
-      "Créez votre compte Buy Property Portugal pour enregistrer vos propriétés favorites, recevoir des alertes personnalisées, suivre vos demandes et accéder exclusivement aux annonces immobilières de luxe en Algarve.",
+      "Créez votre compte Buy Property Portugal pour enregistrer vos propriétés favorites, recevoir des alertes personnalisées, suivre vos demandes et accéder exclusivement aux annonces immobilières de luxe en Portugal.",
     keywords: [
       "inscription Buy Property Portugal",
-      "créer compte propriétés algarve",
+      "créer compte propriétés Portugal",
       "inscription propriétés luxe",
       "enregistrement alertes immobilières",
-      "compte immobilier algarve",
+      "compte immobilier Portugal",
       "portail inscription client",
       "inscription acheteur propriété",
       "création compte villa luxe",
       "inscription client immobilier",
-      "enregistrer propriétés favorites algarve",
+      "enregistrer propriétés favorites Portugal",
     ],
     ogTitle: "Créez Votre Compte Buy Property Portugal",
     classification:
@@ -55,18 +55,18 @@ export const registerMetadata = {
   de: {
     title: "Registrieren - Erstellen Sie Ihr Konto",
     description:
-      "Erstellen Sie Ihr Buy Property Portugal Konto, um Lieblingsimmobilien zu speichern, personalisierte Immobilienbenachrichtigungen zu erhalten, Anfragen zu verfolgen und exklusiven Zugang zu Luxusimmobilienangeboten in der Algarve zu erhalten.",
+      "Erstellen Sie Ihr Buy Property Portugal Konto, um Lieblingsimmobilien zu speichern, personalisierte Immobilienbenachrichtigungen zu erhalten, Anfragen zu verfolgen und exklusiven Zugang zu Luxusimmobilienangeboten in der Portugal zu erhalten.",
     keywords: [
       "Buy Property Portugal registrierung",
-      "konto erstellen algarve immobilien",
+      "konto erstellen Portugal immobilien",
       "anmeldung luxusimmobilien",
       "immobilienbenachrichtigung registrierung",
-      "algarve immobilienkonto",
+      "Portugal immobilienkonto",
       "kundenregistrierung portal",
       "immobilienkäufer registrierung",
       "luxusvilla konto erstellung",
       "immobilienkunde anmeldung",
-      "favoriten immobilien speichern algarve",
+      "favoriten immobilien speichern Portugal",
     ],
     ogTitle: "Erstellen Sie Ihr Buy Property Portugal Konto",
     classification:
@@ -82,18 +82,18 @@ export const registerMetadata = {
   pt: {
     title: "Registar - Criar Sua Conta",
     description:
-      "Crie sua conta Buy Property Portugal para guardar propriedades favoritas, receber alertas personalizados, acompanhar pedidos e obter acesso exclusivo a anúncios imobiliários de luxo no Algarve.",
+      "Crie sua conta Buy Property Portugal para guardar propriedades favoritas, receber alertas personalizados, acompanhar pedidos e obter acesso exclusivo a anúncios imobiliários de luxo no Portugal.",
     keywords: [
       "registo Buy Property Portugal",
-      "criar conta propriedades algarve",
+      "criar conta propriedades Portugal",
       "inscrição propriedades luxo",
       "registo alertas imobiliários",
-      "conta imobiliária algarve",
+      "conta imobiliária Portugal",
       "portal registo cliente",
       "registo comprador propriedade",
       "criação conta moradia luxo",
       "inscrição cliente imobiliário",
-      "guardar propriedades favoritas algarve",
+      "guardar propriedades favoritas Portugal",
     ],
     ogTitle: "Crie Sua Conta Buy Property Portugal",
     classification:
@@ -109,18 +109,18 @@ export const registerMetadata = {
   nl: {
     title: "Registreren - Maak Uw Account Aan",
     description:
-      "Maak uw Buy Property Portugal account aan om favoriete eigenschappen op te slaan, gepersonaliseerde vastgoedmeldingen te ontvangen, aanvragen te volgen en exclusieve toegang te krijgen tot luxe vastgoedaanbiedingen in de Algarve.",
+      "Maak uw Buy Property Portugal account aan om favoriete eigenschappen op te slaan, gepersonaliseerde vastgoedmeldingen te ontvangen, aanvragen te volgen en exclusieve toegang te krijgen tot luxe vastgoedaanbiedingen in de Portugal.",
     keywords: [
       "Buy Property Portugal registratie",
-      "account aanmaken algarve vastgoed",
+      "account aanmaken Portugal vastgoed",
       "aanmelden luxe vastgoed",
       "vastgoedmeldingen registratie",
-      "algarve vastgoed account",
+      "Portugal vastgoed account",
       "klant registratie portal",
       "vastgoedkoper registratie",
       "luxe villa account aanmaken",
       "vastgoedklant aanmelding",
-      "favoriete vastgoed opslaan algarve",
+      "favoriete vastgoed opslaan Portugal",
     ],
     ogTitle: "Maak Uw Buy Property Portugal Account Aan",
     classification:
@@ -163,18 +163,18 @@ export const registerMetadata = {
   se: {
     title: "Registrera - Skapa Ditt Konto",
     description:
-      "Skapa ditt Buy Property Portugal konto för att spara favoritfastigheter, ta emot personliga fastighetsvarningar, spåra förfrågningar och få exklusiv tillgång till lyxfastighetsannonser i Algarve.",
+      "Skapa ditt Buy Property Portugal konto för att spara favoritfastigheter, ta emot personliga fastighetsvarningar, spåra förfrågningar och få exklusiv tillgång till lyxfastighetsannonser i Portugal.",
     keywords: [
       "Buy Property Portugal registrering",
-      "skapa konto algarve fastigheter",
+      "skapa konto Portugal fastigheter",
       "registrera lyxfastigheter",
       "fastighetsvarningar registrering",
-      "algarve fastighet konto",
+      "Portugal fastighet konto",
       "kundregistrering portal",
       "fastighetsköpare registrering",
       "lyxvilla konto skapande",
       "fastighetskund registrering",
-      "spara favoritfastigheter algarve",
+      "spara favoritfastigheter Portugal",
     ],
     ogTitle: "Skapa Ditt Buy Property Portugal Konto",
     classification:

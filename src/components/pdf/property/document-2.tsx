@@ -340,10 +340,10 @@ export const PropertyBrochureDocument: React.FC<
             )}
           </View>
           <Link
-            src="mailto:info@exclusive-algarve.com"
+            src="mailto:info@exclusive-Portugal.com"
             style={styles.emailLink}
           >
-            info@exclusive-algarve.com
+            info@exclusive-Portugal.com
           </Link>
         </View>
 
@@ -368,7 +368,7 @@ export const PropertyBrochureDocument: React.FC<
 
           {/* Description and Price */}
           <Text style={styles.description}>
-            Modern Villa near Gale beach and Salgados Golf for sale Algarve
+            Modern Villa near Gale beach and Salgados Golf for sale Portugal
           </Text>
 
           <View style={styles.priceContainer}>
@@ -503,14 +503,14 @@ export const PropertyBrochureDocument: React.FC<
                 <Text style={styles.officeTitle}>LAGOA</Text>
                 <Text style={styles.officeAddress}>
                   Rua Ernesto Cabrita, Edificio Vales L/A{"\n"}
-                  8400-387 Lagoa - Algarve
+                  8400-387 Lagoa - Portugal
                 </Text>
               </View>
               <View style={styles.contactOffice}>
                 <Text style={styles.officeTitle}>VILAMOURA</Text>
                 <Text style={styles.officeAddress}>
                   Avenida Tivoli, B, Bloco 3, R/C Esq{"\n"}
-                  8125-465 Vilamoura - Algarve
+                  8125-465 Vilamoura - Portugal
                 </Text>
               </View>
               <View style={styles.contactOffice}>
@@ -525,7 +525,7 @@ export const PropertyBrochureDocument: React.FC<
               <Text style={styles.contactItem}>Tel.: +351 282 353 019</Text>
               <Text style={styles.contactItem}>Mobile: +351 918 024 082</Text>
               <Text style={styles.contactItem}>
-                Email: info@exclusive-algarve.com
+                Email: info@exclusive-Portugal.com
               </Text>
             </View>
           </View>
@@ -555,7 +555,7 @@ export const PropertyBrochureDocument: React.FC<
 
         {/* Footer with Website and Page Number - Fixed at bottom */}
         <View style={styles.footer} fixed>
-          <Text style={styles.websiteText}>exclusivealgarvevillas.com</Text>
+          <Text style={styles.websiteText}>exclusivePortugalvillas.com</Text>
           <Text
             style={styles.pageNumber}
             render={({ pageNumber, totalPages }) =>

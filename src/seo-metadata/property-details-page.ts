@@ -2,9 +2,9 @@ export const propertyDetailsPageMetadata = {
   en: {
     notFoundTitle: "Property Not Found",
     notFoundDescription: "The requested property could not be found",
-    titleSuffix: "for sale in Algarve",
+    titleSuffix: "for sale in Portugal",
     classification:
-      "Luxury property listing, Algarve real estate, Premium villa for sale, Investment opportunity",
+      "Luxury property listing, Portugal real estate, Premium villa for sale, Investment opportunity",
     category:
       "Property listing, Real estate detail, Villa sale, Luxury home, Investment property",
     dcTitlePrefix: "Luxury property for sale",
@@ -21,9 +21,9 @@ export const propertyDetailsPageMetadata = {
   fr: {
     notFoundTitle: "Propriété Non Trouvée",
     notFoundDescription: "La propriété demandée n'a pas pu être trouvée",
-    titleSuffix: "à vendre en Algarve",
+    titleSuffix: "à vendre en Portugal",
     classification:
-      "Annonce de propriété de luxe, Immobilier Algarve, Villa premium à vendre, Opportunité d'investissement",
+      "Annonce de propriété de luxe, Immobilier Portugal, Villa premium à vendre, Opportunité d'investissement",
     category:
       "Annonce immobilière, Détail immobilier, Vente de villa, Maison de luxe, Propriété d'investissement",
     dcTitlePrefix: "Propriété de luxe à vendre",
@@ -41,9 +41,9 @@ export const propertyDetailsPageMetadata = {
     notFoundTitle: "Immobilie Nicht Gefunden",
     notFoundDescription:
       "Die angeforderte Immobilie konnte nicht gefunden werden",
-    titleSuffix: "zu verkaufen in Algarve",
+    titleSuffix: "zu verkaufen in Portugal",
     classification:
-      "Luxusimmobilien-Anzeige, Algarve Immobilien, Premium-Villa zu verkaufen, Investitionsmöglichkeit",
+      "Luxusimmobilien-Anzeige, Portugal Immobilien, Premium-Villa zu verkaufen, Investitionsmöglichkeit",
     category:
       "Immobilienanzeige, Immobiliendetail, Villenverkauf, Luxushaus, Anlageimmobilie",
     dcTitlePrefix: "Luxusimmobilie zu verkaufen",
@@ -60,9 +60,9 @@ export const propertyDetailsPageMetadata = {
   pt: {
     notFoundTitle: "Propriedade Não Encontrada",
     notFoundDescription: "A propriedade solicitada não foi encontrada",
-    titleSuffix: "à venda no Algarve",
+    titleSuffix: "à venda no Portugal",
     classification:
-      "Anúncio de propriedade de luxo, Imóveis Algarve, Moradia premium à venda, Oportunidade de investimento",
+      "Anúncio de propriedade de luxo, Imóveis Portugal, Moradia premium à venda, Oportunidade de investimento",
     category:
       "Anúncio imobiliário, Detalhe imobiliário, Venda de moradia, Casa de luxo, Propriedade de investimento",
     dcTitlePrefix: "Propriedade de luxo à venda",
@@ -79,9 +79,9 @@ export const propertyDetailsPageMetadata = {
   nl: {
     notFoundTitle: "Vastgoed Niet Gevonden",
     notFoundDescription: "Het gevraagde vastgoed kon niet worden gevonden",
-    titleSuffix: "te koop in Algarve",
+    titleSuffix: "te koop in Portugal",
     classification:
-      "Luxe vastgoedadvertentie, Algarve onroerend goed, Premium villa te koop, Beleggingsmogelijkheid",
+      "Luxe vastgoedadvertentie, Portugal onroerend goed, Premium villa te koop, Beleggingsmogelijkheid",
     category:
       "Vastgoedadvertentie, Vastgoeddetail, Villa verkoop, Luxe huis, Beleggingsvastgoed",
     dcTitlePrefix: "Luxe vastgoed te koop",
@@ -117,9 +117,9 @@ export const propertyDetailsPageMetadata = {
   se: {
     notFoundTitle: "Fastighet Hittades Inte",
     notFoundDescription: "Den begärda fastigheten kunde inte hittas",
-    titleSuffix: "till salu i Algarve",
+    titleSuffix: "till salu i Portugal",
     classification:
-      "Lyxfastighetsannons, Algarve fastigheter, Premium villa till salu, Investeringsmöjlighet",
+      "Lyxfastighetsannons, Portugal fastigheter, Premium villa till salu, Investeringsmöjlighet",
     category:
       "Fastighetsannons, Fastighetsdetalj, Villaförsäljning, Lyxhem, Investeringsfastighet",
     dcTitlePrefix: "Lyxfastighet till salu",

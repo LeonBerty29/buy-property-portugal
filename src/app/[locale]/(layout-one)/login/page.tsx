@@ -22,7 +22,7 @@ interface LoginPageProps {
 }
 
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;

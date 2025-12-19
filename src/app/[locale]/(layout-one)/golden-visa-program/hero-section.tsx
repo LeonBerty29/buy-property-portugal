@@ -11,7 +11,7 @@ export const GoldenVisaProgramHeroSection = () => {
       <div className="absolute top-0 left-0 h-full w-full before:absolute before:inset-0 before:bg-black/60 before:bg-opacity-50 before:content-[''] before:z-10">
         <Image
           src="/images/house-view.png"
-          alt={t("algarveHomeAlt")}
+          alt={t("PortugalHomeAlt")}
           width={1513}
           height={622}
           className=" h-full w-full object-cover"

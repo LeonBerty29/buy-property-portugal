@@ -4,7 +4,7 @@ import { PropertyData } from "./types";
 export const getSamplePropertyData = (): PropertyData => ({
   id: "EAV-3500",
   title: "Modern Villa",
-  location: "Albufeira, Algarve",
+  location: "Albufeira, Portugal",
   price: "€4,500,000",
   shortDescription:
     "This villa is composed of three levels. On the ground floor, from the main entrance, the hall leads you to the living room and dining area, towards the kitchen.",
@@ -44,7 +44,7 @@ export const convertHtmlPropertyToData = (htmlProperty: any): PropertyData => {
   return {
     id: "EAV-3500", // Extract from your HTML component
     title: "Modern Villa",
-    location: "Albufeira, Algarve",
+    location: "Albufeira, Portugal",
     price: "€4,500,000",
     shortDescription: htmlProperty.shortDescription || "",
     fullDescription: htmlProperty.fullDescription || "",
