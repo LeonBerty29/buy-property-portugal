@@ -20,7 +20,7 @@ interface Props {
 }
 
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -136,7 +136,7 @@ const ContactPage = async () => {
               {t("bookAMeetingWithUs")}
             </h1>
             <p className="text-neutral-700 text-sm xl:text-base mb-7">
-              {t("exclusiveAlgarveVillasDescription")}
+              {t("exclusivePortugalVillasDescription")}
             </p>
 
             <BookMeeting

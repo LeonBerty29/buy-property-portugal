@@ -1,13 +1,13 @@
 {
   "about": {
-    "meetTheTeamText": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Algarve tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter.",
+    "meetTheTeamText": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Portugal tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter.",
     "meetTiltlePart1": "LERNEN SIE",
     "meetTiltlePart2": "DAS TEAM KENNEN",
     "proudAchievement1": "WIR SIND STOLZ AUF UNSERE",
     "proudAchievement2": "ERFOLGE",
     "proudAchievementDescription": "Buy Property Portugal hat im Laufe der Jahre verschiedene Auszeichnungen gewonnen, von \"Beste Immobilienagentur-Website\" bis \"Beste Immobilienagentur Portugal\" bei den International Property Awards in London. Darüber hinaus wurde 2019 eine Auszeichnung als Beste Luxus-Immobilienagentur 2019 vom Build Magazine verliehen.",
     "seeTheTeam": "Das Team ansehen",
-    "textAboutEav": "Buy Property Portugal ist seit 2006 ein bekannter Name im Verkauf von luxuriösen und einzigartigen Immobilien in der westlichen und zentralen Algarve. Mit langjähriger Erfahrung leiten wir ein Team von Immobilienprofis, die in ihrem Arbeitsbereich sachkundig sind und Ihnen engagiert alle Facetten der Algarve-Region zeigen werden.",
+    "textAboutEav": "Buy Property Portugal ist seit 2006 ein bekannter Name im Verkauf von luxuriösen und einzigartigen Immobilien in der westlichen und zentralen Portugal. Mit langjähriger Erfahrung leiten wir ein Team von Immobilienprofis, die in ihrem Arbeitsbereich sachkundig sind und Ihnen engagiert alle Facetten der Portugal-Region zeigen werden.",
     "title": "ÜBER Buy Property Portugal"
   },
   "bookMeetingAction": {
@@ -129,9 +129,9 @@
     "profileUpdated": "Profil aktualisiert"
   },
   "theTeamPage": {
-    "assistHeading": "WIR SIND HIER, UM SIE WÄHREND DES GESAMTEN PROZESSES DES KAUFS UND VERKAUFS VON LUXUSIMMOBILIEN AN DER ALGARVE ZU UNTERSTÜTZEN",
+    "assistHeading": "WIR SIND HIER, UM SIE WÄHREND DES GESAMTEN PROZESSES DES KAUFS UND VERKAUFS VON LUXUSIMMOBILIEN AN DER Portugal ZU UNTERSTÜTZEN",
     "aboutUsAlt": "über-uns",
-    "directorsParagraph": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Algarve tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter."
+    "directorsParagraph": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Portugal tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter."
   },
   "accountActivatePage": {
     "successTitle": "Erfolg!!",
@@ -190,9 +190,9 @@
   },
   "becomeAVendorPage": {
     "becomeAVendor": "VERKÄUFER WERDEN",
-    "sellMyPropertyInTheAlgarve": "MEINE IMMOBILIE AN DER ALGARVE VERKAUFEN",
-    "youDecidedToSellYourPropertyInTheAlgarve": "Sie haben sich entschieden, Ihre Immobilie an der Algarve zu verkaufen, und was nun?",
-    "vendorsOftenFeelOverwhelmedWithBureaucracy": "Verkäufer fühlen sich oft von der Bürokratie überwältigt und sind unsicher, wo sie anfangen sollen, wenn sie sich für den Verkauf einer Immobilie an der Algarve entscheiden. Bei Buy Property Portugal sind wir hier, um Sie während des gesamten Verkaufs Ihrer Immobilie zu unterstützen und sicherzustellen, dass Sie alle Aspekte des Verkaufs Ihres Immobilienvermögens für einen erfolgreichen Verkauf optimieren.",
+    "sellMyPropertyInThePortugal": "MEINE IMMOBILIE AN DER Portugal VERKAUFEN",
+    "youDecidedToSellYourPropertyInThePortugal": "Sie haben sich entschieden, Ihre Immobilie an der Portugal zu verkaufen, und was nun?",
+    "vendorsOftenFeelOverwhelmedWithBureaucracy": "Verkäufer fühlen sich oft von der Bürokratie überwältigt und sind unsicher, wo sie anfangen sollen, wenn sie sich für den Verkauf einer Immobilie an der Portugal entscheiden. Bei Buy Property Portugal sind wir hier, um Sie während des gesamten Verkaufs Ihrer Immobilie zu unterstützen und sicherzustellen, dass Sie alle Aspekte des Verkaufs Ihres Immobilienvermögens für einen erfolgreichen Verkauf optimieren.",
     "observeYourPropertyPriorToMarket": "Betrachten Sie Ihre Immobilie, bevor Sie sie zum Verkauf auf den Markt bringen, und beantworten Sie nun: Wie ansprechend ist Ihre Immobilie für Käufer?",
     "youGuessItRight": "Sie haben es richtig erraten, es gibt Hausaufgaben zu erledigen!",
     "stageYourProperty": "Ihre Immobilie herrichten",
@@ -215,7 +215,7 @@
     "mediationContractsValidSixMonths": "Vermittlungsverträge sind normalerweise für 6 Monate mit verlängerbaren gleichen Zeiträumen gültig und können auf \"exklusiver\" oder \"nicht-exklusiver\" Basis erfolgen. Wir verwenden den von IMPIC genehmigten Standardvertrag, dem Organ, das die Immobilien- und Baulizenzen regelt. Alle Fragen zum Vertrag können von unserem Verkaufsteam geklärt werden.",
     "propertyLookingBestDocumentsInOrder": "Jetzt, da Ihre Immobilie optimal aussieht, alle Dokumente der Immobilie in Ordnung sind und Sie den Vermittlungsvertrag unterschrieben haben, sind Sie bereit, Ihre Immobilie zu verkaufen!",
     "professionalTeamMarketsProperty": "Unser professionelles Team bei Buy Property Portugal vermarktet Ihre Immobilie zum Verkauf mit Unterstützung unseres hauseigenen Fotografen und arbeitet mit Ihnen an der Immobilienbeschreibung, um sicherzustellen, dass alle Merkmale und Ausstattungen der Immobilie gut dokumentiert und präsentiert werden.",
-    "highEndLuxuryRealEstateServices": "Für hochwertige Luxusimmobilien, Villen am Meer und einzigartige exklusive Häuser zum Verkauf in der West- und Zentralalgarve nutzen wir auch die Dienste professioneller Fotografen und Drohnen-Videodienste.",
+    "highEndLuxuryRealEstateServices": "Für hochwertige Luxusimmobilien, Villen am Meer und einzigartige exklusive Häuser zum Verkauf in der West- und ZentralPortugal nutzen wir auch die Dienste professioneller Fotografen und Drohnen-Videodienste.",
     "or": "oder",
     "happyToAssistYou": "und wir helfen Ihnen gerne weiter.",
     "useWebformBelow": "Alternativ können Sie das untenstehende Webformular verwenden, um Informationen über die Immobilie zu übermitteln, die Sie zum Verkauf haben, und ein Mitglied unseres Verkaufsteams wird sich in Kürze mit Ihnen in Verbindung setzen.",
@@ -258,7 +258,7 @@
   "blogsPage": {
     "mainHeadingLine1": "SIE WERDEN NIEMALS EINE",
     "mainHeadingLine2": "GELEGENHEIT VERPASSEN!",
-    "welcomeParagraph": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Algarve tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter.",
+    "welcomeParagraph": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Sowohl Marcela als auch Bart sind seit über einem Jahrzehnt im Verkauf von Luxusimmobilien an der Portugal tätig. Sie haben ein mehrfach preisgekröntes Unternehmen aufgebaut und erweitern das Geschäft Jahr für Jahr weiter.",
     "pageNotFoundTitle": "Seite nicht gefunden",
     "pageNotFoundPage": "Seite",
     "pageNotFoundDoesntExist": "existiert nicht.",
@@ -272,11 +272,11 @@
     "next": "Weiter"
   },
   "buyingProcessPage": {
-    "buyingProcessInTheAlgarve": "KAUFPROZESS AN DER ALGARVE",
+    "buyingProcessInThePortugal": "KAUFPROZESS AN DER Portugal",
     "buyingIntroductionParagraph1": "Der Kauf eines neuen Zuhauses in einem fremden Land mit unterschiedlichen Regeln, Gesetzgebung, Sprache und kulturellen Unterschieden kann wie eine entmutigende Aufgabe erscheinen... richtig? Das muss es nicht sein!",
-    "buyingIntroductionParagraph2": "Genau wie Sie fühlten sich viele andere genauso, aber vor Ihnen haben wir Hunderten von glücklichen Käufern zu einer neuen Immobilie an der Algarve verholfen. Deshalb bieten wir Ihnen unsere langjährige Erfahrung, unser Wissen und unser lokales Netzwerk von Fachleuten, um den Kaufprozess zu einem angenehmen Erlebnis zu machen!",
+    "buyingIntroductionParagraph2": "Genau wie Sie fühlten sich viele andere genauso, aber vor Ihnen haben wir Hunderten von glücklichen Käufern zu einer neuen Immobilie an der Portugal verholfen. Deshalb bieten wir Ihnen unsere langjährige Erfahrung, unser Wissen und unser lokales Netzwerk von Fachleuten, um den Kaufprozess zu einem angenehmen Erlebnis zu machen!",
     "buyingIntroductionParagraph3": "Es ist sehr wichtig, mit Fachleuten zu arbeiten, die lizenziert sind. Ob es sich um die Immobilienagentur, Bauunternehmer, Anwälte, Architekten usw. handelt. Wir empfehlen dringend, alle 'Freiberufler' oder andere nicht lizenzierte Dienstleistungen zu vermeiden, auf die Sie stoßen werden",
-    "buyingIntroductionParagraph4": "Die Immobiliensuche beginnt meist mit der Durchsicht von Websites und Immobilienportalen, um ein erstes Gefühl dafür zu bekommen, was Ihr Budget an der Algarve kaufen kann, was derzeit auf dem Markt ist, welche Optionen in Ihren bevorzugten Bereichen verfügbar sind und schließlich die Immobilien zu identifizieren, die Sie interessieren.",
+    "buyingIntroductionParagraph4": "Die Immobiliensuche beginnt meist mit der Durchsicht von Websites und Immobilienportalen, um ein erstes Gefühl dafür zu bekommen, was Ihr Budget an der Portugal kaufen kann, was derzeit auf dem Markt ist, welche Optionen in Ihren bevorzugten Bereichen verfügbar sind und schließlich die Immobilien zu identifizieren, die Sie interessieren.",
     "buyingIntroductionParagraph5": "Die Entscheidung, mit einer zuverlässigen und etablierten Agentur wie Buy Property Portugal zu arbeiten, gibt Ihnen den Vorteil, von unserem Marktwissen und unserer langjährigen Erfahrung zu profitieren. Nachdem wir verschiedene 'Stürme' auf dem Immobilienmarkt überstanden haben, sind wir weiterhin die 'portugiesische Verbindung' für alle unsere ausländischen Kunden.",
     "buyingIntroductionParagraph6": "Darüber hinaus erhalten Sie bei der Wahl von Buy Property Portugal sofort Zugang zu viel mehr - Bei Buy Property Portugal arbeiten wir mit einem vertrauenswürdigen Partnernetzwerk lokaler Agenturen zusammen, das Ihnen eine große Auswahl an Immobilienoptionen bietet, ohne dass Sie zusätzliche Arbeit leisten müssen. Unser kostenloser 'Immobiliensuchdienst' gibt Ihnen die Möglichkeit, auf Immobilien zuzugreifen, die den öffentlichen Markt noch nicht erreicht haben.",
     "step1Search": "01",
@@ -312,7 +312,7 @@
   "contactPage": {
     "contactUs": "KONTAKTIEREN SIE UNS",
     "bookAMeetingWithUs": "TERMIN MIT UNS VEREINBAREN",
-    "exclusiveAlgarveVillasDescription": "Buy Property Portugal ist seit 2006 ein bekannter Name im Verkauf von luxuriösen und einzigartigen Immobilien in der westlichen und zentralen Algarve. Mit langjähriger Erfahrung leiten wir ein Team von Immobilienprofis, die in ihrem Arbeitsbereich sachkundig sind und Ihnen engagiert alle Facetten der Algarve-Region zeigen werden.",
+    "exclusivePortugalVillasDescription": "Buy Property Portugal ist seit 2006 ein bekannter Name im Verkauf von luxuriösen und einzigartigen Immobilien in der westlichen und zentralen Portugal. Mit langjähriger Erfahrung leiten wir ein Team von Immobilienprofis, die in ihrem Arbeitsbereich sachkundig sind und Ihnen engagiert alle Facetten der Portugal-Region zeigen werden.",
     "requestAnAgentPartnership": "Agentenpartnerschaft anfragen",
     "request": "ANFRAGEN"
   },
@@ -330,7 +330,7 @@
     "applicantEmploymentStatus": "Selbstständig sein oder von einem Unternehmen außerhalb Portugals angestellt sein",
     "applicantResidencyPath": "Sobald sie in Portugal ansässig sind, können digitale Nomaden das Steuerregime für nicht gewöhnlich Ansässige beantragen und nach 5 Jahren Aufenthalt im Land die portugiesische Staatsbürgerschaft beantragen.",
     "lawyerRecommendation": "Buy Property Portugal empfiehlt immer die Nutzung eines lokalen lizenzierten Anwalts beim Kauf oder Verkauf von Immobilien in Portugal.",
-    "algarveHomeAlt": "Algarve-Haus"
+    "PortugalHomeAlt": "Portugal-Haus"
   },
   "favoritesPage": {
     "yourFavouriteProperties": "Ihre Lieblingsimmobilien",
@@ -356,7 +356,7 @@
     "browseAllProperties": "Alle Immobilien durchsuchen"
   },
   "goldenVisaProgramPage": {
-    "algarveHomeAlt": "Algarve-Haus",
+    "PortugalHomeAlt": "Portugal-Haus",
     "golden": "GOLDENES",
     "visaProgram": "VISUMPROGRAMM",
     "portugal": "PORTUGAL",
@@ -429,7 +429,7 @@
   "termsAndConditionsPage": {
     "termsAndConditions": "Allgemeine Geschäftsbedingungen",
     "privacy": "DATENSCHUTZ",
-    "privacyNoticeIntro1": "Diese Datenschutzerklärung legt die Datenschutzrichtlinien von Exclusivealgarvevillas.com offen. Diese Datenschutzerklärung gilt ausschließlich für Informationen, die über diese Website gesammelt werden. Sie zielt darauf ab, Sie über Folgendes zu informieren:",
+    "privacyNoticeIntro1": "Diese Datenschutzerklärung legt die Datenschutzrichtlinien von ExclusivePortugalvillas.com offen. Diese Datenschutzerklärung gilt ausschließlich für Informationen, die über diese Website gesammelt werden. Sie zielt darauf ab, Sie über Folgendes zu informieren:",
     "privacyNoticeIntro2": "Welche personenbezogenen Daten über die Website gesammelt werden, wie sie verwendet werden und mit wem sie geteilt werden können.",
     "choicesRegardingYourData": "Die Ihnen zur Verfügung stehenden Wahlmöglichkeiten bezüglich der Nutzung Ihrer Daten.",
     "securityProcedures": "Die Sicherheitsverfahren zum Schutz vor Missbrauch Ihrer Informationen.",
@@ -447,14 +447,14 @@
     "provideInformationToAdvisors": "Bereitstellung von Informationen an unsere Vertreter und Berater, wie Anwälte und Buchhalter, um uns bei der Einhaltung rechtlicher und Sicherheitsanforderungen zu helfen.",
     "processAndDefendLawsuit": "Zur Bearbeitung und Verteidigung eines Rechtsstreits, Schiedsverfahrens oder Gerichtsverfahrens.",
     "transferInformationOnSale": "Übertragung Ihrer Informationen im Falle eines Verkaufs, einer Fusion, Konsolidierung, Liquidation, Umstrukturierung oder Übernahme. In diesem Fall werden wir Sie über die Änderung durch Veröffentlichung einer Mitteilung auf dieser Website informieren, und jeder, der sich angemeldet hat, unterliegt unseren Verpflichtungen gemäß dieser Datenschutzerklärung.",
-    "checkDataHeld": "Um zu überprüfen, welche Daten wir gegebenenfalls über Sie haben, senden Sie bitte eine E-Mail an info@exclusivealgarvevillas.com.",
+    "checkDataHeld": "Um zu überprüfen, welche Daten wir gegebenenfalls über Sie haben, senden Sie bitte eine E-Mail an info@exclusivePortugalvillas.com.",
     "security": "SICHERHEIT",
     "securityCommitment": "Die Gewährleistung der Vertraulichkeit, Integrität und Verfügbarkeit von Kundendaten ist eine Verpflichtung, die wir gegenüber allen unseren Kunden und Benutzern eingehen.",
     "bestSecurityPractices": "Unser Unternehmen befolgt die besten Praktiken für das Informationssicherheitsmanagement und verlangt von unseren Mitarbeitern die Einhaltung strenger Sicherheitsstandards. Wir gewährleisten die Sicherheit der uns mitgeteilten personenbezogenen Daten und können sie nicht für andere als die im Vertrag definierten Zwecke verwenden, noch können wir sie mit anderen uns zur Verfügung stehenden Daten korrelieren.",
     "internetDataRisk": "Bitte beachten Sie, dass Daten, die im Internet zirkulieren, nicht vollständig vor möglichem Missbrauch geschützt sind, und Sie sind allein verantwortlich für die Mitteilung von Passwörtern, vertraulichen Codes und anderen sensiblen Informationen.",
     "accessCorrectionOppositionDeletionOfPersonalData": "ZUGRIFF, BERICHTIGUNG, WIDERSPRUCH UND LÖSCHUNG PERSONENBEZOGENER DATEN",
     "rightsOfDataSubject": "Gemäß der geltenden Gesetzgebung haben Sie als betroffene Person jederzeit das Recht, auf Ihre personenbezogenen Daten zuzugreifen, deren Berichtigung oder Ergänzung zu verlangen, der Verarbeitung von Daten zu widersprechen (außer denjenigen, die unbedingt für die Erbringung der Dienstleistung erforderlich sind), Datenportabilität zu verlangen, die Löschung Ihrer Daten für Marketing- oder Telemarketingzwecke zu verlangen oder die Aufnahme in Abonnentenlisten und Informationsdienste.",
-    "requestActionsByEmail": "Sie können jede der oben genannten Aktionen beantragen, indem Sie eine E-Mail an info@exclusivealgarvevillas.com senden.",
+    "requestActionsByEmail": "Sie können jede der oben genannten Aktionen beantragen, indem Sie eine E-Mail an info@exclusivePortugalvillas.com senden.",
     "effectOfDeletionRequests": "Wenn Sie die Löschung einiger oder aller Ihrer personenbezogenen Daten beantragen, können einige der angeforderten Dienstleistungen möglicherweise nicht erbracht werden, da wir die personenbezogenen Daten aufbewahren müssen, die zur Erfüllung unserer gesetzlichen Verpflichtungen erforderlich sind.",
     "cookies": "COOKIES",
     "cookiesStored": "Während Sie diesen Dienst nutzen, können wir 'Cookies' auf Ihrem Computer speichern.",
@@ -465,7 +465,7 @@
     "effectivenessOfChanges": "Alle Änderungen werden unmittelbar nach ihrer Veröffentlichung auf der Website wirksam. Wenn wir wesentliche Änderungen an dieser Erklärung vornehmen, werden wir Sie hier darüber informieren, dass sie aktualisiert wurde, damit Sie wissen, welche Informationen wir sammeln, wie wir sie verwenden und unter welchen Umständen.",
     "objectToChangesAdvice": "Wenn Sie Einwände gegen Änderungen unserer Datenschutzerklärung haben, sollten Sie die Nutzung unserer Dienste, einschließlich der Website, einstellen.",
     "questionsAndContactInformation": "FRAGEN UND KONTAKTINFORMATIONEN",
-    "questionsContactInstructions": "Wenn Sie Fragen oder Kommentare haben oder wenn Sie personenbezogene Daten, die wir über Sie haben, aktualisieren, löschen oder ändern möchten, oder wenn Sie Bedenken hinsichtlich unseres Umgangs mit Datenschutzfragen haben, kontaktieren Sie uns bitte unter info@exclusivealgarvevillas.com."
+    "questionsContactInstructions": "Wenn Sie Fragen oder Kommentare haben oder wenn Sie personenbezogene Daten, die wir über Sie haben, aktualisieren, löschen oder ändern möchten, oder wenn Sie Bedenken hinsichtlich unseres Umgangs mit Datenschutzfragen haben, kontaktieren Sie uns bitte unter info@exclusivePortugalvillas.com."
   },
   "yearlyPropertyTaxesPage": {
     "yearlyPropertyTaxes": "JÄHRLICHE GRUNDSTEUERN",
@@ -622,12 +622,12 @@
   },
   "awardsSection": {
     "weveMadeItForYou": "WIR HABEN ES FÜR SIE GEMACHT",
-    "theBestLuxuryLifestyleAgencyInAlgarve": "Die beste Luxus-Lifestyle-Agentur an der Algarve",
+    "theBestLuxuryLifestyleAgencyInPortugal": "Die beste Luxus-Lifestyle-Agentur an der Portugal",
     "contactUsNow": "KONTAKTIEREN SIE UNS JETZT"
   },
   "discoverSection": {
     "discoverTheBest": "Entdecken Sie die besten",
-    "propertiesInAlgarve": "Immobilien an der Algarve",
+    "propertiesInPortugal": "Immobilien an der Portugal",
     "discoverAmazingFeatures": "Entdecken Sie erstaunliche Funktionen und endlose Möglichkeiten mit unserer innovativen Lösung, die entwickelt wurde, um Ihr Erlebnis zu transformieren.",
     "discoverLuxury": "LUXUS ENTDECKEN"
   },
@@ -646,14 +646,14 @@
     "ourLatestNews": "Unsere neuesten Nachrichten"
   },
   "lifestyle": {
-    "theAlgarvesLifestyle": "Der Lifestyle der Algarve"
+    "thePortugalsLifestyle": "Der Lifestyle der Portugal"
   },
   "recentListing": {
     "ourRecentListing": "Unsere neuesten Angebote"
   },
   "searchComponent": {
     "heading1": "FINDEN SIE IHR TRAUMHAUS",
-    "heading2": "IMMOBILIE AN DER ALGARVE",
+    "heading2": "IMMOBILIE AN DER Portugal",
     "placeholderRegion": "Region",
     "placeholderType": "Typ",
     "placeholderPriceRange": "Preisbereich",
@@ -755,7 +755,7 @@
   },
   "navbar": {
     "contact": "Kontakt",
-    "exclusiveAlgarveVillasLogo": "Buy Property Portugal Logo",
+    "exclusivePortugalVillasLogo": "Buy Property Portugal Logo",
     "toggleMenu": "Menü umschalten",
     "signIn": "ANMELDEN"
   },
@@ -1043,7 +1043,7 @@
   },
   "homepageSearchEngine": {
     "findYourDreamHome": "FINDEN SIE IHR TRAUMHAUS",
-    "propertyInAlgarve": "IMMOBILIE AN DER ALGARVE",
+    "propertyInPortugal": "IMMOBILIE AN DER Portugal",
     "showResult": "Ergebnis anzeigen"
   },
   "homepageSearchResult": {
@@ -1076,7 +1076,7 @@
     "properties": "Immobilien",
     "allProperties": "ALLE IMMOBILIEN",
     "propertiesForSaleWith": "Immobilien zum Verkauf bei",
-    "exclusiveAlgarveVillas": "Buy Property Portugal",
+    "exclusivePortugalVillas": "Buy Property Portugal",
     "search": "Suche",
     "propertyFilters": "Immobilienfilter",
     "filters": "Filter"
@@ -1234,8 +1234,8 @@
     "seeDetails": "Details anzeigen"
   },
   "carouselSliderVertical": {
-    "awardBadgeExclusiveAlgarveVillas": "Auszeichnungsplakette Buy Property Portugal",
-    "exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy": "Buy Property Portugal Teammitglied macht ein Foto mit seiner Auszeichnungstrophäe"
+    "awardBadgeExclusivePortugalVillas": "Auszeichnungsplakette Buy Property Portugal",
+    "exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy": "Buy Property Portugal Teammitglied macht ein Foto mit seiner Auszeichnungstrophäe"
   },
   "bookMeetingData": {
     "unauthorizedInvalidOrMissingInternalToken": "Dienst derzeit nicht verfügbar, bitte versuchen Sie es später erneut.",
@@ -1302,7 +1302,7 @@
     "failedToFetchAboutResources": "Über-Ressourcen konnten nicht abgerufen werden:"
   },
   "teamData": {
-    "teamInAlgarve": "Team in Algarve",
+    "teamInPortugal": "Team in Portugal",
     "teamInCarvoeiro": "Team in Carvoeiro",
     "teamInLagos": "Team in Lagos",
     "teamInVilamoura": "Team in Vilamoura",
@@ -1320,7 +1320,7 @@
   "meetTheTeam": {
     "heading": "Buy Property Portugal",
     "buttonLabel": "LERNEN SIE DAS TEAM KENNEN",
-    "description1": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Mit umfassendem Wissen in Immobilien-, Rechts- und Steuerangelegenheiten können wir Sie während des gesamten Prozesses des Kaufs und Verkaufs von Luxusimmobilien an der Algarve unterstützen.",
+    "description1": "Die Direktoren Marcela Boturao & Bart van Linden möchten Sie herzlich einladen, das Team von Buy Property Portugal kennenzulernen. Mit umfassendem Wissen in Immobilien-, Rechts- und Steuerangelegenheiten können wir Sie während des gesamten Prozesses des Kaufs und Verkaufs von Luxusimmobilien an der Portugal unterstützen.",
     "description2": "Wir arbeiten mit einem kleinen Team von Fachleuten zusammen, die unsere Ideen und Denkweise teilen. Als dienstleistungsorientiertes Unternehmen glauben wir immer noch an das Konzept 'Der Kunde ist König'.",
     "positionDirector": "Direktor",
     "positionOfficeManager": "Büroleiter",

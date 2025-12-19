@@ -5,7 +5,7 @@ export const accountResendActivationMetadata = {
       "Resend your Buy Property Portugal account activation link. Didn't receive the activation email? Request a new activation link to verify your account.",
     ogTitle: "Resend Account Activation Link - Buy Property Portugal",
     ogDescription:
-      "Request a new activation link for your Buy Property Portugal account. Verify your email and start accessing luxury property listings in the Algarve.",
+      "Request a new activation link for your Buy Property Portugal account. Verify your email and start accessing luxury property listings in the Portugal.",
     keywords: [
       "resend activation link",
       "account activation email",
@@ -32,7 +32,7 @@ export const accountResendActivationMetadata = {
     ogTitle:
       "Renvoyer le Lien d'Activation du Compte - Buy Property Portugal",
     ogDescription:
-      "Demandez un nouveau lien d'activation pour votre compte Buy Property Portugal. Vérifiez votre email et commencez à accéder aux annonces de propriétés de luxe dans l'Algarve.",
+      "Demandez un nouveau lien d'activation pour votre compte Buy Property Portugal. Vérifiez votre email et commencez à accéder aux annonces de propriétés de luxe dans l'Portugal.",
     keywords: [
       "renvoyer lien activation",
       "email activation compte",
@@ -58,7 +58,7 @@ export const accountResendActivationMetadata = {
       "Senden Sie Ihren Buy Property Portugal Konto-Aktivierungslink erneut. Aktivierungs-E-Mail nicht erhalten? Fordern Sie einen neuen Aktivierungslink an, um Ihr Konto zu verifizieren.",
     ogTitle: "Konto-Aktivierungslink Erneut Senden - Buy Property Portugal",
     ogDescription:
-      "Fordern Sie einen neuen Aktivierungslink für Ihr Buy Property Portugal Konto an. Verifizieren Sie Ihre E-Mail und beginnen Sie mit dem Zugriff auf Luxusimmobilien-Angebote in der Algarve.",
+      "Fordern Sie einen neuen Aktivierungslink für Ihr Buy Property Portugal Konto an. Verifizieren Sie Ihre E-Mail und beginnen Sie mit dem Zugriff auf Luxusimmobilien-Angebote in der Portugal.",
     keywords: [
       "aktivierungslink erneut senden",
       "konto aktivierungs email",
@@ -84,7 +84,7 @@ export const accountResendActivationMetadata = {
       "Reenvie o link de ativação da sua conta Buy Property Portugal. Não recebeu o email de ativação? Solicite um novo link para verificar a sua conta.",
     ogTitle: "Reenviar Link de Ativação da Conta - Buy Property Portugal",
     ogDescription:
-      "Solicite um novo link de ativação para a sua conta Buy Property Portugal. Verifique o seu email e comece a aceder a anúncios de propriedades de luxo no Algarve.",
+      "Solicite um novo link de ativação para a sua conta Buy Property Portugal. Verifique o seu email e comece a aceder a anúncios de propriedades de luxo no Portugal.",
     keywords: [
       "reenviar link ativação",
       "email ativação conta",
@@ -110,7 +110,7 @@ export const accountResendActivationMetadata = {
     ogTitle:
       "Account Activeringslink Opnieuw Verzenden - Buy Property Portugal",
     ogDescription:
-      "Vraag een nieuwe activeringslink aan voor uw Buy Property Portugal account. Verifieer uw email en begin met toegang tot luxe vastgoedaanbiedingen in de Algarve.",
+      "Vraag een nieuwe activeringslink aan voor uw Buy Property Portugal account. Verifieer uw email en begin met toegang tot luxe vastgoedaanbiedingen in de Portugal.",
     keywords: [
       "activeringslink opnieuw verzenden",
       "account activatie email",
@@ -163,7 +163,7 @@ export const accountResendActivationMetadata = {
       "Skicka din Buy Property Portugal konto aktiveringslänk igen. Fick du inte aktiveringsmeddelandet? Begär en ny aktiveringslänk för att verifiera ditt konto.",
     ogTitle: "Skicka Konto Aktiveringslänk Igen - Buy Property Portugal",
     ogDescription:
-      "Begär en ny aktiveringslänk för ditt Buy Property Portugal konto. Verifiera din email och börja få tillgång till lyxfastighetsannonser i Algarve.",
+      "Begär en ny aktiveringslänk för ditt Buy Property Portugal konto. Verifiera din email och börja få tillgång till lyxfastighetsannonser i Portugal.",
     keywords: [
       "skicka aktiveringslänk igen",
       "konto aktivering email",

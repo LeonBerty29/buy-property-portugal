@@ -34,7 +34,7 @@ interface PageProps {
 }
 
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
 export async function generateMetadata({
   params,

@@ -5,7 +5,7 @@ export const accountForgotPasswordMetadata = {
       "Reset your Buy Property Portugal account password. Enter your email address to receive a password reset link and regain access to your property search account.",
     ogTitle: "Reset Your Password - Buy Property Portugal",
     ogDescription:
-      "Forgot your password? Enter your email to receive a secure password reset link and regain access to your luxury property account in the Algarve.",
+      "Forgot your password? Enter your email to receive a secure password reset link and regain access to your luxury property account in the Portugal.",
     keywords: [
       "forgot password",
       "reset password",
@@ -13,7 +13,7 @@ export const accountForgotPasswordMetadata = {
       "account recovery",
       "password reset link",
       "recover account",
-      "algarve property account access",
+      "Portugal property account access",
       "forgotten password recovery",
       "password recovery",
       "reset account password",
@@ -30,7 +30,7 @@ export const accountForgotPasswordMetadata = {
       "Réinitialisez le mot de passe de votre compte Buy Property Portugal. Entrez votre adresse email pour recevoir un lien de réinitialisation et récupérer l'accès à votre compte de recherche immobilière.",
     ogTitle: "Réinitialisez Votre Mot de Passe - Buy Property Portugal",
     ogDescription:
-      "Mot de passe oublié ? Entrez votre email pour recevoir un lien sécurisé de réinitialisation et récupérer l'accès à votre compte propriété de luxe dans l'Algarve.",
+      "Mot de passe oublié ? Entrez votre email pour recevoir un lien sécurisé de réinitialisation et récupérer l'accès à votre compte propriété de luxe dans l'Portugal.",
     keywords: [
       "mot de passe oublié",
       "réinitialiser mot de passe",
@@ -38,7 +38,7 @@ export const accountForgotPasswordMetadata = {
       "récupération compte",
       "lien réinitialisation mot de passe",
       "récupérer compte",
-      "accès compte propriété algarve",
+      "accès compte propriété Portugal",
       "récupération mot de passe oublié",
       "récupération mot de passe",
       "réinitialiser mot de passe compte",
@@ -58,7 +58,7 @@ export const accountForgotPasswordMetadata = {
       "Setzen Sie Ihr Buy Property Portugal Kontopasswort zurück. Geben Sie Ihre E-Mail-Adresse ein, um einen Link zur Passwortzurücksetzung zu erhalten und wieder Zugriff auf Ihr Immobiliensuchkonto zu erhalten.",
     ogTitle: "Passwort Zurücksetzen - Buy Property Portugal",
     ogDescription:
-      "Passwort vergessen? Geben Sie Ihre E-Mail ein, um einen sicheren Link zur Passwortzurücksetzung zu erhalten und wieder Zugriff auf Ihr Luxusimmobilienkonto in der Algarve zu bekommen.",
+      "Passwort vergessen? Geben Sie Ihre E-Mail ein, um einen sicheren Link zur Passwortzurücksetzung zu erhalten und wieder Zugriff auf Ihr Luxusimmobilienkonto in der Portugal zu bekommen.",
     keywords: [
       "passwort vergessen",
       "passwort zurücksetzen",
@@ -66,7 +66,7 @@ export const accountForgotPasswordMetadata = {
       "konto wiederherstellung",
       "passwort zurücksetzen link",
       "konto wiederherstellen",
-      "algarve immobilien konto zugang",
+      "Portugal immobilien konto zugang",
       "vergessenes passwort wiederherstellung",
       "passwort wiederherstellung",
       "konto passwort zurücksetzen",
@@ -86,7 +86,7 @@ export const accountForgotPasswordMetadata = {
       "Redefina a palavra-passe da sua conta Buy Property Portugal. Introduza o seu endereço de email para receber um link de redefinição e recuperar o acesso à sua conta de pesquisa de propriedades.",
     ogTitle: "Redefinir a Sua Palavra-passe - Buy Property Portugal",
     ogDescription:
-      "Esqueceu a palavra-passe? Introduza o seu email para receber um link seguro de redefinição e recuperar o acesso à sua conta de propriedades de luxo no Algarve.",
+      "Esqueceu a palavra-passe? Introduza o seu email para receber um link seguro de redefinição e recuperar o acesso à sua conta de propriedades de luxo no Portugal.",
     keywords: [
       "esqueceu palavra-passe",
       "redefinir palavra-passe",
@@ -94,7 +94,7 @@ export const accountForgotPasswordMetadata = {
       "recuperação conta",
       "link redefinição palavra-passe",
       "recuperar conta",
-      "acesso conta propriedade algarve",
+      "acesso conta propriedade Portugal",
       "recuperação palavra-passe esquecida",
       "recuperação palavra-passe",
       "redefinir palavra-passe conta",
@@ -114,7 +114,7 @@ export const accountForgotPasswordMetadata = {
       "Reset uw Buy Property Portugal accountwachtwoord. Voer uw e-mailadres in om een wachtwoordresetlink te ontvangen en weer toegang te krijgen tot uw vastgoedzoekkaccount.",
     ogTitle: "Reset Uw Wachtwoord - Buy Property Portugal",
     ogDescription:
-      "Wachtwoord vergeten? Voer uw email in om een beveiligde wachtwoordresetlink te ontvangen en weer toegang te krijgen tot uw luxe vastgoedaccount in de Algarve.",
+      "Wachtwoord vergeten? Voer uw email in om een beveiligde wachtwoordresetlink te ontvangen en weer toegang te krijgen tot uw luxe vastgoedaccount in de Portugal.",
     keywords: [
       "wachtwoord vergeten",
       "wachtwoord resetten",
@@ -122,7 +122,7 @@ export const accountForgotPasswordMetadata = {
       "account herstel",
       "wachtwoord reset link",
       "account herstellen",
-      "algarve vastgoed account toegang",
+      "Portugal vastgoed account toegang",
       "vergeten wachtwoord herstel",
       "wachtwoord herstel",
       "account wachtwoord resetten",
@@ -166,7 +166,7 @@ export const accountForgotPasswordMetadata = {
       "Återställ ditt Buy Property Portugal kontolösenord. Ange din e-postadress för att få en länk för lösenordsåterställning och återfå tillgång till ditt fastighetssökkonto.",
     ogTitle: "Återställ Ditt Lösenord - Buy Property Portugal",
     ogDescription:
-      "Glömt lösenordet? Ange din email för att få en säker länk för lösenordsåterställning och återfå tillgång till ditt lyxfastighetskonto i Algarve.",
+      "Glömt lösenordet? Ange din email för att få en säker länk för lösenordsåterställning och återfå tillgång till ditt lyxfastighetskonto i Portugal.",
     keywords: [
       "glömt lösenord",
       "återställ lösenord",
@@ -174,7 +174,7 @@ export const accountForgotPasswordMetadata = {
       "konto återställning",
       "lösenordsåterställning länk",
       "återställa konto",
-      "algarve fastighet konto åtkomst",
+      "Portugal fastighet konto åtkomst",
       "glömt lösenord återställning",
       "lösenord återställning",
       "återställ konto lösenord",

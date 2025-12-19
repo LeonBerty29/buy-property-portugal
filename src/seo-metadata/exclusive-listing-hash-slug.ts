@@ -2,22 +2,22 @@ export const exclusiveListingHashSlugMetadata = {
   en: {
     title: "Exclusive Property Listing",
     description:
-      "View this exclusive luxury property listing in the Algarve, Portugal. Premium villa available through Buy Property Portugal private selection with detailed information and high-quality images.",
+      "View this exclusive luxury property listing in the Portugal, Portugal. Premium villa available through Buy Property Portugal private selection with detailed information and high-quality images.",
     ogTitle: "Exclusive Property - Private Luxury Villa Listing",
     ogDescription:
-      "Discover this exclusive luxury property in Portugal's Algarve region. Premium villa with detailed specifications, high-quality images, and complete property information available through our private selection.",
+      "Discover this exclusive luxury property in Portugal's Portugal region. Premium villa with detailed specifications, high-quality images, and complete property information available through our private selection.",
     keywords: [
       "exclusive property listing",
-      "private luxury villa algarve",
+      "private luxury villa Portugal",
       "exclusive property portugal",
       "luxury villa private listing",
-      "premium property algarve",
-      "exclusive real estate algarve",
+      "premium property Portugal",
+      "exclusive real estate Portugal",
       "private property selection",
       "luxury villa exclusive",
-      "high-end property algarve",
+      "high-end property Portugal",
       "exclusive villa listing portugal",
-      "private property algarve",
+      "private property Portugal",
       "luxury real estate exclusive",
     ],
     classification:
@@ -25,27 +25,27 @@ export const exclusiveListingHashSlugMetadata = {
     category:
       "Exclusive listings, Private properties, Luxury villas, Premium real estate",
     dcTitle:
-      "Exclusive property listing Algarve, Private luxury villa Portugal, Premium real estate exclusive selection",
+      "Exclusive property listing Portugal, Private luxury villa Portugal, Premium real estate exclusive selection",
   },
   fr: {
     title: "Annonce Propriété Exclusive",
     description:
-      "Consultez cette annonce exclusive de propriété de luxe dans l'Algarve, Portugal. Villa premium disponible via la sélection privée d'Buy Property Portugal avec informations détaillées et images de haute qualité.",
+      "Consultez cette annonce exclusive de propriété de luxe dans l'Portugal, Portugal. Villa premium disponible via la sélection privée d'Buy Property Portugal avec informations détaillées et images de haute qualité.",
     ogTitle: "Propriété Exclusive - Annonce Villa Luxe Privée",
     ogDescription:
-      "Découvrez cette propriété exclusive de luxe dans la région de l'Algarve au Portugal. Villa premium avec spécifications détaillées, images de haute qualité et informations complètes disponibles via notre sélection privée.",
+      "Découvrez cette propriété exclusive de luxe dans la région de l'Portugal au Portugal. Villa premium avec spécifications détaillées, images de haute qualité et informations complètes disponibles via notre sélection privée.",
     keywords: [
       "annonce propriété exclusive",
-      "villa luxe privée algarve",
+      "villa luxe privée Portugal",
       "propriété exclusive portugal",
       "villa luxe annonce privée",
-      "propriété premium algarve",
-      "immobilier exclusif algarve",
+      "propriété premium Portugal",
+      "immobilier exclusif Portugal",
       "sélection propriété privée",
       "villa luxe exclusive",
-      "propriété haut de gamme algarve",
+      "propriété haut de gamme Portugal",
       "annonce villa exclusive portugal",
-      "propriété privée algarve",
+      "propriété privée Portugal",
       "immobilier luxe exclusif",
     ],
     classification:
@@ -58,22 +58,22 @@ export const exclusiveListingHashSlugMetadata = {
   de: {
     title: "Exklusive Immobilienangebot",
     description:
-      "Sehen Sie sich dieses exklusive Luxusimmobilienangebot in der Algarve, Portugal an. Premium-Villa verfügbar durch die private Auswahl von Buy Property Portugal mit detaillierten Informationen und hochwertigen Bildern.",
+      "Sehen Sie sich dieses exklusive Luxusimmobilienangebot in der Portugal, Portugal an. Premium-Villa verfügbar durch die private Auswahl von Buy Property Portugal mit detaillierten Informationen und hochwertigen Bildern.",
     ogTitle: "Exklusive Immobilie - Private Luxusvilla Angebot",
     ogDescription:
-      "Entdecken Sie diese exklusive Luxusimmobilie in Portugals Algarve-Region. Premium-Villa mit detaillierten Spezifikationen, hochwertigen Bildern und vollständigen Immobilieninformationen verfügbar durch unsere private Auswahl.",
+      "Entdecken Sie diese exklusive Luxusimmobilie in Portugals Portugal-Region. Premium-Villa mit detaillierten Spezifikationen, hochwertigen Bildern und vollständigen Immobilieninformationen verfügbar durch unsere private Auswahl.",
     keywords: [
       "exklusives immobilienangebot",
-      "private luxusvilla algarve",
+      "private luxusvilla Portugal",
       "exklusive immobilie portugal",
       "luxusvilla privates angebot",
-      "premium immobilie algarve",
-      "exklusive immobilien algarve",
+      "premium immobilie Portugal",
+      "exklusive immobilien Portugal",
       "private immobilienauswahl",
       "luxusvilla exklusiv",
-      "hochwertige immobilie algarve",
+      "hochwertige immobilie Portugal",
       "exklusives villa angebot portugal",
-      "private immobilie algarve",
+      "private immobilie Portugal",
       "luxusimmobilien exklusiv",
     ],
     classification:
@@ -81,27 +81,27 @@ export const exclusiveListingHashSlugMetadata = {
     category:
       "Exklusive Angebote, Private Immobilien, Luxusvillen, Premium Immobilien",
     dcTitle:
-      "Exklusives Immobilienangebot Algarve, Private Luxusvilla Portugal, Premium Immobilien exklusive Auswahl",
+      "Exklusives Immobilienangebot Portugal, Private Luxusvilla Portugal, Premium Immobilien exklusive Auswahl",
   },
   pt: {
     title: "Anúncio Propriedade Exclusiva",
     description:
-      "Veja este anúncio exclusivo de propriedade de luxo no Algarve, Portugal. Villa premium disponível através da seleção privada da Buy Property Portugal com informações detalhadas e imagens de alta qualidade.",
+      "Veja este anúncio exclusivo de propriedade de luxo no Portugal, Portugal. Villa premium disponível através da seleção privada da Buy Property Portugal com informações detalhadas e imagens de alta qualidade.",
     ogTitle: "Propriedade Exclusiva - Anúncio Villa Luxo Privada",
     ogDescription:
-      "Descubra esta propriedade exclusiva de luxo na região do Algarve em Portugal. Villa premium com especificações detalhadas, imagens de alta qualidade e informações completas disponíveis através da nossa seleção privada.",
+      "Descubra esta propriedade exclusiva de luxo na região do Portugal em Portugal. Villa premium com especificações detalhadas, imagens de alta qualidade e informações completas disponíveis através da nossa seleção privada.",
     keywords: [
       "anúncio propriedade exclusiva",
-      "villa luxo privada algarve",
+      "villa luxo privada Portugal",
       "propriedade exclusiva portugal",
       "villa luxo anúncio privado",
-      "propriedade premium algarve",
-      "imobiliário exclusivo algarve",
+      "propriedade premium Portugal",
+      "imobiliário exclusivo Portugal",
       "seleção propriedade privada",
       "villa luxo exclusiva",
-      "propriedade alto padrão algarve",
+      "propriedade alto padrão Portugal",
       "anúncio villa exclusiva portugal",
-      "propriedade privada algarve",
+      "propriedade privada Portugal",
       "imobiliário luxo exclusivo",
     ],
     classification:
@@ -109,27 +109,27 @@ export const exclusiveListingHashSlugMetadata = {
     category:
       "Anúncios exclusivos, Propriedades privadas, Villas luxo, Imobiliário premium",
     dcTitle:
-      "Anúncio propriedade exclusiva Algarve, Villa luxo privada Portugal, Imobiliário premium seleção exclusiva",
+      "Anúncio propriedade exclusiva Portugal, Villa luxo privada Portugal, Imobiliário premium seleção exclusiva",
   },
   nl: {
     title: "Exclusief Vastgoedaanbod",
     description:
-      "Bekijk dit exclusieve luxe vastgoedaanbod in de Algarve, Portugal. Premium villa beschikbaar via de privé selectie van Buy Property Portugal met gedetailleerde informatie en hoogwaardige afbeeldingen.",
+      "Bekijk dit exclusieve luxe vastgoedaanbod in de Portugal, Portugal. Premium villa beschikbaar via de privé selectie van Buy Property Portugal met gedetailleerde informatie en hoogwaardige afbeeldingen.",
     ogTitle: "Exclusief Vastgoed - Privé Luxe Villa Aanbod",
     ogDescription:
-      "Ontdek dit exclusieve luxe vastgoed in Portugal's Algarve regio. Premium villa met gedetailleerde specificaties, hoogwaardige afbeeldingen en volledige vastgoedinformatie beschikbaar via onze privé selectie.",
+      "Ontdek dit exclusieve luxe vastgoed in Portugal's Portugal regio. Premium villa met gedetailleerde specificaties, hoogwaardige afbeeldingen en volledige vastgoedinformatie beschikbaar via onze privé selectie.",
     keywords: [
       "exclusief vastgoed aanbod",
-      "privé luxe villa algarve",
+      "privé luxe villa Portugal",
       "exclusief vastgoed portugal",
       "luxe villa privé aanbod",
-      "premium vastgoed algarve",
-      "exclusief vastgoed algarve",
+      "premium vastgoed Portugal",
+      "exclusief vastgoed Portugal",
       "privé vastgoed selectie",
       "luxe villa exclusief",
-      "high-end vastgoed algarve",
+      "high-end vastgoed Portugal",
       "exclusief villa aanbod portugal",
-      "privé vastgoed algarve",
+      "privé vastgoed Portugal",
       "luxe vastgoed exclusief",
     ],
     classification:
@@ -137,7 +137,7 @@ export const exclusiveListingHashSlugMetadata = {
     category:
       "Exclusieve aanbiedingen, Privé vastgoed, Luxe villa's, Premium vastgoed",
     dcTitle:
-      "Exclusief vastgoed aanbod Algarve, Privé luxe villa Portugal, Premium vastgoed exclusieve selectie",
+      "Exclusief vastgoed aanbod Portugal, Privé luxe villa Portugal, Premium vastgoed exclusieve selectie",
   },
   ru: {
     title: "Эксклюзивное Предложение Недвижимости",
@@ -170,22 +170,22 @@ export const exclusiveListingHashSlugMetadata = {
   sv: {
     title: "Exklusivt Fastighetserbjudande",
     description:
-      "Se detta exklusiva lyxfastighetserbjudande i Algarve, Portugal. Premiumvilla tillgänglig genom Buy Property Portugal privata urval med detaljerad information och högkvalitativa bilder.",
+      "Se detta exklusiva lyxfastighetserbjudande i Portugal, Portugal. Premiumvilla tillgänglig genom Buy Property Portugal privata urval med detaljerad information och högkvalitativa bilder.",
     ogTitle: "Exklusiv Fastighet - Privat Lyxvilla Erbjudande",
     ogDescription:
-      "Upptäck denna exklusiva lyxfastighet i Portugals Algarve-region. Premiumvilla med detaljerade specifikationer, högkvalitativa bilder och komplett fastighetsinformation tillgänglig genom vårt privata urval.",
+      "Upptäck denna exklusiva lyxfastighet i Portugals Portugal-region. Premiumvilla med detaljerade specifikationer, högkvalitativa bilder och komplett fastighetsinformation tillgänglig genom vårt privata urval.",
     keywords: [
       "exklusivt fastighetserbjudande",
-      "privat lyxvilla algarve",
+      "privat lyxvilla Portugal",
       "exklusiv fastighet portugal",
       "lyxvilla privat erbjudande",
-      "premium fastighet algarve",
-      "exklusiv fastighet algarve",
+      "premium fastighet Portugal",
+      "exklusiv fastighet Portugal",
       "privat fastighet urval",
       "lyxvilla exklusiv",
-      "exklusiv fastighet algarve",
+      "exklusiv fastighet Portugal",
       "exklusivt villa erbjudande portugal",
-      "privat fastighet algarve",
+      "privat fastighet Portugal",
       "lyxfastighet exklusiv",
     ],
     classification:
@@ -193,7 +193,7 @@ export const exclusiveListingHashSlugMetadata = {
     category:
       "Exklusiva erbjudanden, Privata fastigheter, Lyxvillor, Premium fastighet",
     dcTitle:
-      "Exklusivt fastighetserbjudande Algarve, Privat lyxvilla Portugal, Premium fastighet exklusivt urval",
+      "Exklusivt fastighetserbjudande Portugal, Privat lyxvilla Portugal, Premium fastighet exklusivt urval",
   },
 } as const;
 

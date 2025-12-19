@@ -21,7 +21,7 @@ interface Props {
 
 const BLOGS_PER_PAGE = 12;
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -59,36 +59,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ICBM = `${GEO_POSITION.lat}, ${GEO_POSITION.lng}`;
 
   const description =
-    "Explore our collection of articles about luxury real estate in the Algarve, property investment tips, lifestyle guides, market insights, and expert advice on buying and selling premium properties in Portugal's Golden Triangle.";
+    "Explore our collection of articles about luxury real estate in the Portugal, property investment tips, lifestyle guides, market insights, and expert advice on buying and selling premium properties in Portugal's Golden Triangle.";
 
   const keywords = [
-    "algarve real estate blog",
-    "luxury property algarve",
-    "algarve property news",
+    "Portugal real estate blog",
+    "luxury property Portugal",
+    "Portugal property news",
     "portugal real estate insights",
-    "algarve lifestyle blog",
-    "property investment algarve",
+    "Portugal lifestyle blog",
+    "property investment Portugal",
     "golden triangle real estate",
-    "algarve property market",
-    "luxury villa tips algarve",
+    "Portugal property market",
+    "luxury villa tips Portugal",
     "buying property portugal",
-    "algarve real estate advice",
+    "Portugal real estate advice",
     "carvoeiro property blog",
-    "western algarve news",
+    "western Portugal news",
     "portugal property investment",
-    "algarve property guides",
+    "Portugal property guides",
     "luxury real estate portugal",
-    "algarve housing market",
-    "property trends algarve",
+    "Portugal housing market",
+    "property trends Portugal",
   ];
 
   return {
-    title: `Blog - Luxury Real Estate Insights & Algarve Property News | ${WEBSITE_NAME}`,
+    title: `Blog - Luxury Real Estate Insights & Portugal Property News | ${WEBSITE_NAME}`,
     description: description,
     keywords: keywords,
     openGraph: {
       title:
-        "Luxury Real Estate Blog - Algarve Property Insights & Expert Advice",
+        "Luxury Real Estate Blog - Portugal Property Insights & Expert Advice",
       description: description,
       url: canonicalUrl,
       siteName: WEBSITE_NAME,
@@ -107,7 +107,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title:
-        "Luxury Real Estate Blog - Algarve Property Insights & Expert Advice",
+        "Luxury Real Estate Blog - Portugal Property Insights & Expert Advice",
       description: description,
       creator: EAV_TWITTER_CREATOR_HANDLE,
     },
@@ -132,11 +132,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "geo.position": `${GEO_POSITION.lat};${GEO_POSITION.lng}`,
       ICBM: ICBM,
       classification:
-        "Real estate blog, Algarve property news, Luxury property insights, Property investment guides",
+        "Real estate blog, Portugal property news, Luxury property insights, Property investment guides",
       category:
         "Blog, Real estate articles, Property news, Lifestyle guides, Investment advice",
       "DC.title":
-        "Algarve luxury property blog, Real estate insights Portugal, Golden triangle property news, Western Algarve lifestyle",
+        "Portugal luxury property blog, Real estate insights Portugal, Golden triangle property news, Western Portugal lifestyle",
     },
   };
 }

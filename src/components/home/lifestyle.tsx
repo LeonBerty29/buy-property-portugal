@@ -67,7 +67,7 @@ const LifeStyle = () => {
   return (
     <div className="container mx-auto px-4 py-8 sm:py-14 lg:py-16 xl:py-20">
       <h1 className="text-3xl font-normal text-center mb-8 lg:mb-12 text-neutral-800">
-        {t("theAlgarvesLifestyle")}
+        {t("thePortugalsLifestyle")}
       </h1>
 
       {/* Gallery Grid */}

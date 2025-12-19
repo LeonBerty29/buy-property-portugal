@@ -7,9 +7,6 @@ import { CollapsibleFilters } from "./collapsible-filters";
 
 export const PropertiesFilter = () => {
   return (
-    <CollapsibleFilters>
-      {/*  */}
-
-    </CollapsibleFilters>
+    <CollapsibleFilters />
   );
 };

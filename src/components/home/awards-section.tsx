@@ -12,7 +12,7 @@ const AwardsSection = async() => {
       <div className="py-24">
         <p className="text-xs font-medium mb-7">{t("weveMadeItForYou")}</p>
         <h2 className="text-4xl font-normal max-w-lg mb-12 text-primary">
-          {t("theBestLuxuryLifestyleAgencyInAlgarve")}
+          {t("theBestLuxuryLifestyleAgencyInPortugal")}
         </h2>
         <Button asChild className="bg-black text-white rounded-none py-5 text-sm font-normal">
           <Link href="/contact">{t("contactUsNow")}</Link>

@@ -7,12 +7,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Read our Terms and Conditions, Privacy Policy, and legal information. Understanding data protection, GDPR compliance, cookies policy, and your rights when using our luxury property services in Portugal.",
     keywords: [
-      "terms and conditions algarve villas",
+      "terms and conditions Portugal villas",
       "privacy policy portugal property",
-      "data protection algarve real estate",
+      "data protection Portugal real estate",
       "legal terms luxury properties",
       "privacy notice property website",
-      "cookie policy algarve villas",
+      "cookie policy Portugal villas",
       "personal data protection portugal",
       "terms of use property services",
       "GDPR compliance portugal",
@@ -23,7 +23,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Legal documentation, Privacy notice, Terms and conditions, User agreement, Data protection, Cookie policy",
     dcTitle:
-      "Terms and conditions Buy Property Portugal, Privacy policy luxury property Portugal, Legal terms Algarve real estate services",
+      "Terms and conditions Buy Property Portugal, Privacy policy luxury property Portugal, Legal terms Portugal real estate services",
   },
   fr: {
     title:
@@ -35,12 +35,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Lisez nos Conditions Générales, Politique de Confidentialité et informations légales. Comprendre la protection des données, la conformité RGPD, la politique de cookies et vos droits lors de l'utilisation de nos services immobiliers de luxe au Portugal.",
     keywords: [
-      "conditions générales algarve villas",
+      "conditions générales Portugal villas",
       "politique confidentialité propriété portugal",
-      "protection données immobilier algarve",
+      "protection données immobilier Portugal",
       "conditions légales propriétés luxe",
       "avis confidentialité site propriété",
-      "politique cookies algarve villas",
+      "politique cookies Portugal villas",
       "protection données personnelles portugal",
       "conditions utilisation services propriété",
       "conformité RGPD portugal",
@@ -51,7 +51,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Documentation légale, Avis confidentialité, Conditions générales, Accord utilisateur, Protection données, Politique cookies",
     dcTitle:
-      "Conditions générales Buy Property Portugal, Politique confidentialité propriété luxe Portugal, Conditions légales services immobiliers Algarve",
+      "Conditions générales Buy Property Portugal, Politique confidentialité propriété luxe Portugal, Conditions légales services immobiliers Portugal",
   },
   de: {
     title: "AGB - Datenschutzerklärung & Rechtliche Informationen",
@@ -61,12 +61,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Lesen Sie unsere AGB, Datenschutzerklärung und rechtlichen Informationen. Verstehen Sie Datenschutz, DSGVO-Konformität, Cookie-Richtlinien und Ihre Rechte bei der Nutzung unserer Luxusimmobilienservices in Portugal.",
     keywords: [
-      "agb algarve villen",
+      "agb Portugal villen",
       "datenschutzerklärung immobilien portugal",
-      "datenschutz algarve immobilien",
+      "datenschutz Portugal immobilien",
       "rechtliche bedingungen luxusimmobilien",
       "datenschutzhinweis immobilien website",
-      "cookie richtlinie algarve villen",
+      "cookie richtlinie Portugal villen",
       "personendatenschutz portugal",
       "nutzungsbedingungen immobilienservices",
       "dsgvo konformität portugal",
@@ -77,7 +77,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Rechtsdokumentation, Datenschutzhinweis, AGB, Nutzervereinbarung, Datenschutz, Cookie-Richtlinie",
     dcTitle:
-      "AGB Buy Property Portugal, Datenschutzerklärung Luxusimmobilien Portugal, Rechtliche Bedingungen Algarve Immobilienservices",
+      "AGB Buy Property Portugal, Datenschutzerklärung Luxusimmobilien Portugal, Rechtliche Bedingungen Portugal Immobilienservices",
   },
   pt: {
     title: "Termos e Condições - Política de Privacidade & Informação Legal",
@@ -88,12 +88,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Leia os nossos Termos e Condições, Política de Privacidade e informação legal. Compreender a proteção de dados, conformidade RGPD, política de cookies e os seus direitos ao utilizar os nossos serviços de propriedades de luxo em Portugal.",
     keywords: [
-      "termos condições algarve villas",
+      "termos condições Portugal villas",
       "política privacidade propriedade portugal",
-      "proteção dados imobiliário algarve",
+      "proteção dados imobiliário Portugal",
       "termos legais propriedades luxo",
       "aviso privacidade site propriedade",
-      "política cookies algarve villas",
+      "política cookies Portugal villas",
       "proteção dados pessoais portugal",
       "termos uso serviços propriedade",
       "conformidade RGPD portugal",
@@ -104,7 +104,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Documentação legal, Aviso privacidade, Termos condições, Acordo utilizador, Proteção dados, Política cookies",
     dcTitle:
-      "Termos condições Buy Property Portugal, Política privacidade propriedade luxo Portugal, Termos legais serviços imobiliários Algarve",
+      "Termos condições Buy Property Portugal, Política privacidade propriedade luxo Portugal, Termos legais serviços imobiliários Portugal",
   },
   nl: {
     title: "Algemene Voorwaarden - Privacybeleid & Juridische Informatie",
@@ -114,12 +114,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Lees onze Algemene Voorwaarden, Privacybeleid en juridische informatie. Begrijp gegevensbescherming, AVG-naleving, cookiebeleid en uw rechten bij het gebruik van onze luxe vastgoedservices in Portugal.",
     keywords: [
-      "algemene voorwaarden algarve villas",
+      "algemene voorwaarden Portugal villas",
       "privacybeleid vastgoed portugal",
-      "gegevensbescherming algarve vastgoed",
+      "gegevensbescherming Portugal vastgoed",
       "juridische voorwaarden luxe vastgoed",
       "privacyverklaring vastgoed website",
-      "cookiebeleid algarve villas",
+      "cookiebeleid Portugal villas",
       "persoonlijke gegevensbescherming portugal",
       "gebruiksvoorwaarden vastgoedservices",
       "avg naleving portugal",
@@ -130,7 +130,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Juridische documentatie, Privacyverklaring, Algemene voorwaarden, Gebruikersovereenkomst, Gegevensbescherming, Cookiebeleid",
     dcTitle:
-      "Algemene voorwaarden Buy Property Portugal, Privacybeleid luxe vastgoed Portugal, Juridische voorwaarden Algarve vastgoedservices",
+      "Algemene voorwaarden Buy Property Portugal, Privacybeleid luxe vastgoed Portugal, Juridische voorwaarden Portugal vastgoedservices",
   },
   ru: {
     title:
@@ -142,12 +142,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Прочтите наши Условия и Положения, Политику Конфиденциальности и юридическую информацию. Понять защиту данных, соответствие GDPR, политику файлов cookie и ваши права при использовании наших услуг элитной недвижимости в Португалии.",
     keywords: [
-      "условия положения algarve villas",
+      "условия положения Portugal villas",
       "политика конфиденциальности недвижимость португалия",
       "защита данных недвижимость алгарве",
       "юридические условия элитная недвижимость",
       "уведомление конфиденциальности сайт недвижимость",
-      "политика cookies algarve villas",
+      "политика cookies Portugal villas",
       "защита персональных данных португалия",
       "условия использования услуги недвижимость",
       "соответствие GDPR португалия",
@@ -168,12 +168,12 @@ export const termsAndConditionsMetadata = {
     ogDescription:
       "Läs våra Villkor, Integritetspolicy och juridisk information. Förstå dataskydd, GDPR-efterlevnad, cookiepolicy och dina rättigheter när du använder våra lyxfastighetstjänster i Portugal.",
     keywords: [
-      "villkor algarve villas",
+      "villkor Portugal villas",
       "integritetspolicy fastighet portugal",
-      "dataskydd algarve fastighet",
+      "dataskydd Portugal fastighet",
       "juridiska villkor lyxfastighet",
       "integritetsmeddelande fastighet webbplats",
-      "cookiepolicy algarve villas",
+      "cookiepolicy Portugal villas",
       "personuppgiftsskydd portugal",
       "användarvillkor fastighetstjänster",
       "gdpr efterlevnad portugal",
@@ -184,7 +184,7 @@ export const termsAndConditionsMetadata = {
     category:
       "Juridisk dokumentation, Integritetsmeddelande, Villkor, Användaravtal, Dataskydd, Cookiepolicy",
     dcTitle:
-      "Villkor Buy Property Portugal, Integritetspolicy lyxfastighet Portugal, Juridiska villkor Algarve fastighetstjänster",
+      "Villkor Buy Property Portugal, Integritetspolicy lyxfastighet Portugal, Juridiska villkor Portugal fastighetstjänster",
   },
 } as const;
 

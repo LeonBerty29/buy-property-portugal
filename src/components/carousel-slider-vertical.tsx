@@ -14,54 +14,54 @@ export default function CarouselSliderVertical({
 
   const products = [
     {
-      title: t("awardBadgeExclusiveAlgarveVillas"),
+      title: t("awardBadgeExclusivePortugalVillas"),
       url: "/images/awards/awards-badge.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-1.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-2.jpg",
     },
 
     {
-      title: t("awardBadgeExclusiveAlgarveVillas"),
+      title: t("awardBadgeExclusivePortugalVillas"),
       url: "/images/awards/awards-badge.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-1.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-2.jpg",
     },
 
     {
-      title: t("awardBadgeExclusiveAlgarveVillas"),
+      title: t("awardBadgeExclusivePortugalVillas"),
       url: "/images/awards/awards-badge.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-1.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-2.jpg",
     },
 
     {
-      title: t("awardBadgeExclusiveAlgarveVillas"),
+      title: t("awardBadgeExclusivePortugalVillas"),
       url: "/images/awards/awards-badge.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-1.jpg",
     },
     {
-      title: t("exclusiveAlgarveTeamMemberTakingPictureWithTheirAwardTrophy"),
+      title: t("exclusivePortugalTeamMemberTakingPictureWithTheirAwardTrophy"),
       url: "/images/awards/awards-2.jpg",
     },
   ];

@@ -23,7 +23,7 @@ export const fetchTeam = async ({
     const requests = [
       client.getStories({
         content_type: "teamMembers",
-        starts_with: `team/algarve/${language}`,
+        starts_with: `team/Portugal/${language}`,
         version: process.env.NODE_ENV === "development" ? "draft" : "published",
         per_page: per_page || 10,
         page: page || 1,
@@ -69,7 +69,7 @@ export const fetchTeam = async ({
     ];
 
     const [
-      responseAlgarve,
+      responsePortugal,
       responseCarvoeiro,
       responseLagos,
       responseVilamoura,
@@ -78,8 +78,8 @@ export const fetchTeam = async ({
 
     return [
       {
-        title: t("teamInAlgarve"),
-        data: responseAlgarve.data.stories,
+        title: t("teamInPortugal"),
+        data: responsePortugal.data.stories,
       },
       {
         title: t("teamInCarvoeiro"),

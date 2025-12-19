@@ -3,12 +3,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Portugal Golden Visa Program - Complete Investment & Residency Guide",
     description:
-      "Complete guide to Portugal's Golden Visa Program. Learn about investment requirements, eligibility criteria, residence permits, and pathways to citizenship through property investment in the Algarve. Expert guidance for obtaining Portuguese residency.",
+      "Complete guide to Portugal's Golden Visa Program. Learn about investment requirements, eligibility criteria, residence permits, and pathways to citizenship through property investment in the Portugal. Expert guidance for obtaining Portuguese residency.",
     keywords: [
       "portugal golden visa",
       "golden visa program portugal",
       "portugal residence permit investment",
-      "algarve golden visa",
+      "Portugal golden visa",
       "portugal investment visa",
       "golden visa requirements portugal",
       "portugal citizenship by investment",
@@ -16,7 +16,7 @@ export const goldenVisaProgramMetadata = {
       "portugal residence visa",
       "golden visa property investment",
       "portugal permanent residence",
-      "algarve investment residency",
+      "Portugal investment residency",
       "portugal investor visa",
       "golden visa application portugal",
       "portugal residency by investment",
@@ -24,16 +24,16 @@ export const goldenVisaProgramMetadata = {
       "portugal golden visa 2024",
       "invest portugal residency",
       "portuguese citizenship investment",
-      "algarve property golden visa",
+      "Portugal property golden visa",
     ],
     ogTitle:
-      "Portugal Golden Visa Program - Residency Through Investment in the Algarve",
+      "Portugal Golden Visa Program - Residency Through Investment in the Portugal",
     classification:
       "Golden visa information, Portugal investment visa, Residence permit guide, Citizenship by investment",
     category:
       "Immigration guide, Investment visa, Residency program, Citizenship pathway, Legal requirements, Property investment visa",
     dcTitle:
-      "Portugal golden visa program guide, Algarve investment residency, Portuguese citizenship by investment, Golden triangle residence permit",
+      "Portugal golden visa program guide, Portugal investment residency, Portuguese citizenship by investment, Golden triangle residence permit",
     audience:
       "International investors, Property buyers, Residency seekers, Non-EU citizens",
     articleSection: "Immigration & Investment",
@@ -42,12 +42,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Programme Visa Gold Portugal - Guide Complet Investissement & Résidence",
     description:
-      "Guide complet du programme Visa Gold du Portugal. Découvrez les exigences d'investissement, les critères d'éligibilité, les permis de résidence et les voies vers la citoyenneté grâce à l'investissement immobilier en Algarve. Conseils d'experts pour obtenir la résidence portugaise.",
+      "Guide complet du programme Visa Gold du Portugal. Découvrez les exigences d'investissement, les critères d'éligibilité, les permis de résidence et les voies vers la citoyenneté grâce à l'investissement immobilier en Portugal. Conseils d'experts pour obtenir la résidence portugaise.",
     keywords: [
       "visa gold portugal",
       "programme visa gold portugal",
       "permis résidence investissement portugal",
-      "visa gold algarve",
+      "visa gold Portugal",
       "visa investissement portugal",
       "exigences visa gold portugal",
       "citoyenneté portugal par investissement",
@@ -55,7 +55,7 @@ export const goldenVisaProgramMetadata = {
       "visa résidence portugal",
       "investissement immobilier visa gold",
       "résidence permanente portugal",
-      "résidence investissement algarve",
+      "résidence investissement Portugal",
       "visa investisseur portugal",
       "demande visa gold portugal",
       "résidence par investissement portugal",
@@ -63,16 +63,16 @@ export const goldenVisaProgramMetadata = {
       "visa gold portugal 2024",
       "investir résidence portugal",
       "citoyenneté portugaise investissement",
-      "propriété algarve visa gold",
+      "propriété Portugal visa gold",
     ],
     ogTitle:
-      "Programme Visa Gold Portugal - Résidence par Investissement en Algarve",
+      "Programme Visa Gold Portugal - Résidence par Investissement en Portugal",
     classification:
       "Information visa gold, Visa investissement Portugal, Guide permis de résidence, Citoyenneté par investissement",
     category:
       "Guide immigration, Visa investissement, Programme résidence, Voie citoyenneté, Exigences légales, Visa investissement immobilier",
     dcTitle:
-      "Guide programme visa gold Portugal, Résidence investissement Algarve, Citoyenneté portugaise par investissement, Permis résidence triangle d'or",
+      "Guide programme visa gold Portugal, Résidence investissement Portugal, Citoyenneté portugaise par investissement, Permis résidence triangle d'or",
     audience:
       "Investisseurs internationaux, Acheteurs immobiliers, Demandeurs résidence, Citoyens hors UE",
     articleSection: "Immigration & Investissement",
@@ -81,12 +81,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Portugal Golden Visa Programm - Vollständiger Investment & Residenz-Leitfaden",
     description:
-      "Vollständiger Leitfaden für Portugals Golden Visa Programm. Erfahren Sie mehr über Investitionsanforderungen, Zulassungskriterien, Aufenthaltsgenehmigungen und Wege zur Staatsbürgerschaft durch Immobilieninvestitionen in der Algarve. Expertenhilfe für die portugiesische Residenz.",
+      "Vollständiger Leitfaden für Portugals Golden Visa Programm. Erfahren Sie mehr über Investitionsanforderungen, Zulassungskriterien, Aufenthaltsgenehmigungen und Wege zur Staatsbürgerschaft durch Immobilieninvestitionen in der Portugal. Expertenhilfe für die portugiesische Residenz.",
     keywords: [
       "portugal golden visa",
       "golden visa programm portugal",
       "portugal aufenthaltsgenehmigung investition",
-      "algarve golden visa",
+      "Portugal golden visa",
       "portugal investitionsvisum",
       "golden visa anforderungen portugal",
       "portugal staatsbürgerschaft durch investition",
@@ -94,7 +94,7 @@ export const goldenVisaProgramMetadata = {
       "portugal residenzvisum",
       "golden visa immobilieninvestition",
       "portugal daueraufenthalt",
-      "algarve investitionsresidenz",
+      "Portugal investitionsresidenz",
       "portugal investorenvisum",
       "golden visa antrag portugal",
       "portugal residenz durch investition",
@@ -102,16 +102,16 @@ export const goldenVisaProgramMetadata = {
       "portugal golden visa 2024",
       "investieren portugal residenz",
       "portugiesische staatsbürgerschaft investition",
-      "algarve immobilie golden visa",
+      "Portugal immobilie golden visa",
     ],
     ogTitle:
-      "Portugal Golden Visa Programm - Residenz durch Investment in der Algarve",
+      "Portugal Golden Visa Programm - Residenz durch Investment in der Portugal",
     classification:
       "Golden Visa Information, Portugal Investitionsvisum, Aufenthaltsgenehmigung-Leitfaden, Staatsbürgerschaft durch Investition",
     category:
       "Einwanderungsleitfaden, Investitionsvisum, Residenzprogramm, Staatsbürgerschaftsweg, Gesetzliche Anforderungen, Immobilieninvestitionsvisum",
     dcTitle:
-      "Portugal Golden Visa Programm-Leitfaden, Algarve Investitionsresidenz, Portugiesische Staatsbürgerschaft durch Investition, Goldenes Dreieck Aufenthaltsgenehmigung",
+      "Portugal Golden Visa Programm-Leitfaden, Portugal Investitionsresidenz, Portugiesische Staatsbürgerschaft durch Investition, Goldenes Dreieck Aufenthaltsgenehmigung",
     audience:
       "Internationale Investoren, Immobilienkäufer, Residenz-Suchende, Nicht-EU-Bürger",
     articleSection: "Einwanderung & Investment",
@@ -120,12 +120,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Programa Visto Gold Portugal - Guia Completo de Investimento & Residência",
     description:
-      "Guia completo do Programa Visto Gold de Portugal. Conheça os requisitos de investimento, critérios de elegibilidade, autorizações de residência e caminhos para a cidadania através do investimento imobiliário no Algarve. Orientação especializada para obter residência portuguesa.",
+      "Guia completo do Programa Visto Gold de Portugal. Conheça os requisitos de investimento, critérios de elegibilidade, autorizações de residência e caminhos para a cidadania através do investimento imobiliário no Portugal. Orientação especializada para obter residência portuguesa.",
     keywords: [
       "visto gold portugal",
       "programa visto gold portugal",
       "autorização residência investimento portugal",
-      "visto gold algarve",
+      "visto gold Portugal",
       "visto investimento portugal",
       "requisitos visto gold portugal",
       "cidadania portugal por investimento",
@@ -133,7 +133,7 @@ export const goldenVisaProgramMetadata = {
       "visto residência portugal",
       "investimento imobiliário visto gold",
       "residência permanente portugal",
-      "residência investimento algarve",
+      "residência investimento Portugal",
       "visto investidor portugal",
       "candidatura visto gold portugal",
       "residência por investimento portugal",
@@ -141,16 +141,16 @@ export const goldenVisaProgramMetadata = {
       "visto gold portugal 2024",
       "investir residência portugal",
       "cidadania portuguesa investimento",
-      "propriedade algarve visto gold",
+      "propriedade Portugal visto gold",
     ],
     ogTitle:
-      "Programa Visto Gold Portugal - Residência através de Investimento no Algarve",
+      "Programa Visto Gold Portugal - Residência através de Investimento no Portugal",
     classification:
       "Informação visto gold, Visto investimento Portugal, Guia autorização residência, Cidadania por investimento",
     category:
       "Guia imigração, Visto investimento, Programa residência, Caminho cidadania, Requisitos legais, Visto investimento imobiliário",
     dcTitle:
-      "Guia programa visto gold Portugal, Residência investimento Algarve, Cidadania portuguesa por investimento, Autorização residência triângulo dourado",
+      "Guia programa visto gold Portugal, Residência investimento Portugal, Cidadania portuguesa por investimento, Autorização residência triângulo dourado",
     audience:
       "Investidores internacionais, Compradores imobiliários, Candidatos residência, Cidadãos não-UE",
     articleSection: "Imigração & Investimento",
@@ -159,12 +159,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Portugal Golden Visa Programma - Complete Investerings & Verblijfs Gids",
     description:
-      "Complete gids voor Portugal's Golden Visa Programma. Leer over investeringseisen, geschiktheidscriteria, verblijfsvergunningen en paden naar staatsburgerschap door vastgoedinvestering in de Algarve. Deskundige begeleiding voor Portugees verblijf.",
+      "Complete gids voor Portugal's Golden Visa Programma. Leer over investeringseisen, geschiktheidscriteria, verblijfsvergunningen en paden naar staatsburgerschap door vastgoedinvestering in de Portugal. Deskundige begeleiding voor Portugees verblijf.",
     keywords: [
       "portugal golden visa",
       "golden visa programma portugal",
       "portugal verblijfsvergunning investering",
-      "algarve golden visa",
+      "Portugal golden visa",
       "portugal investeringsvisum",
       "golden visa vereisten portugal",
       "portugal staatsburgerschap door investering",
@@ -172,7 +172,7 @@ export const goldenVisaProgramMetadata = {
       "portugal verblijfsvisum",
       "golden visa vastgoedinvestering",
       "portugal permanent verblijf",
-      "algarve investering verblijf",
+      "Portugal investering verblijf",
       "portugal investeerders visum",
       "golden visa aanvraag portugal",
       "portugal verblijf door investering",
@@ -180,16 +180,16 @@ export const goldenVisaProgramMetadata = {
       "portugal golden visa 2024",
       "investeren portugal verblijf",
       "portugees staatsburgerschap investering",
-      "algarve eigendom golden visa",
+      "Portugal eigendom golden visa",
     ],
     ogTitle:
-      "Portugal Golden Visa Programma - Verblijf door Investering in de Algarve",
+      "Portugal Golden Visa Programma - Verblijf door Investering in de Portugal",
     classification:
       "Golden visa informatie, Portugal investeringsvisum, Verblijfsvergunning gids, Staatsburgerschap door investering",
     category:
       "Immigratiegids, Investeringsvisum, Verblijfsprogramma, Staatsburgerschapspad, Wettelijke vereisten, Vastgoedinvestering visum",
     dcTitle:
-      "Portugal golden visa programma gids, Algarve investering verblijf, Portugees staatsburgerschap door investering, Gouden driehoek verblijfsvergunning",
+      "Portugal golden visa programma gids, Portugal investering verblijf, Portugees staatsburgerschap door investering, Gouden driehoek verblijfsvergunning",
     audience:
       "Internationale investeerders, Vastgoedkopers, Verblijfszoekers, Niet-EU-burgers",
     articleSection: "Immigratie & Investering",
@@ -237,12 +237,12 @@ export const goldenVisaProgramMetadata = {
     title:
       "Portugal Golden Visa Program - Komplett Investerings & Uppehålls Guide",
     description:
-      "Komplett guide till Portugals Golden Visa Program. Lär dig om investeringskrav, behörighetskriterier, uppehållstillstånd och vägar till medborgarskap genom fastighetsinvestering i Algarve. Experthjälp för portugisiskt uppehåll.",
+      "Komplett guide till Portugals Golden Visa Program. Lär dig om investeringskrav, behörighetskriterier, uppehållstillstånd och vägar till medborgarskap genom fastighetsinvestering i Portugal. Experthjälp för portugisiskt uppehåll.",
     keywords: [
       "portugal golden visa",
       "golden visa program portugal",
       "portugal uppehållstillstånd investering",
-      "algarve golden visa",
+      "Portugal golden visa",
       "portugal investeringsvisum",
       "golden visa krav portugal",
       "portugal medborgarskap genom investering",
@@ -250,7 +250,7 @@ export const goldenVisaProgramMetadata = {
       "portugal uppehållsvisum",
       "golden visa fastighetsinvestering",
       "portugal permanent uppehållstillstånd",
-      "algarve investering uppehåll",
+      "Portugal investering uppehåll",
       "portugal investerare visum",
       "golden visa ansökan portugal",
       "portugal uppehåll genom investering",
@@ -258,16 +258,16 @@ export const goldenVisaProgramMetadata = {
       "portugal golden visa 2024",
       "investera portugal uppehåll",
       "portugisiskt medborgarskap investering",
-      "algarve fastighet golden visa",
+      "Portugal fastighet golden visa",
     ],
     ogTitle:
-      "Portugal Golden Visa Program - Uppehåll genom Investering i Algarve",
+      "Portugal Golden Visa Program - Uppehåll genom Investering i Portugal",
     classification:
       "Golden visa information, Portugal investeringsvisum, Uppehållstillstånd guide, Medborgarskap genom investering",
     category:
       "Immigrationsguide, Investeringsvisum, Uppehållsprogram, Medborgarskapsväg, Juridiska krav, Fastighetsinvestering visum",
     dcTitle:
-      "Portugal golden visa program guide, Algarve investering uppehåll, Portugisiskt medborgarskap genom investering, Gyllene triangeln uppehållstillstånd",
+      "Portugal golden visa program guide, Portugal investering uppehåll, Portugisiskt medborgarskap genom investering, Gyllene triangeln uppehållstillstånd",
     audience:
       "Internationella investerare, Fastighetsköpare, Uppehållssökande, Icke-EU-medborgare",
     articleSection: "Immigration & Investering",

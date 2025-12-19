@@ -10,7 +10,7 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: "Buy Property Portugal",
-  description: "Trusted luxury real estate brokers in Algarve, Portugal",
+  description: "Trusted luxury real estate brokers in Portugal, Portugal",
 };
 
 export default async function RootLayout({

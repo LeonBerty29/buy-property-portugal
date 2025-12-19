@@ -5,7 +5,7 @@ export const resetPasswordMetadata = {
       "Create a new password for your Buy Property Portugal account. Enter your new password to securely reset your account credentials and regain access to your property search account.",
     ogTitle: "Reset Your Account Password - Buy Property Portugal",
     ogDescription:
-      "Set a new password for your account. Securely update your credentials and regain full access to your luxury property account in the Algarve.",
+      "Set a new password for your account. Securely update your credentials and regain full access to your luxury property account in the Portugal.",
     keywords: [
       "reset password",
       "new password",
@@ -31,7 +31,7 @@ export const resetPasswordMetadata = {
     ogTitle:
       "Réinitialisez le Mot de Passe de Votre Compte - Buy Property Portugal",
     ogDescription:
-      "Définissez un nouveau mot de passe pour votre compte. Mettez à jour vos identifiants en toute sécurité et récupérez un accès complet à votre compte propriété de luxe dans l'Algarve.",
+      "Définissez un nouveau mot de passe pour votre compte. Mettez à jour vos identifiants en toute sécurité et récupérez un accès complet à votre compte propriété de luxe dans l'Portugal.",
     keywords: [
       "réinitialiser mot de passe",
       "nouveau mot de passe",
@@ -59,7 +59,7 @@ export const resetPasswordMetadata = {
       "Erstellen Sie ein neues Passwort für Ihr Buy Property Portugal Konto. Geben Sie Ihr neues Passwort ein, um Ihre Kontodaten sicher zurückzusetzen und wieder Zugriff auf Ihr Immobiliensuchkonto zu erhalten.",
     ogTitle: "Setzen Sie Ihr Kontopasswort Zurück - Buy Property Portugal",
     ogDescription:
-      "Legen Sie ein neues Passwort für Ihr Konto fest. Aktualisieren Sie Ihre Anmeldedaten sicher und erlangen Sie vollen Zugriff auf Ihr Luxusimmobilienkonto in der Algarve.",
+      "Legen Sie ein neues Passwort für Ihr Konto fest. Aktualisieren Sie Ihre Anmeldedaten sicher und erlangen Sie vollen Zugriff auf Ihr Luxusimmobilienkonto in der Portugal.",
     keywords: [
       "passwort zurücksetzen",
       "neues passwort",
@@ -87,7 +87,7 @@ export const resetPasswordMetadata = {
       "Crie uma nova palavra-passe para a sua conta Buy Property Portugal. Introduza a sua nova palavra-passe para redefinir com segurança as suas credenciais e recuperar o acesso à sua conta de pesquisa de propriedades.",
     ogTitle: "Redefina a Palavra-passe da Sua Conta - Buy Property Portugal",
     ogDescription:
-      "Defina uma nova palavra-passe para a sua conta. Atualize as suas credenciais com segurança e recupere acesso total à sua conta de propriedades de luxo no Algarve.",
+      "Defina uma nova palavra-passe para a sua conta. Atualize as suas credenciais com segurança e recupere acesso total à sua conta de propriedades de luxo no Portugal.",
     keywords: [
       "redefinir palavra-passe",
       "nova palavra-passe",
@@ -114,7 +114,7 @@ export const resetPasswordMetadata = {
       "Maak een nieuw wachtwoord voor uw Buy Property Portugal account. Voer uw nieuwe wachtwoord in om uw accountgegevens veilig opnieuw in te stellen en weer toegang te krijgen tot uw vastgoedzoekkaccount.",
     ogTitle: "Stel Uw Accountwachtwoord Opnieuw In - Buy Property Portugal",
     ogDescription:
-      "Stel een nieuw wachtwoord in voor uw account. Werk uw inloggegevens veilig bij en krijg volledige toegang tot uw luxe vastgoedaccount in de Algarve.",
+      "Stel een nieuw wachtwoord in voor uw account. Werk uw inloggegevens veilig bij en krijg volledige toegang tot uw luxe vastgoedaccount in de Portugal.",
     keywords: [
       "wachtwoord opnieuw instellen",
       "nieuw wachtwoord",
@@ -166,7 +166,7 @@ export const resetPasswordMetadata = {
       "Skapa ett nytt lösenord för ditt Buy Property Portugal konto. Ange ditt nya lösenord för att säkert återställa dina kontouppgifter och återfå tillgång till ditt fastighetssökkonto.",
     ogTitle: "Återställ Ditt Kontolösenord - Buy Property Portugal",
     ogDescription:
-      "Ställ in ett nytt lösenord för ditt konto. Uppdatera dina inloggningsuppgifter säkert och återfå full tillgång till ditt lyxfastighetskonto i Algarve.",
+      "Ställ in ett nytt lösenord för ditt konto. Uppdatera dina inloggningsuppgifter säkert och återfå full tillgång till ditt lyxfastighetskonto i Portugal.",
     keywords: [
       "återställ lösenord",
       "nytt lösenord",

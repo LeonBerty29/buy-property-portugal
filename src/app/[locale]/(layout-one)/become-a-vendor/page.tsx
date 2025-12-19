@@ -16,9 +16,9 @@ interface Props {
 }
 
 const BASE_URL =
-  process.env.BASE_URL || "https://www.exclusivealgarvevillas.com";
+  process.env.BASE_URL || "https://www.exclusivePortugalvillas.com";
 
-// Geographic coordinates for Algarve
+// Geographic coordinates for Portugal
 const GEO_POSITION = { lat: 37.245425, lng: -8.150925 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -126,11 +126,11 @@ const BecomeAVendor = async () => {
               {t("becomeAVendor")}
             </p>
             <h1 className="text-2xl lg:text-3xl font-semibold sm:max-w-70 mb-6">
-              {t("sellMyPropertyInTheAlgarve")}
+              {t("sellMyPropertyInThePortugal")}
             </h1>
 
             <p className="text-black font-medium mb-4 text-sm xl:text-base">
-              {t("youDecidedToSellYourPropertyInTheAlgarve")}
+              {t("youDecidedToSellYourPropertyInThePortugal")}
             </p>
             <div className="space-y-4">
               <p className="text-black/75 text-sm xl:text-base">

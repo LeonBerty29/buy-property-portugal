@@ -1,158 +1,158 @@
 export const propertiesMetadata = {
   en: {
     title:
-      "Luxury properties for sale in algarve portugal - Buy Property Portugal",
+      "Luxury properties for sale in Portugal portugal - Buy Property Portugal",
     description:
-      "Browse premium Algarve properties for sale including luxury villas in Vale do Lobo, Quinta do Lago, Lagos, and Carvoeiro.",
+      "Browse premium Portugal properties for sale including luxury villas in Vale do Lobo, Quinta do Lago, Lagos, and Carvoeiro.",
     keywords: [
-      "algarve luxury property for sale",
-      "algarve villa for sale",
-      "luxury villa algarve for sale",
-      "algarve home for sale",
-      "algarve properties for sale",
+      "Portugal luxury property for sale",
+      "Portugal villa for sale",
+      "luxury villa Portugal for sale",
+      "Portugal home for sale",
+      "Portugal properties for sale",
       "golden triangle properties",
       "vale do lobo property",
-      "frontline algarve property",
+      "frontline Portugal property",
       "quinta do lago properties",
       "lagos villa",
       "carvoeiro villa for sale",
     ],
-    ogTitle: "Live the Algarve dream. Browse luxury properties for sale",
+    ogTitle: "Live the Portugal dream. Browse luxury properties for sale",
     ogDescription:
-      "Explore premium Algarve properties for sale - luxury villas, modern apartments, elegant townhouse and plots.",
+      "Explore premium Portugal properties for sale - luxury villas, modern apartments, elegant townhouse and plots.",
     classification:
-      "Luxury real estate, Algarve properties, Premium villas for sale, Investment properties",
+      "Luxury real estate, Portugal properties, Premium villas for sale, Investment properties",
     category:
       "Real estate listings, Luxury properties, Villa sales, Property investment, Residential real estate",
     dcTitle:
-      "Algarve luxury properties for sale, Vale do Lobo villas, Quinta do Lago homes, Golden triangle real estate",
+      "Portugal luxury properties for sale, Vale do Lobo villas, Quinta do Lago homes, Golden triangle real estate",
     audience:
       "Property buyers, Real estate investors, Luxury home seekers, International buyers, Relocation clients",
     articleSection: "Real Estate & Property Sales",
   },
   fr: {
     title:
-      "Propriétés de luxe à vendre en Algarve Portugal - Buy Property Portugal",
+      "Propriétés de luxe à vendre en Portugal Portugal - Buy Property Portugal",
     description:
-      "Parcourez les propriétés premium de l'Algarve à vendre, y compris les villas de luxe à Vale do Lobo, Quinta do Lago, Lagos et Carvoeiro.",
+      "Parcourez les propriétés premium de l'Portugal à vendre, y compris les villas de luxe à Vale do Lobo, Quinta do Lago, Lagos et Carvoeiro.",
     keywords: [
-      "propriété luxe algarve à vendre",
-      "villa algarve à vendre",
-      "villa luxe algarve à vendre",
-      "maison algarve à vendre",
-      "propriétés algarve à vendre",
+      "propriété luxe Portugal à vendre",
+      "villa Portugal à vendre",
+      "villa luxe Portugal à vendre",
+      "maison Portugal à vendre",
+      "propriétés Portugal à vendre",
       "propriétés triangle d'or",
       "propriété vale do lobo",
-      "propriété front de mer algarve",
+      "propriété front de mer Portugal",
       "propriétés quinta do lago",
       "villa lagos",
       "villa carvoeiro à vendre",
     ],
     ogTitle:
-      "Vivez le rêve de l'Algarve. Parcourez les propriétés de luxe à vendre",
+      "Vivez le rêve de l'Portugal. Parcourez les propriétés de luxe à vendre",
     ogDescription:
-      "Explorez les propriétés premium de l'Algarve à vendre - villas de luxe, appartements modernes, maisons de ville élégantes et terrains.",
+      "Explorez les propriétés premium de l'Portugal à vendre - villas de luxe, appartements modernes, maisons de ville élégantes et terrains.",
     classification:
-      "Immobilier de luxe, Propriétés Algarve, Villas premium à vendre, Propriétés d'investissement",
+      "Immobilier de luxe, Propriétés Portugal, Villas premium à vendre, Propriétés d'investissement",
     category:
       "Annonces immobilières, Propriétés de luxe, Ventes de villas, Investissement immobilier, Immobilier résidentiel",
     dcTitle:
-      "Propriétés de luxe Algarve à vendre, Villas Vale do Lobo, Maisons Quinta do Lago, Immobilier triangle d'or",
+      "Propriétés de luxe Portugal à vendre, Villas Vale do Lobo, Maisons Quinta do Lago, Immobilier triangle d'or",
     audience:
       "Acheteurs immobiliers, Investisseurs immobiliers, Chercheurs de maisons de luxe, Acheteurs internationaux, Clients en relocalisation",
     articleSection: "Immobilier & Ventes de Propriétés",
   },
   de: {
     title:
-      "Luxusimmobilien zu verkaufen in Algarve Portugal - Buy Property Portugal",
+      "Luxusimmobilien zu verkaufen in Portugal Portugal - Buy Property Portugal",
     description:
-      "Durchsuchen Sie Premium-Immobilien in der Algarve zum Verkauf, einschließlich Luxusvillen in Vale do Lobo, Quinta do Lago, Lagos und Carvoeiro.",
+      "Durchsuchen Sie Premium-Immobilien in der Portugal zum Verkauf, einschließlich Luxusvillen in Vale do Lobo, Quinta do Lago, Lagos und Carvoeiro.",
     keywords: [
-      "algarve luxusimmobilie zu verkaufen",
-      "algarve villa zu verkaufen",
-      "luxusvilla algarve zu verkaufen",
-      "algarve haus zu verkaufen",
-      "algarve immobilien zu verkaufen",
+      "Portugal luxusimmobilie zu verkaufen",
+      "Portugal villa zu verkaufen",
+      "luxusvilla Portugal zu verkaufen",
+      "Portugal haus zu verkaufen",
+      "Portugal immobilien zu verkaufen",
       "goldenes dreieck immobilien",
       "vale do lobo immobilie",
-      "strandnahe algarve immobilie",
+      "strandnahe Portugal immobilie",
       "quinta do lago immobilien",
       "lagos villa",
       "carvoeiro villa zu verkaufen",
     ],
     ogTitle:
-      "Leben Sie den Algarve-Traum. Durchsuchen Sie Luxusimmobilien zum Verkauf",
+      "Leben Sie den Portugal-Traum. Durchsuchen Sie Luxusimmobilien zum Verkauf",
     ogDescription:
-      "Entdecken Sie Premium-Immobilien in der Algarve zum Verkauf - Luxusvillen, moderne Apartments, elegante Stadthäuser und Grundstücke.",
+      "Entdecken Sie Premium-Immobilien in der Portugal zum Verkauf - Luxusvillen, moderne Apartments, elegante Stadthäuser und Grundstücke.",
     classification:
-      "Luxusimmobilien, Algarve-Immobilien, Premium-Villen zum Verkauf, Anlageimmobilien",
+      "Luxusimmobilien, Portugal-Immobilien, Premium-Villen zum Verkauf, Anlageimmobilien",
     category:
       "Immobilienangebote, Luxusimmobilien, Villenverkauf, Immobilieninvestition, Wohnimmobilien",
     dcTitle:
-      "Algarve Luxusimmobilien zu verkaufen, Vale do Lobo Villen, Quinta do Lago Häuser, Goldenes Dreieck Immobilien",
+      "Portugal Luxusimmobilien zu verkaufen, Vale do Lobo Villen, Quinta do Lago Häuser, Goldenes Dreieck Immobilien",
     audience:
       "Immobilienkäufer, Immobilieninvestoren, Luxushaus-Suchende, Internationale Käufer, Umzugskunden",
     articleSection: "Immobilien & Immobilienverkauf",
   },
   pt: {
     title:
-      "Propriedades de luxo à venda no Algarve Portugal - Buy Property Portugal",
+      "Propriedades de luxo à venda no Portugal Portugal - Buy Property Portugal",
     description:
-      "Navegue pelas propriedades premium do Algarve à venda, incluindo moradias de luxo em Vale do Lobo, Quinta do Lago, Lagos e Carvoeiro.",
+      "Navegue pelas propriedades premium do Portugal à venda, incluindo moradias de luxo em Vale do Lobo, Quinta do Lago, Lagos e Carvoeiro.",
     keywords: [
-      "propriedade luxo algarve à venda",
-      "moradia algarve à venda",
-      "moradia luxo algarve à venda",
-      "casa algarve à venda",
-      "propriedades algarve à venda",
+      "propriedade luxo Portugal à venda",
+      "moradia Portugal à venda",
+      "moradia luxo Portugal à venda",
+      "casa Portugal à venda",
+      "propriedades Portugal à venda",
       "propriedades triângulo dourado",
       "propriedade vale do lobo",
-      "propriedade frente mar algarve",
+      "propriedade frente mar Portugal",
       "propriedades quinta do lago",
       "moradia lagos",
       "moradia carvoeiro à venda",
     ],
     ogTitle:
-      "Viva o sonho do Algarve. Navegue pelas propriedades de luxo à venda",
+      "Viva o sonho do Portugal. Navegue pelas propriedades de luxo à venda",
     ogDescription:
-      "Explore propriedades premium do Algarve à venda - moradias de luxo, apartamentos modernos, casas geminadas elegantes e lotes.",
+      "Explore propriedades premium do Portugal à venda - moradias de luxo, apartamentos modernos, casas geminadas elegantes e lotes.",
     classification:
-      "Imóveis de luxo, Propriedades Algarve, Moradias premium à venda, Propriedades de investimento",
+      "Imóveis de luxo, Propriedades Portugal, Moradias premium à venda, Propriedades de investimento",
     category:
       "Anúncios imobiliários, Propriedades de luxo, Vendas de moradias, Investimento imobiliário, Imóveis residenciais",
     dcTitle:
-      "Propriedades de luxo Algarve à venda, Moradias Vale do Lobo, Casas Quinta do Lago, Imóveis triângulo dourado",
+      "Propriedades de luxo Portugal à venda, Moradias Vale do Lobo, Casas Quinta do Lago, Imóveis triângulo dourado",
     audience:
       "Compradores de imóveis, Investidores imobiliários, Procuradores de casas de luxo, Compradores internacionais, Clientes em realocação",
     articleSection: "Imobiliário & Venda de Propriedades",
   },
   nl: {
     title:
-      "Luxe vastgoed te koop in Algarve Portugal - Buy Property Portugal",
+      "Luxe vastgoed te koop in Portugal Portugal - Buy Property Portugal",
     description:
-      "Bekijk premium Algarve vastgoed te koop, inclusief luxe villa's in Vale do Lobo, Quinta do Lago, Lagos en Carvoeiro.",
+      "Bekijk premium Portugal vastgoed te koop, inclusief luxe villa's in Vale do Lobo, Quinta do Lago, Lagos en Carvoeiro.",
     keywords: [
-      "algarve luxe vastgoed te koop",
-      "algarve villa te koop",
-      "luxe villa algarve te koop",
-      "algarve huis te koop",
-      "algarve vastgoed te koop",
+      "Portugal luxe vastgoed te koop",
+      "Portugal villa te koop",
+      "luxe villa Portugal te koop",
+      "Portugal huis te koop",
+      "Portugal vastgoed te koop",
       "gouden driehoek vastgoed",
       "vale do lobo vastgoed",
-      "eerstelijn algarve vastgoed",
+      "eerstelijn Portugal vastgoed",
       "quinta do lago vastgoed",
       "lagos villa",
       "carvoeiro villa te koop",
     ],
-    ogTitle: "Leef de Algarve droom. Bekijk luxe vastgoed te koop",
+    ogTitle: "Leef de Portugal droom. Bekijk luxe vastgoed te koop",
     ogDescription:
-      "Ontdek premium Algarve vastgoed te koop - luxe villa's, moderne appartementen, elegante herenhuizen en percelen.",
+      "Ontdek premium Portugal vastgoed te koop - luxe villa's, moderne appartementen, elegante herenhuizen en percelen.",
     classification:
-      "Luxe onroerend goed, Algarve vastgoed, Premium villa's te koop, Beleggingsvastgoed",
+      "Luxe onroerend goed, Portugal vastgoed, Premium villa's te koop, Beleggingsvastgoed",
     category:
       "Vastgoedaanbiedingen, Luxe vastgoed, Villa verkoop, Vastgoedinvestering, Residentieel vastgoed",
     dcTitle:
-      "Algarve luxe vastgoed te koop, Vale do Lobo villa's, Quinta do Lago huizen, Gouden driehoek onroerend goed",
+      "Portugal luxe vastgoed te koop, Vale do Lobo villa's, Quinta do Lago huizen, Gouden driehoek onroerend goed",
     audience:
       "Vastgoedkopers, Vastgoedbeleggers, Luxe huiszoekers, Internationale kopers, Verhuisklanten",
     articleSection: "Onroerend Goed & Vastgoedverkoop",
@@ -191,31 +191,31 @@ export const propertiesMetadata = {
   },
   se: {
     title:
-      "Lyxfastigheter till salu i Algarve Portugal - Buy Property Portugal",
+      "Lyxfastigheter till salu i Portugal Portugal - Buy Property Portugal",
     description:
-      "Bläddra bland premium Algarve fastigheter till salu inklusive lyxvillor i Vale do Lobo, Quinta do Lago, Lagos och Carvoeiro.",
+      "Bläddra bland premium Portugal fastigheter till salu inklusive lyxvillor i Vale do Lobo, Quinta do Lago, Lagos och Carvoeiro.",
     keywords: [
-      "algarve lyxfastighet till salu",
-      "algarve villa till salu",
-      "lyxvilla algarve till salu",
-      "algarve hem till salu",
-      "algarve fastigheter till salu",
+      "Portugal lyxfastighet till salu",
+      "Portugal villa till salu",
+      "lyxvilla Portugal till salu",
+      "Portugal hem till salu",
+      "Portugal fastigheter till salu",
       "gyllene triangeln fastigheter",
       "vale do lobo fastighet",
-      "strandnära algarve fastighet",
+      "strandnära Portugal fastighet",
       "quinta do lago fastigheter",
       "lagos villa",
       "carvoeiro villa till salu",
     ],
-    ogTitle: "Lev Algarve-drömmen. Bläddra bland lyxfastigheter till salu",
+    ogTitle: "Lev Portugal-drömmen. Bläddra bland lyxfastigheter till salu",
     ogDescription:
-      "Utforska premium Algarve fastigheter till salu - lyxvillor, moderna lägenheter, eleganta radhus och tomter.",
+      "Utforska premium Portugal fastigheter till salu - lyxvillor, moderna lägenheter, eleganta radhus och tomter.",
     classification:
-      "Lyxfastigheter, Algarve fastigheter, Premium villor till salu, Investeringsfastigheter",
+      "Lyxfastigheter, Portugal fastigheter, Premium villor till salu, Investeringsfastigheter",
     category:
       "Fastighetsannonser, Lyxfastigheter, Villaförsäljning, Fastighetsinvestering, Bostadsfastigheter",
     dcTitle:
-      "Algarve lyxfastigheter till salu, Vale do Lobo villor, Quinta do Lago hem, Gyllene triangeln fastigheter",
+      "Portugal lyxfastigheter till salu, Vale do Lobo villor, Quinta do Lago hem, Gyllene triangeln fastigheter",
     audience:
       "Fastighetsköpare, Fastighetsinvesterare, Lyxbostad sökare, Internationella köpare, Flyttkunder",
     articleSection: "Fastigheter & Fastighetsförsäljning",

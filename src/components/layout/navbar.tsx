@@ -126,7 +126,7 @@ export default function NavBar({
                     ? "/images/buyproperytyportugal-logo-dark.png"
                     : "/images/buyproperytyportugal-logo.png"
                 }
-                alt={t("exclusiveAlgarveVillasLogo")}
+                alt={t("exclusivePortugalVillasLogo")}
                 width={70}
                 height={50}
                 className="object-contain h-15 w-20"

@@ -60,7 +60,7 @@ const SearchHeader = async() => {
             <p className="text-sm lg:text-base text-center">
               <b>{propertiesCount}</b> {t("propertiesForSaleWith")}{" "}
               <span className="text-primary font-semibold">
-                {t("exclusiveAlgarveVillas")}
+                {t("exclusivePortugalVillas")}
               </span>
             </p>
           </div>
