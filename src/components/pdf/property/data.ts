@@ -2,7 +2,7 @@
 import { PropertyData } from "./types";
 
 export const getSamplePropertyData = (): PropertyData => ({
-  id: "EAV-3500",
+  id: "BPP-3500",
   title: "Modern Villa",
   location: "Albufeira, Portugal",
   price: "€4,500,000",
@@ -42,7 +42,7 @@ export const getSamplePropertyData = (): PropertyData => ({
 // Function to convert your existing HTML component data to PropertyData
 export const convertHtmlPropertyToData = (htmlProperty: any): PropertyData => {
   return {
-    id: "EAV-3500", // Extract from your HTML component
+    id: "BPP-3500", // Extract from your HTML component
     title: "Modern Villa",
     location: "Albufeira, Portugal",
     price: "€4,500,000",

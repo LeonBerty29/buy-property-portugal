@@ -16,9 +16,7 @@ function createBasicAuthHeader(): string {
 /**
  * Generic fetch wrapper with Basic Auth
  */
-async function apiRequest<T>(
-  endpoint: string,
-): Promise<T> {
+async function apiRequest<T>(endpoint: string): Promise<T> {
   const url = `${process.env.API_BASE_URL}${endpoint}`;
 
   const defaultHeaders = {
@@ -35,7 +33,6 @@ async function apiRequest<T>(
 
   const response = await fetch(url, config);
 
-  
   if (!response.ok) {
     const errorText = await response.text();
     throw new Error(
@@ -54,7 +51,7 @@ function buildQueryString(params: PropertySearchParams): string {
 
   Object.entries(params).forEach(([key, value]) => {
     if (value !== undefined && value !== null && value !== "") {
-      // Handle array parameters (like price_ranges, energy_class)
+      // Handle array parameters (like price_ranges, energy_class, districts)
       if (Array.isArray(value)) {
         if (value.length > 0) {
           // For price_ranges, we need to use the bracket notation
@@ -62,12 +59,12 @@ function buildQueryString(params: PropertySearchParams): string {
             value.forEach((item) => {
               searchParams.append("price_ranges[]", item.toString());
             });
-          } else if (key === "price_ranges[]") {
-            // value.forEach((item) => {
-            // searchParams.append("price_ranges[]", item.toString());
-            // });
           }
-          // For energy_class and other arrays, use bracket notation as well
+          // For districts, join as comma-separated values
+          else if (key === "district") {
+            searchParams.append("district", value.join(","));
+          }
+          // For energy_class, use bracket notation
           else if (key === "energy_class") {
             value.forEach((item) => {
               searchParams.append("energy_class[]", item.toString());
@@ -100,6 +97,8 @@ export const getProperties = cache(
     const queryString = buildQueryString(params);
     const locale = await getLocale();
     const endpoint = `/v1/properties${queryString}&language=${locale}`;
+
+    // console.log({ endpoint });
 
     return apiRequest<PropertyListResponse>(endpoint);
   }

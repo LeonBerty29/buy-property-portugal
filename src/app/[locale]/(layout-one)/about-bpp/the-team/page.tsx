@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     theTeamMetadata.en;
 
   // Get the localized path for the team page
-  const teamPath = routing.pathnames["/about-eav/the-team"];
+  const teamPath = routing.pathnames["/about-bpp/the-team"];
   const localizedTeamPath =
     typeof teamPath === "string"
       ? teamPath

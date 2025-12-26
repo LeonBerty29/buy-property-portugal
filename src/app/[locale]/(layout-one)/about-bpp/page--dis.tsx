@@ -16,7 +16,7 @@ import {
   WEBSITE_NAME,
 } from "@/config/constants";
 import { Metadata } from "next";
-import { aboutEavMetadata } from "@/seo-metadata/about-eav";
+import { aboutEavMetadata } from "@/seo-metadata/about-bpp";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // ICBM coordinates
   const ICBM = `${GEO_POSITION.lat}, ${GEO_POSITION.lng}`;
 
-  // Get the localized path for the about-eav page
-  const aboutPath = routing.pathnames["/about-eav"];
+  // Get the localized path for the about-bpp page
+  const aboutPath = routing.pathnames["/about-bpp"];
   const localizedAboutPath =
     typeof aboutPath === "string"
       ? aboutPath
@@ -177,7 +177,7 @@ const AboutUs = async (props: Props) => {
               asChild
               className="bg-primary hover:bg-black text-white transition-colors mt-5"
             >
-              <Link href="/about-eav/the-team">{t("seeTheTeam")}</Link>
+              <Link href="/about-bpp/the-team">{t("seeTheTeam")}</Link>
             </Button>
           </div>
         </div>

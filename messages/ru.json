@@ -697,7 +697,7 @@
     "buttonHideAdvanced": "Скрыть расширенный"
   },
   "aboutUsResourceDropdown": {
-    "aboutEAV": "О EAV",
+    "aboutEAV": "О BPP",
     "noResourcesAvailable": "Ресурсы недоступны",
     "theTeam": "Команда",
     "clientTestimonials": "Отзывы клиентов",
@@ -815,7 +815,7 @@
     "close": "Закрыть"
   },
   "annotationPropertyCard": {
-    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ EAV",
+    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ BPP",
     "annotationNote": "Аннотация (Заметка)",
     "contactForPrice": "Узнать цену",
     "location": "Местоположение",
@@ -831,14 +831,14 @@
     "close": "Закрыть"
   },
   "favoriteProductCard": {
-    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ EAV",
+    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ BPP",
     "contactForPrice": "Узнать цену",
     "location": "Местоположение",
     "grossArea": "Общая площадь",
     "plotSize": "Размер участка"
   },
   "productCard": {
-    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ EAV",
+    "exclusiveListingByEav": "ЭКСКЛЮЗИВНОЕ ПРЕДЛОЖЕНИЕ ОТ BPP",
     "contactForPrice": "Узнать цену",
     "location": "Местоположение",
     "grossArea": "Общая площадь",
@@ -1551,5 +1551,13 @@
     "busStation": "Автовокзал",
     "airport": "Аэропорт",
     "hospital": "Больница"
+  },
+  "phoneNumberFormSchema": {
+    "phoneRequired": "Требуется номер телефона",
+    "phoneInvalid": "Пожалуйста, введите действительный номер телефона",
+    "invalidCountryCode": "Неверный код страны",
+    "tooShort": "Номер телефона слишком короткий",
+    "tooLong": "Номер телефона слишком длинный",
+    "invalidFormat": "Неверный формат номера телефона"
   }
 }

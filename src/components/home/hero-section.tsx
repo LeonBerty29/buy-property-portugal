@@ -79,7 +79,7 @@ export default function HeroSection({
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/images/eav-mobile-banner.jpg"
+              src="/images/bpp-mobile-banner.jpg"
               alt="House view"
               fill
               className="object-cover"

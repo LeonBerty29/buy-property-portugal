@@ -47,9 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...createSitemapEntries(localizedPaths("/blogs"), "monthly", 0.8),
 
     // About pages
-    ...createSitemapEntries(localizedPaths("/about-eav"), "monthly", 0.8),
-    ...createSitemapEntries(localizedPaths("/about-eav/the-team"), "monthly", 0.7),
-    ...createSitemapEntries(localizedPaths("/about-eav/client-testimonials"), "monthly", 0.7),
+    ...createSitemapEntries(localizedPaths("/about-bpp"), "monthly", 0.8),
+    ...createSitemapEntries(localizedPaths("/about-bpp/the-team"), "monthly", 0.7),
+    ...createSitemapEntries(localizedPaths("/about-bpp/client-testimonials"), "monthly", 0.7),
 
     // Important informational pages
     ...createSitemapEntries(localizedPaths("/buying-process"), "monthly", 0.8),

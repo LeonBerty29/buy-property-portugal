@@ -3,7 +3,7 @@ import LatestNews from "@/components/home/latest-news";
 // import HeroSection from "@/components/home/hero-section";
 // import AwardsSection from "@/components/home/awards-section";
 import RecentListing from "@/components/home/recent-listing";
-import MeetTheTeam from "@/components/home/meet-the-team";
+// import MeetTheTeam from "@/components/home/meet-the-team";
 // import HouseView from "@/components/home/house-view";
 // import LifeStyle from "@/components/home/lifestyle";
 import DiscoverSection from "@/components/home/discover-section";
@@ -27,10 +27,11 @@ import { routing } from "@/i18n/routing";
 import { homeMetadata } from "@/seo-metadata/home-page";
 import { Metadata } from "next";
 import { SearchInput } from "@/components/search/search-input";
-import MapSelection from "../(layout-one)/portugal-map/map-selection";
+import MapSelection from "../../../components/home/map-selection";
 // import { FilterComponents } from "@/components/search/filter-compoonent";
 import { Link } from "@/i18n/navigation";
 import { HomeFilterComponents } from "@/components/search/home-filter-components";
+import { HomepageRegions } from "@/components/home/homepage-regions";
 
 type Params = {
   [x: string]: string | string[];
@@ -149,10 +150,10 @@ export default async function Home(props: PageProps) {
   const searchParams = await props.searchParams;
 
   return (
-    <div className="container h-full mx-auto pt-24">
+    <div className="h-full mx-auto pt-24">
       <div className="w-full px-6 lg:px-14">
         {searchParams && (
-          <div className="">
+          <div className="2xl:container mx-auto">
             <h2 className="mb-6 font-semibold text-2xl">
               Quick Advance Search
             </h2>
@@ -197,7 +198,7 @@ export default async function Home(props: PageProps) {
                 </p>
                 <div className="">
                   <SearchInput
-                    placeholder="e.g Braga"
+                    placeholder="Describe the property you are looking for"
                     className="placeholder:text-gray-500 text-gray-800 placeholder:text-sm"
                   />
                 </div>
@@ -206,7 +207,7 @@ export default async function Home(props: PageProps) {
           </div>
 
           {!searchParams && (
-            <div className="">
+            <div className="2xl:container mx-auto">
               <h2 className="mb-6 font-semibold text-2xl">
                 Quick Advance Search
               </h2>
@@ -232,14 +233,24 @@ export default async function Home(props: PageProps) {
       {/* <div>
         <LifeStyle />
       </div> */}
+
+      <div className="py-10">
+        <HomepageRegions />
+      </div>
+
+      <div className="py-10">
+        <FooterPropertiesLink />
+      </div>
+
       <div className="bg-neutral-800">
         <Suspense fallback={<RecentListingLoading />}>
           <RecentListing />
         </Suspense>
       </div>
-      <div className="mt-8">
+
+      {/* <div className="mt-8">
         <MeetTheTeam />
-      </div>
+      </div> */}
 
       {/* <div>
         <Suspense fallback={<HouseViewLoading />}>
@@ -253,10 +264,6 @@ export default async function Home(props: PageProps) {
 
       <div className="pt-10">
         <DiscoverSection />
-      </div>
-
-      <div className="py-10">
-        <FooterPropertiesLink />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export const GoogleMapSection = ({
       <MarkerF
         position={{ lat: latitude, lng: longitude }}
         icon={{
-          url: "/images/eav-map-pin.svg",
+          url: "/images/bpp-map-pin.svg",
           scaledSize: new google.maps.Size(32, 32),
         }}
       >

@@ -75,8 +75,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: `${BASE_URL}/images/eav-dark-logo`,
-          secureUrl: `${BASE_URL}/images/eav-dark-logo`,
+          url: `${BASE_URL}/images/bpp-dark-logo`,
+          secureUrl: `${BASE_URL}/images/bpp-dark-logo`,
           width: 1200,
           height: 630,
           alt: metadata.ogTitle,

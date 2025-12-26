@@ -1,6 +1,6 @@
 // import { Suspense } from "react";
 import { SearchInput } from "@/components/search/search-input";
-import MapSelection from "./map-selection";
+import MapSelection from "../../../../components/home/map-selection";
 // import DistrictList from './district-list';
 // import PropertiesDisplay from "./property-display";
 // import { PropertySearchParams } from "@/types/property";
