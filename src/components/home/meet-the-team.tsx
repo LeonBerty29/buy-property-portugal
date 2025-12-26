@@ -88,7 +88,7 @@ const MeetTheTeam = async() => {
           asChild
           className="bg-gray-300 text-neutral-900 rounded-none text-sm py-5 font-light mb-3 hover:text-white"
         >
-          <Link href="/about-eav/the-team">{t("buttonLabel")}</Link>
+          <Link href="/about-bpp/the-team">{t("buttonLabel")}</Link>
         </Button>
         <p className="max-w-lg text-sm text-neutral-800 mt-16">
           {t("description1")}

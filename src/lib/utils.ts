@@ -21,14 +21,30 @@ export const generateApiParams = (searchParams: PropertySearchParams) => {
     } else {
       priceRanges = [searchParams["price_ranges[]"] as string];
     }
-
   }
+
+  let districts: number[] | undefined;
+  if (searchParams.district) {
+    const districtValue = searchParams.district;
+
+    if (typeof districtValue === "string") {
+      // Handle comma-separated string from URL: "8,5"
+      districts = districtValue
+        .split(",")
+        .map((d) => Number(d.trim()))
+        .filter((id) => !isNaN(id) && id > 0);
+    } else if (Array.isArray(districtValue)) {
+      // Handle array: [8, 5]
+      districts = districtValue.filter((id) => !isNaN(id) && id > 0);
+    }
+  }
+
   const apiParams: PropertySearchParams = {
     search: searchParams.search,
     location_area: searchParams.location_area,
     municipality: searchParams.municipality,
     zone: searchParams.zone,
-    district: searchParams.district,
+    district: districts, // Keep as district (singular)
     min_price: searchParams.min_price,
     max_price: searchParams.max_price,
     price_ranges: priceRanges || [],
@@ -95,7 +111,6 @@ export const generateSuspenseKey = (apiParams: PropertySearchParams) => {
 };
 
 export const hasActiveFilters = (params: PropertySearchParams): boolean => {
-
   return !!(
     params.search ||
     params.location_area ||

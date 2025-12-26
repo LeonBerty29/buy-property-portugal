@@ -697,7 +697,7 @@
     "buttonHideAdvanced": "Dölj avancerat"
   },
   "aboutUsResourceDropdown": {
-    "aboutEAV": "Om EAV",
+    "aboutEAV": "Om BPP",
     "noResourcesAvailable": "Inga resurser tillgängliga",
     "theTeam": "Teamet",
     "clientTestimonials": "Kundvittnesmål",
@@ -815,7 +815,7 @@
     "close": "Stäng"
   },
   "annotationPropertyCard": {
-    "exclusiveListingByEav": "EXKLUSIV LISTA AV EAV",
+    "exclusiveListingByEav": "EXKLUSIV LISTA AV BPP",
     "annotationNote": "Anteckning",
     "contactForPrice": "Kontakta för pris",
     "location": "Plats",
@@ -831,14 +831,14 @@
     "close": "Stäng"
   },
   "favoriteProductCard": {
-    "exclusiveListingByEav": "EXKLUSIV LISTA AV EAV",
+    "exclusiveListingByEav": "EXKLUSIV LISTA AV BPP",
     "contactForPrice": "Kontakta för pris",
     "location": "Plats",
     "grossArea": "Bruttoarea",
     "plotSize": "Tomtstorlek"
   },
   "productCard": {
-    "exclusiveListingByEav": "EXKLUSIV LISTA AV EAV",
+    "exclusiveListingByEav": "EXKLUSIV LISTA AV BPP",
     "contactForPrice": "Kontakta för pris",
     "location": "Plats",
     "grossArea": "Bruttoarea",
@@ -1551,5 +1551,13 @@
     "busStation": "Busstation",
     "airport": "Flygplats",
     "hospital": "Sjukhus"
+  },
+  "phoneNumberFormSchema": {
+    "phoneRequired": "Telefonnummer krävs",
+    "phoneInvalid": "Vänligen ange ett giltigt telefonnummer",
+    "invalidCountryCode": "Ogiltig landskod",
+    "tooShort": "Telefonnumret är för kort",
+    "tooLong": "Telefonnumret är för långt",
+    "invalidFormat": "Ogiltigt telefonnummerformat"
   }
 }

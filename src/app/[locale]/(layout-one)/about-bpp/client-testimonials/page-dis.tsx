@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ] || clientTestimonialsMetadata.en;
 
   // Get the localized path for the client testimonials page
-  const testimonialsPath = routing.pathnames["/about-eav/client-testimonials"];
+  const testimonialsPath = routing.pathnames["/about-bpp/client-testimonials"];
   const localizedTestimonialsPath =
     typeof testimonialsPath === "string"
       ? testimonialsPath

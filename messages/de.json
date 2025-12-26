@@ -697,7 +697,7 @@
     "buttonHideAdvanced": "Erweitert ausblenden"
   },
   "aboutUsResourceDropdown": {
-    "aboutEAV": "Über EAV",
+    "aboutEAV": "Über BPP",
     "noResourcesAvailable": "Keine Ressourcen verfügbar",
     "theTeam": "Das Team",
     "clientTestimonials": "Kundenbewertungen",
@@ -815,7 +815,7 @@
     "close": "Schließen"
   },
   "annotationPropertyCard": {
-    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON EAV",
+    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON BPP",
     "annotationNote": "Anmerkung (Notiz)",
     "contactForPrice": "Kontaktieren Sie uns für den Preis",
     "location": "Standort",
@@ -831,14 +831,14 @@
     "close": "Schließen"
   },
   "favoriteProductCard": {
-    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON EAV",
+    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON BPP",
     "contactForPrice": "Kontaktieren Sie uns für den Preis",
     "location": "Standort",
     "grossArea": "Bruttofläche",
     "plotSize": "Grundstücksgröße"
   },
   "productCard": {
-    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON EAV",
+    "exclusiveListingByEav": "EXKLUSIVES ANGEBOT VON BPP",
     "contactForPrice": "Kontaktieren Sie uns für den Preis",
     "location": "Standort",
     "grossArea": "Bruttofläche",
@@ -1551,5 +1551,13 @@
     "busStation": "Bushaltestelle",
     "airport": "Flughafen",
     "hospital": "Krankenhaus"
+  },
+  "phoneNumberFormSchema": {
+    "phoneRequired": "Telefonnummer ist erforderlich",
+    "phoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein",
+    "invalidCountryCode": "Ungültiger Ländercode",
+    "tooShort": "Telefonnummer ist zu kurz",
+    "tooLong": "Telefonnummer ist zu lang",
+    "invalidFormat": "Ungültiges Telefonnummernformat"
   }
 }

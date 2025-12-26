@@ -29,10 +29,10 @@ import {
 } from "./listing-filters";
 import { getTranslations } from "next-intl/server";
 
-const SearchHeader = async() => {
-  const t = await getTranslations("searchHeader");
+const PROPERTIES_COUNT = 3550;
 
-  const propertiesCount = 3550;
+const SearchHeader = async () => {
+  const t = await getTranslations("searchHeader");
 
   return (
     <>
@@ -58,7 +58,7 @@ const SearchHeader = async() => {
 
           <div className="flex-col items-center gap-2 sm:flex">
             <p className="text-sm lg:text-base text-center">
-              <b>{propertiesCount}</b> {t("propertiesForSaleWith")}{" "}
+              <b>{PROPERTIES_COUNT}</b> {t("propertiesForSaleWith")}{" "}
               <span className="text-primary font-semibold">
                 {t("exclusivePortugalVillas")}
               </span>

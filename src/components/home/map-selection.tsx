@@ -14,7 +14,7 @@ import { useRouter } from "@/i18n/navigation";
 export default function MapSelection() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [selectedDistricts, setSelectedDistricts] = useState<string[]>([]);
+  const [selectedDistrictIds, setSelectedDistrictIds] = useState<number[]>([]);
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null);
 
   // Function to get custom district name positions
@@ -35,7 +35,6 @@ export default function MapSelection() {
     const centerY = (minY + maxY) / 2;
 
     // Custom positions for specific districts
-    // Adjust these offset values based on your map's needs
     const customPositions: {
       [key: string]: {
         offsetX?: number;
@@ -44,7 +43,12 @@ export default function MapSelection() {
         positionX?: "left" | "right" | "center";
       };
     } = {
-      "Viana do Castelo": { positionX: "left", offsetX: -10, positionY: "center", offsetY: -2 },
+      "Viana do Castelo": {
+        positionX: "left",
+        offsetX: -10,
+        positionY: "center",
+        offsetY: -2,
+      },
       Braga: { positionY: "center", positionX: "left", offsetX: -2 },
       Porto: { positionY: "center", positionX: "left", offsetX: -1 },
       "Vila Real": { positionY: "center" },
@@ -108,31 +112,35 @@ export default function MapSelection() {
   };
 
   useEffect(() => {
-    const districtParam = searchParams.get("search");
+    const districtParam = searchParams.get("district");
     if (districtParam) {
-      const districtsArray = districtParam.split(",").filter(Boolean);
-      setSelectedDistricts(districtsArray);
+      const districtIdsArray = districtParam
+        .split(",")
+        .filter(Boolean)
+        .map(Number)
+        .filter((id) => !isNaN(id));
+      setSelectedDistrictIds(districtIdsArray);
     } else {
-      setSelectedDistricts([]);
+      setSelectedDistrictIds([]);
     }
   }, [searchParams]);
 
-  const handleDistrictClick = (districtName: string) => {
-    let newSelectedDistricts: string[];
+  const handleDistrictClick = (districtId: number) => {
+    let newSelectedDistrictIds: number[];
 
-    if (selectedDistricts.includes(districtName)) {
-      newSelectedDistricts = selectedDistricts.filter(
-        (name) => name !== districtName
+    if (selectedDistrictIds.includes(districtId)) {
+      newSelectedDistrictIds = selectedDistrictIds.filter(
+        (id) => id !== districtId
       );
     } else {
-      newSelectedDistricts = [...selectedDistricts, districtName];
+      newSelectedDistrictIds = [...selectedDistrictIds, districtId];
     }
 
-    if (newSelectedDistricts.length > 0) {
+    if (newSelectedDistrictIds.length > 0) {
       router.push({
         pathname: `/properties`,
         query: {
-          search: newSelectedDistricts.join(","),
+          district: newSelectedDistrictIds.join(","),
         },
       });
     } else {
@@ -141,7 +149,7 @@ export default function MapSelection() {
   };
 
   const getDistrictStyle = (district: (typeof pathData)[0]) => {
-    const isSelected = selectedDistricts.includes(district.name);
+    const isSelected = selectedDistrictIds.includes(district.id);
     const isHovered = hoveredDistrict === district.name;
 
     return {
@@ -153,10 +161,6 @@ export default function MapSelection() {
       filter: isSelected ? "brightness(1.1)" : "none",
       opacity: isSelected || isHovered ? 1 : 0.8,
     };
-  };
-
-  const clearAllSelections = () => {
-    router.push(`/properties`);
   };
 
   return (
@@ -188,11 +192,11 @@ export default function MapSelection() {
 
             {/* Render all paths first */}
             {pathData.map((district) => {
-              const isSelected = selectedDistricts.includes(district.name);
+              const isSelected = selectedDistrictIds.includes(district.id);
 
               return (
                 <Tooltip
-                  key={district.name}
+                  key={district.id}
                   open={hoveredDistrict === district.name}
                 >
                   <TooltipTrigger asChild>
@@ -201,7 +205,7 @@ export default function MapSelection() {
                       style={getDistrictStyle(district)}
                       onMouseEnter={() => setHoveredDistrict(district.name)}
                       onMouseLeave={() => setHoveredDistrict(null)}
-                      onClick={() => handleDistrictClick(district.name)}
+                      onClick={() => handleDistrictClick(district.id)}
                       filter={
                         isSelected ? "url(#selected-glow)" : "url(#shadow)"
                       }
@@ -216,7 +220,7 @@ export default function MapSelection() {
 
             {/* Render all text labels on top */}
             {pathData.map((district) => {
-              const isSelected = selectedDistricts.includes(district.name);
+              const isSelected = selectedDistrictIds.includes(district.id);
               const labelPos = getDistrictNamePosition(
                 district.name,
                 district.d
@@ -224,7 +228,7 @@ export default function MapSelection() {
 
               return (
                 <text
-                  key={`label-${district.name}`}
+                  key={`label-${district.id}`}
                   x={labelPos.x}
                   y={labelPos.y}
                   textAnchor="middle"
@@ -247,50 +251,6 @@ export default function MapSelection() {
           </svg>
         </TooltipProvider>
       </div>
-
-      {selectedDistricts.length > 0 && (
-        <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
-              <p className="text-sm font-semibold text-blue-900 mb-3">
-                {selectedDistricts.length} District
-                {selectedDistricts.length > 1 ? "s" : ""} Selected
-              </p>
-              <div className="flex flex-wrap gap-1">
-                {selectedDistricts.map((districtName) => {
-                  const district = pathData.find(
-                    (d) => d.name === districtName
-                  );
-                  return (
-                    <span
-                      key={districtName}
-                      className="inline-flex items-center gap-1 px-2 py-1 bg-white rounded-md text-xs font-medium text-slate-700 border border-slate-200"
-                    >
-                      <div
-                        className="w-2 h-2 rounded-full"
-                        style={{ backgroundColor: district?.fill }}
-                      />
-                      {districtName}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-            <button
-              onClick={clearAllSelections}
-              className="ml-2 px-3 py-1.5 text-xs font-medium text-blue-700 hover:text-blue-900 hover:bg-blue-100 rounded-md transition-colors"
-            >
-              Clear All
-            </button>
-          </div>
-        </div>
-      )}
-
-      {selectedDistricts.length > 0 && (
-        <div className="mt-4 text-xs text-slate-500 text-center">
-          💡 Tip: Click on districts to add or remove from your selection
-        </div>
-      )}
     </div>
   );
 }

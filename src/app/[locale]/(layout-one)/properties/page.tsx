@@ -240,6 +240,8 @@ async function PropertieList({
 }: {
   apiParams: PropertySearchParams;
 }) {
+
+  // console.log({apiParams})
   const t = await getTranslations("propertiesPage");
   const session = await auth();
   let token = session?.accessToken;

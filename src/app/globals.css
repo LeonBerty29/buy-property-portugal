@@ -168,3 +168,109 @@ button {
   background: #9CA3AF;
   border-radius: 3px;
 }
+
+.iti {
+  width: 100%;
+  display: block;
+}
+
+.iti__input {
+  width: 100%;
+  padding-left: 52px !important; /* Space for flag */
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .iti__input,
+.dark .iti__input {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+[data-theme="dark"] .iti__input::placeholder,
+.dark .iti__input::placeholder {
+  color: #6b7280 !important;
+  font-size: 0.875rem !important;
+}
+
+[data-theme="dark"] .iti__input:focus,
+.dark .iti__input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #1f2937 !important;
+}
+
+/* Light theme styles */
+[data-theme="light"] .iti__input,
+.light .iti__input {
+  background-color: #f3f4f6 !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+[data-theme="light"] .iti__input::placeholder,
+.light .iti__input::placeholder {
+  color: #4b5563 !important;
+  font-size: 0.875rem !important;
+}
+
+[data-theme="light"] .iti__input:focus,
+.light .iti__input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #9ca3af !important;
+}
+
+/* Flag button styling */
+.iti__selected-flag {
+  border-radius: 0 !important;
+  padding-left: 8px !important;
+}
+
+[data-theme="dark"] .iti__selected-flag,
+.dark .iti__selected-flag {
+  background-color: white !important;
+}
+
+[data-theme="light"] .iti__selected-flag,
+.light .iti__selected-flag {
+  background-color: #f3f4f6 !important;
+}
+
+/* Dropdown styling */
+.iti__dropdown-content {
+  border-radius: 0.5rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.iti__country:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.iti__country.iti__highlight {
+  background-color: #e5e7eb !important;
+}
+
+/* Disabled state */
+.iti__input:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+.iti__selected-flag:disabled {
+  cursor: not-allowed !important;
+}
+
+/* Arrow styling */
+.iti__arrow {
+  border-left-color: #6b7280 !important;
+  border-top-color: #6b7280 !important;
+}
+
+.iti__selected-dial-code {
+  font-size: 13px;
+}

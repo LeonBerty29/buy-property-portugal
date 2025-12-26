@@ -22,7 +22,7 @@ export const AboutUsResourcesLanguageSwitcherDropdown = ({
   const pathname = usePathname();
   const router = useRouter();
 
-  const isPropertyPage = pathname.includes("/about-eav/");
+  const isPropertyPage = pathname.includes("/about-bpp/");
 
   if (!isPropertyPage) {
     return <LanguageSwitcher />;
@@ -34,7 +34,7 @@ export const AboutUsResourcesLanguageSwitcherDropdown = ({
       const path = slugs[lang];
       const targetPath = path
         ? {
-            pathname: "/about-eav/[slug]" as const,
+            pathname: "/about-bpp/[slug]" as const,
             params: { slug: path },
           }
         : "/";

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useTransition, useRef } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,6 +27,7 @@ import { CheckCircle } from "lucide-react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { toast } from "sonner";
 import { useTranslations } from "next-intl";
+import { PhoneNumberInput, validatePhoneNumber } from "./phone-number-input";
 
 interface ContactFormProps {
   theme?: "dark" | "light";
@@ -43,6 +44,7 @@ export function ContactForm({
 }: ContactFormProps) {
   const t = useTranslations("contactForm");
   const translationSchema = useTranslations("contactFormSchema");
+  const phoneNumberSchema = useTranslations("phoneNumberFormSchema");
   const contactFormSchema = getClientContactFormSchema(translationSchema);
 
   const [isPending, startTransition] = useTransition();
@@ -50,12 +52,13 @@ export function ContactForm({
   const [successMessage, setSuccessMessage] = useState("");
   const [error, setError] = useState<string | undefined>("");
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
+  // Phone validation states
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+  const [isPhoneValid, setIsPhoneValid] = useState<boolean>(false);
 
-  // Capture the source URL once when component mounts
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const sourceUrlRef = useRef<string>("");
 
-  // Initialize sourceUrl on first render
   if (!sourceUrlRef.current && typeof window !== "undefined") {
     sourceUrlRef.current = window.location.href;
   }
@@ -75,6 +78,22 @@ export function ContactForm({
   });
 
   const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
+    // Validate phone number before submission
+    const phoneValidation = validatePhoneNumber(phoneNumber, isPhoneValid, {
+      phoneRequired: translationSchema("phoneRequired"),
+      phoneInvalid: translationSchema("phoneInvalid"),
+    });
+
+    if (!phoneValidation.isValid) {
+      form.setError("phone", {
+        type: "manual",
+        message: phoneValidation.message,
+      });
+      return;
+    }
+
+    values.phone = phoneNumber;
+
     if (!executeRecaptcha) {
       toast(`${t("recaptchaErrorTitle")}`, {
         description: `${t("recaptchaErrorDescription")}`,
@@ -92,7 +111,10 @@ export function ContactForm({
     formDataToSubmit.append("email", values.email);
     formDataToSubmit.append("message", values.message || "");
     formDataToSubmit.append("source_url", values.source_url || "");
-    formDataToSubmit.append("accept_terms", values.accept_terms ? "true" : "false");
+    formDataToSubmit.append(
+      "accept_terms",
+      values.accept_terms ? "true" : "false"
+    );
 
     startTransition(async () => {
       const token = await executeRecaptcha("contactForm");
@@ -102,13 +124,11 @@ export function ContactForm({
         const result = await contactFormAction(formDataToSubmit);
 
         if (result.success) {
-          // Show success dialog
           setSuccessMessage(
             result.message || t("contactFormSubmittedSuccessfully")
           );
           setShowSuccessDialog(true);
 
-          // Reset form but keep sourceUrl
           form.reset({
             first_name: "",
             last_name: "",
@@ -118,10 +138,11 @@ export function ContactForm({
             accept_terms: true,
             source_url: sourceUrlRef.current,
           });
+
+          setPhoneNumber("");
+          setIsPhoneValid(false);
         } else {
-          // Handle server validation errors
           if (result.fieldErrors) {
-            // Map server field names to client field names and set form errors
             Object.entries(result.fieldErrors).forEach(([key, message]) => {
               const fieldMapping: {
                 [key: string]: keyof z.infer<typeof contactFormSchema>;
@@ -163,13 +184,13 @@ export function ContactForm({
 
   const inputClasses =
     theme === "dark"
-      ? "indent-4 bg-white text-black placeholder:text-gray-500 border-none rounded-none py-5 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 placeholder:text-sm"
-      : "indent-4 bg-gray-100 text-black placeholder:text-gray-600 border-none rounded-none py-5 focus:ring-2 focus:ring-gray-400 placeholder:text-sm";
+      ? "indent-4 bg-white text-black placeholder:text-gray-500 border-none rounded-none p-3 h-9 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 placeholder:text-sm"
+      : "indent-4 bg-gray-100 text-black placeholder:text-gray-600 border-none rounded-none p-3 h-9 focus:ring-2 focus:ring-gray-400 placeholder:text-sm";
 
   const textareaClasses =
     theme === "dark"
-      ? "indent-4 bg-white text-black placeholder:text-gray-500 border-none rounded-none py-5 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 min-h-[120px]"
-      : "indent-4 bg-gray-100 text-black placeholder:text-gray-600 border-none rounded-none py-5 focus:ring-2 focus:ring-gray-400 min-h-[120px]";
+      ? "indent-4 bg-white text-black placeholder:text-gray-500 border-none rounded-none p-3 h-9 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 min-h-[120px]"
+      : "indent-4 bg-gray-100 text-black placeholder:text-gray-600 border-none rounded-none p-3 h-9 focus:ring-2 focus:ring-gray-400 min-h-[120px]";
 
   const checkboxLabelClasses =
     theme === "dark" ? "text-white text-xs" : "text-black text-xs";
@@ -250,22 +271,28 @@ export function ContactForm({
               )}
             />
 
-            <FormField
+            <Controller
               control={form.control}
               name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      {...field}
-                      type="tel"
-                      placeholder={t("phoneNumberPlaceholder")}
-                      className={inputClasses}
-                      disabled={isPending}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
+              render={({ field, fieldState }) => (
+                <PhoneNumberInput
+                  field={field}
+                  fieldState={fieldState}
+                  disabled={isPending}
+                  theme={theme}
+                  onValidityChange={(isValid, number) => {
+                    setIsPhoneValid(isValid);
+                    setPhoneNumber(number);
+                  }}
+                  translations={{
+                    phoneRequired: phoneNumberSchema("phoneRequired"),
+                    phoneInvalid: phoneNumberSchema("phoneInvalid"),
+                    invalidCountryCode: phoneNumberSchema("invalidCountryCode"),
+                    tooShort: phoneNumberSchema("tooShort"),
+                    tooLong: phoneNumberSchema("tooLong"),
+                    invalidFormat: phoneNumberSchema("invalidFormat"),
+                  }}
+                />
               )}
             />
           </div>
@@ -310,14 +337,12 @@ export function ContactForm({
             )}
           />
 
-          {/* Show general error message */}
           {error && (
             <div className="flex justify-center mt-2">
               <p className="text-red-500 text-sm">{error}</p>
             </div>
           )}
 
-          {/* Hidden sourceUrl field */}
           <FormField
             control={form.control}
             name="source_url"
@@ -345,7 +370,6 @@ export function ContactForm({
         </form>
       </Form>
 
-      {/* Success Dialog */}
       <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
         <DialogContent className="sm:max-w-md rounded-2xl">
           <DialogHeader>

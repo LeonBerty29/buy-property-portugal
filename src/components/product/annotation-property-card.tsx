@@ -39,7 +39,7 @@ export const AnnotationPropertyCard = async ({
   // Hardcoded placeholders for missing fields (adjust as needed)
   const favorite = favorites.includes(property.id);
   const reference = property.reference;
-  const exclusive = property.agency.name === "EAV";
+  const exclusive = property.agency.name === "BPP";
   const grossArea = property.features.private_area;
   const plotSize = property.features.plot_size;
   const amenities = {

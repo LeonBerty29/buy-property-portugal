@@ -117,7 +117,7 @@ export function AboutUsResourcesDropdown({
               >
                 <Link
                   href={{
-                    pathname: "/about-eav/[slug]",
+                    pathname: "/about-bpp/[slug]",
                     params: { slug: resource.slug },
                   }}
                 >
@@ -126,11 +126,11 @@ export function AboutUsResourcesDropdown({
               </DropdownMenuItem>
             ))
           )}
-          <DropdownMenuItem
+          {/* <DropdownMenuItem
             asChild
             className="cursor-pointer py-3 hover:bg-gray-100 text-gray-800 border-b border-gray-200"
           >
-            <Link href={{ pathname: "/about-eav/the-team" }}>
+            <Link href={{ pathname: "/about-bpp/the-team" }}>
               {t("theTeam")}
             </Link>
           </DropdownMenuItem>
@@ -138,10 +138,10 @@ export function AboutUsResourcesDropdown({
             asChild
             className="cursor-pointer py-3 hover:bg-gray-100 text-gray-800 border-b border-gray-200"
           >
-            <Link href={{ pathname: "/about-eav/client-testimonials" }}>
+            <Link href={{ pathname: "/about-bpp/client-testimonials" }}>
               {t("clientTestimonials")}
             </Link>
-          </DropdownMenuItem>
+          </DropdownMenuItem> */}
         </DropdownMenuContent>
       </div>
     </DropdownMenu>

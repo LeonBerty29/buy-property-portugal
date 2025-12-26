@@ -63,11 +63,6 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
 
-  // Separate state for meeting type selection (onsite/virtual)
-  const [meetingTypeSelection, setMeetingTypeSelection] = useState<
-    "onsite" | "virtual" | ""
-  >("");
-
   const [formData, setFormData] = useState<ClientBookMeetingFormData>({
     first_name: "",
     last_name: "",
@@ -76,7 +71,7 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
     meeting_date: undefined,
     meeting_time: "",
     additional_text: "",
-    meeting_type: "",
+    meeting_type: "virtual", // Always virtual
     meeting_location: "",
     accept_terms: false,
     source_url: "",
@@ -105,12 +100,6 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
     "15:00",
     "16:00",
     "17:00",
-  ];
-
-  const onsiteLocations: string[] = [
-    "Vilamoura office",
-    "Lagoa (carvoeiro) office",
-    "Lagos office",
   ];
 
   const virtualPlatforms: string[] = ["Google meet", "Zoom"];
@@ -172,7 +161,7 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
       formData.additional_text as string
     );
     formDataToSubmit.append("source_url", formData.source_url as string);
-    formDataToSubmit.append("meeting_type", formData.meeting_type);
+    formDataToSubmit.append("meeting_type", "virtual");
     formDataToSubmit.append("meeting_location", formData.meeting_location);
     formDataToSubmit.append("recaptcha_token", token || "");
     formDataToSubmit.append("accept_terms", formData.accept_terms.toString());
@@ -189,13 +178,12 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
             email: "",
             meeting_date: undefined,
             meeting_time: "",
-            meeting_type: "",
+            meeting_type: "virtual",
             meeting_location: "",
             additional_text: "",
             accept_terms: false,
             source_url: formData.source_url,
           });
-          setMeetingTypeSelection("onsite");
           setErrors({});
           setIsOpen(false);
           setShowSuccessDialog(true);
@@ -258,12 +246,6 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
 
   const handleTimeSelect = (value: string): void => {
     handleInputChange("meeting_time", value);
-  };
-
-  const handleMeetingTypeChange = (type: "onsite" | "virtual"): void => {
-    setMeetingTypeSelection(type);
-    // Reset meeting_type when switching
-    handleInputChange("meeting_type", type);
   };
 
   const handleMeetingLocationSelect = (value: string): void => {
@@ -471,107 +453,41 @@ const BookMeetingDialog = ({ buttonStyle }: { buttonStyle?: string }) => {
               </div>
 
               <div>
-                <Label className="text-sm font-medium mb-3 block">
-                  {t("meetingType")}
+                <Label className="sr-only" htmlFor="virtualPlatform">
+                  {t("virtualPlatform")}
                 </Label>
-                <div className="flex space-x-4">
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="meetingType"
-                      value="onsite"
-                      checked={meetingTypeSelection === "onsite"}
-                      onChange={() => handleMeetingTypeChange("onsite")}
-                      className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
-                      disabled={isPending}
-                    />
-                    <span className="text-sm">{t("onSiteMeeting")}</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="meetingType"
-                      value="virtual"
-                      checked={meetingTypeSelection === "virtual"}
-                      onChange={() => handleMeetingTypeChange("virtual")}
-                      className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
-                      disabled={isPending}
-                    />
-                    <span className="text-sm">{t("virtualMeeting")}</span>
-                  </label>
-                </div>
-                {errors.meeting_type && (
+                <Select
+                  value={
+                    virtualPlatforms.includes(formData.meeting_location)
+                      ? formData.meeting_location
+                      : ""
+                  }
+                  onValueChange={handleMeetingLocationSelect}
+                  disabled={isPending}
+                >
+                  <SelectTrigger
+                    className={
+                      errors.meeting_location
+                        ? "border-red-500 w-full"
+                        : "w-full"
+                    }
+                  >
+                    <SelectValue placeholder={t("selectVirtualPlatform")} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {virtualPlatforms.map((platform: string) => (
+                      <SelectItem key={platform} value={platform}>
+                        {platform}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                {errors.meeting_location && (
                   <p className="text-red-500 text-sm mt-1">
-                    {errors.meeting_type}
+                    {errors.meeting_location}
                   </p>
                 )}
               </div>
-
-              {meetingTypeSelection === "onsite" && (
-                <div>
-                  <Label className="sr-only" htmlFor="onsiteLocation">
-                    {t("officeLocation")}
-                  </Label>
-                  <Select
-                    value={onsiteLocations.includes(formData.meeting_location) ? formData.meeting_location : ""}
-                    onValueChange={handleMeetingLocationSelect}
-                    disabled={isPending}
-                  >
-                    <SelectTrigger
-                      className={
-                        errors.meeting_location ? "border-red-500 w-full" : "w-full"
-                      }
-                    >
-                      <SelectValue placeholder={t("selectOfficeLocation")} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {onsiteLocations.map((location: string) => (
-                        <SelectItem key={location} value={location}>
-                          {location}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  {errors.meeting_type && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.meeting_location}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {meetingTypeSelection === "virtual" && (
-                <div>
-                  <Label className="sr-only" htmlFor="virtualPlatform">
-                    {t("virtualPlatform")}
-                  </Label>
-                  <Select
-                    value={virtualPlatforms.includes(formData.meeting_location) ? formData.meeting_location : ""}
-                    onValueChange={handleMeetingLocationSelect}
-                    disabled={isPending}
-                  >
-                    <SelectTrigger
-                      className={
-                        errors.meeting_type ? "border-red-500 w-full" : "w-full"
-                      }
-                    >
-                      <SelectValue placeholder={t("selectVirtualPlatform")} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {virtualPlatforms.map((platform: string) => (
-                        <SelectItem key={platform} value={platform}>
-                          {platform}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  {errors.meeting_type && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.meeting_type}
-                    </p>
-                  )}
-                </div>
-              )}
 
               <div>
                 <Label className="sr-only" htmlFor="message">

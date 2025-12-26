@@ -145,7 +145,7 @@ export interface PropertySearchParams {
   location_area?: string;
   municipality?: string;
   zone?: string;
-  district?: string;
+  district?: string | number[]; // String from URL ("8,5") or number array internally
   min_price?: number;
   max_price?: number;
   price_ranges?: string[];

@@ -27,7 +27,7 @@ const navigations: { name: string; link: any }[] = [
   },
   {
     name: "aboutUs",
-    link: "/about-eav",
+    link: "/about-bpp",
   },
   {
     name: "contact",
