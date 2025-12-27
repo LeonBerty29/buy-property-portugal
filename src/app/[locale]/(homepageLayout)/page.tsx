@@ -151,7 +151,7 @@ export default async function Home(props: PageProps) {
 
   return (
     <div className="h-full mx-auto pt-24">
-      <div className="w-full px-6 lg:px-14">
+      <div className="hidden lg:block w-full px-6 lg:px-14">
         {searchParams && (
           <div className="2xl:container mx-auto">
             <h2 className="mb-6 font-semibold text-2xl">
@@ -166,7 +166,7 @@ export default async function Home(props: PageProps) {
       <HomepageSearchResult searchParams={searchParams} />
 
       <div className="from-slate-900 to-slate-800 p-4 md:p-8">
-        <div className="2xl:container h-full mx-auto pt-14">
+        <div className="2xl:container h-full mx-auto lg:pt-14">
           <div className="grid lg:grid-cols-5 items-start bg-gray-100 rounded-2xl mb-10">
             {/* Sticky Map Section with Custom Scrollbar */}
             <div
@@ -183,7 +183,7 @@ export default async function Home(props: PageProps) {
             </div>
 
             {/* Scrollable Properties Section */}
-            <div className="lg:col-span-3 h-full p-6 lg:p-10">
+            <div className="lg:col-span-3 h-full p-6 lg:p-10 py-10">
               {/* <Suspense fallback={<PropertiesGridSkeleton />} key={suspenseKey}>
                     <PropertiesList apiParams={apiParams} />
                   </Suspense> */}
