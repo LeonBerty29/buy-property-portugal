@@ -81,6 +81,17 @@ export default function MapSelection() {
       Évora: { positionY: "center" },
       Beja: { positionY: "center" },
       Faro: { positionY: "bottom", offsetY: -4 },
+      Madeira: {
+        positionY: "top",
+        positionX: "left",
+        offsetY: -2,
+        offsetX: -4,
+      },
+      Açores: {
+        positionY: "bottom",
+        positionX: "center",
+        offsetY: 0,
+      },
     };
 
     const config = customPositions[districtName] || {
@@ -163,12 +174,16 @@ export default function MapSelection() {
     };
   };
 
+  // Separate mainland and islands
+  const mainlandDistricts = pathData.filter((d) => d.id <= 18);
+  const islands = pathData.filter((d) => d.id > 18);
+
   return (
     <div className="bg-white rounded-2xl p-4 border">
       <div className="relative">
         <TooltipProvider delayDuration={200}>
           <svg
-            viewBox="0 0 180 366"
+            viewBox="0 0 180 370"
             className="w-full h-auto"
             style={{ minHeight: "180px", maxHeight: "466px" }}
           >
@@ -190,8 +205,8 @@ export default function MapSelection() {
               </filter>
             </defs>
 
-            {/* Render all paths first */}
-            {pathData.map((district) => {
+            {/* Render mainland districts */}
+            {mainlandDistricts.map((district) => {
               const isSelected = selectedDistrictIds.includes(district.id);
 
               return (
@@ -218,8 +233,8 @@ export default function MapSelection() {
               );
             })}
 
-            {/* Render all text labels on top */}
-            {pathData.map((district) => {
+            {/* Render mainland text labels */}
+            {mainlandDistricts.map((district) => {
               const isSelected = selectedDistrictIds.includes(district.id);
               const labelPos = getDistrictNamePosition(
                 district.name,
@@ -248,6 +263,67 @@ export default function MapSelection() {
                 </text>
               );
             })}
+
+            {/* Render islands group - positioned at bottom right */}
+            <g transform="translate(-60, -13) scale(1)">
+              {islands.map((district) => {
+                const isSelected = selectedDistrictIds.includes(district.id);
+
+                return (
+                  <Tooltip
+                    key={district.id}
+                    open={hoveredDistrict === district.name}
+                  >
+                    <TooltipTrigger asChild>
+                      <path
+                        d={district.d}
+                        style={getDistrictStyle(district)}
+                        onMouseEnter={() => setHoveredDistrict(district.name)}
+                        onMouseLeave={() => setHoveredDistrict(null)}
+                        onClick={() => handleDistrictClick(district.id)}
+                        filter={
+                          isSelected ? "url(#selected-glow)" : "url(#shadow)"
+                        }
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="font-semibold">{district.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+
+              {/* Island labels */}
+              {islands.map((district) => {
+                const isSelected = selectedDistrictIds.includes(district.id);
+                const labelPos = getDistrictNamePosition(
+                  district.name,
+                  district.d
+                );
+
+                return (
+                  <text
+                    key={`label-${district.id}`}
+                    x={labelPos.x}
+                    y={labelPos.y}
+                    textAnchor="middle"
+                    className="text-[8px] font-normal pointer-events-none select-none"
+                    fill={
+                      isSelected || hoveredDistrict === district.name
+                        ? "#ffffff"
+                        : "#1e293b"
+                    }
+                    style={{
+                      textShadow: "0 1px 3px rgba(0,0,0,0.6)",
+                      fontWeight: isSelected ? "bold" : "700",
+                      letterSpacing: "0.5px",
+                    }}
+                  >
+                    {district.name}
+                  </text>
+                );
+              })}
+            </g>
           </svg>
         </TooltipProvider>
       </div>
