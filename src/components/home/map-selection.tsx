@@ -183,7 +183,7 @@ export default function MapSelection() {
       <div className="relative">
         <TooltipProvider delayDuration={200}>
           <svg
-            viewBox="0 0 180 370"
+            viewBox="0 0 120 370"
             className="w-full h-auto"
             style={{ minHeight: "180px", maxHeight: "466px" }}
           >
