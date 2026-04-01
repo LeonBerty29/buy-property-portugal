@@ -68,12 +68,15 @@ export const ExclusiveCardProductImageCarousel: React.FC<ProductImageCarouselPro
                 {property ? (
                   <Link
                     href={{
-                      pathname: "/exclusive-listing/[hash]/[slug]",
+                      pathname:
+                        "/exclusive-listing/[hash]/[propertySlug]/[propertyReference]",
                       params: {
-                        slug: property.seo.slugs[
-                          locale as keyof typeof property.seo.slugs
-                        ],
                         hash: hash,
+                        propertySlug:
+                          property.seo.slugs[
+                            locale as keyof typeof property.seo.slugs
+                          ],
+                        propertyReference: property.reference,
                       },
                     }}
                     className="relative w-full aspect-4/3 overflow-hidden block"

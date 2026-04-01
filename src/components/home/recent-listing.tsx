@@ -43,11 +43,14 @@ const RecentListing = async () => {
                     <div className="w-full relative h-60 sm:h-54 xl:h-70 overflow-hidden">
                       <Link
                         href={{
-                          pathname: "/properties/[slug]",
+                          pathname:
+                            "/properties/[propertySlug]/[propertyReference]",
                           params: {
-                            slug: property.seo.slugs[
-                              locale as keyof typeof property.seo.slugs
-                            ],
+                            propertySlug:
+                              property.seo.slugs[
+                                locale as keyof typeof property.seo.slugs
+                              ],
+                            propertyReference: property.reference,
                           },
                         }}
                       >

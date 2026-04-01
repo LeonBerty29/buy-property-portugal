@@ -91,11 +91,11 @@ export const FavoriteProductCard = async ({
       <CardContent className="p-3 lg:flex-1 lg:p-6 lg:space-y-3 lg:flex lg:flex-col lg:justify-center">
         <Link
           href={{
-            pathname: "/properties/[slug]",
+            pathname: "/properties/[propertySlug]/[propertyReference]",
             params: {
-              slug: property.seo.slugs[
-                locale as keyof typeof property.seo.slugs
-              ],
+              propertySlug:
+                property.seo.slugs[locale as keyof typeof property.seo.slugs],
+              propertyReference: property.reference,
             },
           }}
           className="block space-y-3"

@@ -13,7 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Link } from "@/i18n/navigation";
+import { Link, redirect } from "@/i18n/navigation";
 import ShareButton from "@/components/property/share-property";
 import { PropertyImageGrid } from "@/components/property-details/property-image-grid";
 import SimilarProperties from "@/components/property-details/similar-properties";
@@ -41,15 +41,26 @@ import {
 import { routing } from "@/i18n/routing";
 import { propertyDetailsPageMetadata } from "@/seo-metadata/property-details-page";
 import { ScrollToTopWrapper } from "@/components/scroll-to-top-wrapper";
+import { RequestInformationDialog } from "@/components/property-details/request-information";
 
 interface Props {
-  params: Promise<{ propertyId: string; locale: string }>;
+  params: Promise<{
+    locale: string;
+    propertySlug: string;
+    propertyReference: string;
+  }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { propertyId, locale } = await params;
-  const propertyResponse = await getProperty(propertyId);
-  const property = propertyResponse.data;
+  const { propertySlug, propertyReference, locale } = await params;
+  const propertyResponse = await getProperty(propertySlug, propertyReference);
+
+  // If it's a redirect response, return minimal metadata
+  if ("redirect" in propertyResponse && propertyResponse.redirect) {
+    return { title: "Redirecting..." };
+  }
+
+  const property = propertyResponse.data!;
 
   // Get metadata for current locale
   const metadata =
@@ -65,7 +76,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   // Get the localized path for properties from routing config
-  const propertiesPath = routing.pathnames["/properties/[slug]"];
+  const propertiesPath =
+    routing.pathnames["/properties/[propertySlug]/[propertyReference]"];
   const localizedPropertiesPath =
     typeof propertiesPath === "string"
       ? propertiesPath
@@ -76,10 +88,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     property.seo.slugs[locale as keyof typeof property.seo.slugs];
 
   // Build the localized property path by replacing [slug] with actual slug
-  const localizedPath = localizedPropertiesPath.replace("[slug]", currentSlug);
+  const localizedPath = localizedPropertiesPath.replace(
+    "[propertySlug]",
+    currentSlug,
+  );
 
   // Build canonical URL for current locale (all locales are prefixed)
-  const canonicalUrl = `${BASE_URL}/${locale}${localizedPath}`;
+  const canonicalUrl = `${BASE_URL}/${locale}${localizedPath}/${propertyReference}`;
 
   // Build alternate language URLs using slugs from property.seo.slugs
   const languages: Record<string, string> = {};
@@ -93,10 +108,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const slug = property.seo.slugs[loc as keyof typeof property.seo.slugs];
 
     // Replace [slug] with actual localized slug
-    const fullPath = path.replace("[slug]", slug);
+    const fullPath = path.replace("[propertySlug]", slug);
 
     // All locales are prefixed
-    languages[loc] = `${BASE_URL}/${loc}${fullPath}`;
+    languages[loc] = `${BASE_URL}/${loc}${fullPath}/${propertyReference}`;
   });
 
   // Add x-default using default locale
@@ -117,11 +132,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const primaryImage = property.assets.images.gallery[0];
 
-  // Build enhanced title with property details
-  const enhancedTitle = `${property.title} ${metadata.titleSuffix}`;
-
   return {
-    title: `${enhancedTitle} | ${WEBSITE_NAME}`,
+    title: `${property.title} | ${WEBSITE_NAME}`,
     description: property.seo.description,
     keywords: [
       ...property.seo.keywords,
@@ -130,7 +142,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       property.location.zone,
     ],
     openGraph: {
-      title: `${enhancedTitle} | ${WEBSITE_NAME}`,
+      title: `${property.title} | ${WEBSITE_NAME}`,
       description: property.seo.description,
       url: canonicalUrl,
       siteName: WEBSITE_NAME,
@@ -149,7 +161,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${enhancedTitle} | ${WEBSITE_NAME}`,
+      title: `${property.title} | ${WEBSITE_NAME}`,
       description: property.seo.description,
       creator: EAV_TWITTER_CREATOR_HANDLE,
       images: property.assets.images.gallery.map((image) => image.url),
@@ -200,19 +212,19 @@ export default async function page(props: Props) {
   setRequestLocale(locale);
 
   return (
-      <div className="py-14">
-        <ScrollToTopWrapper>
-          <Suspense fallback={<PropertyDetailsPageLoading />}>
-            <PageContent {...props} />
-          </Suspense>
-        </ScrollToTopWrapper>
-      </div>
+    <div className="py-14">
+      <ScrollToTopWrapper>
+        <Suspense fallback={<PropertyDetailsPageLoading />}>
+          <PageContent {...props} />
+        </Suspense>
+      </ScrollToTopWrapper>
+    </div>
   );
 }
 
 const PageContent = async (props: Props) => {
   const t = await getTranslations("propertyDetailsPage");
-  const { propertyId } = await props.params;
+  const { propertySlug, propertyReference } = await props.params;
   const locale = await getLocale();
   const session = await auth();
   const token = session?.accessToken;
@@ -220,19 +232,33 @@ const PageContent = async (props: Props) => {
   // Use Promise.all to fetch all data concurrently
   const [propertyResponse, favoritesResponse, notesResponse] =
     await Promise.all([
-      getProperty(propertyId),
+      getProperty(propertySlug, propertyReference),
       token
         ? getFavorites(token)
         : Promise.resolve({ favorite_properties: [] }),
       token ? getNote() : Promise.resolve({ data: [] }),
     ]);
 
-  const property = propertyResponse.data;
+  // Handle slug redirect
+  if ("redirect" in propertyResponse && propertyResponse.redirect) {
+    redirect({
+      href: {
+        pathname: "/properties/[propertySlug]/[propertyReference]",
+        params: {
+          propertySlug: propertyResponse.new_slug!,
+          propertyReference: propertyResponse.property_reference!,
+        },
+      },
+      locale,
+    });
+  }
+
+  const property = propertyResponse.data!;
   const favorites = favoritesResponse.favorite_properties;
   const notes = notesResponse.data;
   const isFavourite = favorites.includes(property.id);
 
-  const propertiesPath = routing.pathnames["/properties/[slug]"];
+  const propertiesPath = routing.pathnames["/properties/[propertySlug]/[propertyReference]"];
   const localizedPropertiesPath =
     typeof propertiesPath === "string"
       ? propertiesPath
@@ -240,7 +266,7 @@ const PageContent = async (props: Props) => {
   const currentSlug =
     property.seo.slugs[locale as keyof typeof property.seo.slugs];
   const localizedPath = localizedPropertiesPath.replace("[slug]", currentSlug);
-  const propertyUrl = `${BASE_URL}/${locale}${localizedPath}`;
+  const propertyUrl = `${BASE_URL}/${locale}${localizedPath}/${propertyReference}`;
 
   // Enhanced Structured Data for Real Estate
   const structuredData = {
@@ -450,10 +476,20 @@ const PageContent = async (props: Props) => {
               {property.title}
             </h1>
 
-            <p className="font-medium text-primary text-2xl">
-              {getCurrencySymbol(property.currency)}{" "}
-              {property.price.toLocaleString()}
-            </p>
+            {property.show_price ? (
+              <p className="font-medium text-primary text-2xl">
+                {getCurrencySymbol(property.currency)}{" "}
+                {property.price.toLocaleString()}
+              </p>
+            ) : (
+              <RequestInformationDialog
+                salesConsultant={property.sales_consultant}
+              >
+                <p className="font-medium text-primary text-2xl hover:underline cursor-pointer">
+                  {t("contactForPrice")}
+                </p>
+              </RequestInformationDialog>
+            )}
           </div>
 
           <BookVisitDialog propertyReference={property.reference} />
@@ -462,11 +498,7 @@ const PageContent = async (props: Props) => {
 
       <div className="mt-10">
         <div className="2xl:container px-6 sm:px-8 md:px-10 lg:px-14 mx-auto min-h-full">
-          <PropertyImageGrid
-            assets={property.assets}
-            salesConsultant={property.sales_consultant}
-            propertyReference={property.reference}
-          />
+          <PropertyImageGrid property={property} />
 
           <div className="gap-x-6 flex flex-col lg:flex-row mb-8">
             <div className="w-full lg:flex-1 pt-4">
@@ -474,6 +506,7 @@ const PageContent = async (props: Props) => {
                 features={property.features}
                 propertyType={property.typology.name}
               />
+
               <ScrollableTabs property={property} />
             </div>
 

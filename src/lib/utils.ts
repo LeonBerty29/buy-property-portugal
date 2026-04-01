@@ -15,7 +15,6 @@ export const getProxiedImageUrl = (originalUrl: string) => {
 export const generateApiParams = (searchParams: PropertySearchParams) => {
   let priceRanges: string[] | undefined;
   if (searchParams["price_ranges[]"]) {
-    // Handle both single value and array of values
     if (Array.isArray(searchParams["price_ranges[]"])) {
       priceRanges = searchParams["price_ranges[]"] as string[];
     } else {
@@ -23,19 +22,17 @@ export const generateApiParams = (searchParams: PropertySearchParams) => {
     }
   }
 
-  let districts: number[] | undefined;
+  let district: string | undefined;
   if (searchParams.district) {
     const districtValue = searchParams.district;
 
     if (typeof districtValue === "string") {
-      // Handle comma-separated string from URL: "8,5"
-      districts = districtValue
+      // Validate and clean comma-separated string from URL: "8,5"
+      district = districtValue
         .split(",")
-        .map((d) => Number(d.trim()))
-        .filter((id) => !isNaN(id) && id > 0);
-    } else if (Array.isArray(districtValue)) {
-      // Handle array: [8, 5]
-      districts = districtValue.filter((id) => !isNaN(id) && id > 0);
+        .map((d) => d.trim())
+        .filter((d) => d !== "" && !isNaN(Number(d)) && Number(d) > 0)
+        .join(",");
     }
   }
 
@@ -44,7 +41,7 @@ export const generateApiParams = (searchParams: PropertySearchParams) => {
     location_area: searchParams.location_area,
     municipality: searchParams.municipality,
     zone: searchParams.zone,
-    district: districts, // Keep as district (singular)
+    district: district,
     min_price: searchParams.min_price,
     max_price: searchParams.max_price,
     price_ranges: priceRanges || [],
@@ -75,7 +72,6 @@ export const generateApiParams = (searchParams: PropertySearchParams) => {
 };
 
 export const generateSuspenseKey = (apiParams: PropertySearchParams) => {
-  // Create a key based on the search parameters that affect the data
   const suspenseKey = JSON.stringify({
     search: apiParams.search,
     location: apiParams.location_area,

@@ -18,11 +18,11 @@ import Image from "next/image";
 import { ExclusiveListingCard } from "./exclusive-listing-card";
 import { getExclusivePropertiesWithAllPaginated } from "@/data/exclusive-properties";
 import { ExclusivePropertiesPagination } from "./exlcusive-properties-pagination";
-import { HashLanguageSwitcherDropdown } from "@/components/shared/hash-language-switcher-dropdown";
 import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import { ScrollToTopWrapper } from "@/components/scroll-to-top-wrapper";
 import { exclusiveListingHashMetadata } from "@/seo-metadata/exclusive-listing-metadata-hash";
+import { HashLanguageSwitcherDropdown } from "./hash-slug-language-switcher-dropdown";
 
 type Params = {
   [x: string]: string | string[];

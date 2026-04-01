@@ -8,17 +8,20 @@ import { PropertyVideosModal } from "./property-videos-modal";
 import { getTranslations } from "next-intl/server";
 
 interface PropertyImageGridProps {
-  assets: Property["assets"];
-  salesConsultant: Property["sales_consultant"];
-  propertyReference: string;
+  // assets: Property["assets"];
+  // salesConsultant: Property["sales_consultant"];
+  // propertyReference: string;
+
+  property: Property;
 }
 
 export const PropertyImageGrid: React.FC<PropertyImageGridProps> = async ({
-  assets,
-  salesConsultant,
-  propertyReference,
+  property,
 }) => {
   const t = await getTranslations("propertyImageGrid");
+
+  const assets = property.assets;
+  const salesConsultant = property.sales_consultant;
 
   const propertyImages = assets.images.gallery;
   const hasVideos = assets.videos && assets.videos.length > 0;
@@ -78,8 +81,7 @@ export const PropertyImageGrid: React.FC<PropertyImageGridProps> = async ({
             )}
             {totalImages > 3 && (
               <PropertyImagesModal
-                images={propertyImages}
-                propertyReference={propertyReference}
+                property={property}
                 // floorPlans={assets.images.floor_plans}
               />
             )}
@@ -116,8 +118,7 @@ export const PropertyImageGrid: React.FC<PropertyImageGridProps> = async ({
           )}
           {totalImages > 3 && (
             <PropertyImagesModal
-              images={propertyImages}
-              propertyReference={propertyReference}
+              property={property}
               // floorPlans={assets.images.floor_plans}
             />
           )}

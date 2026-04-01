@@ -11,34 +11,45 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
-import { LanguageSwitcher } from "./language-switcher";
+import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { useParams } from "next/navigation";
 
-export const HashLanguageSwitcherDropdown = () => {
+export const HashSlugLanguageSwitcherDropdown = ({
+  slugs,
+}: {
+  slugs: { [key: string]: string };
+}) => {
   const locale = useLocale();
   const pathname = usePathname();
-  const params = useParams()
-  const hash = params.hash as string
+  const params = useParams();
+  const hash = params.hash as string;
+  const propertyReference = params.propertyReference as string;
   const router = useRouter();
 
-  const isPropertiesHashPage = pathname.includes("/exclusive-listing/");
+  const ishashSlugPage =
+    pathname === "/exclusive-listing/[hash]/[propertySlug]/[propertyReference]";
 
-  if (!isPropertiesHashPage) {
+  if (!ishashSlugPage) {
     return <LanguageSwitcher />;
   }
   const languages = routing.locales;
 
   const handleLanguageChange = (lang: string) => {
     if (lang !== locale) {
-      const path = hash;
+      const path = slugs[lang];
       const targetPath = path
         ? {
-            pathname: "/exclusive-listing/[hash]" as const,
-            params: { hash: path },
+            pathname:
+              "/exclusive-listing/[hash]/[propertySlug]/[propertyReference]" as const,
+            params: {
+              hash: hash,
+              propertySlug: path,
+              propertyReference: propertyReference,
+            },
           }
         : "/";
 
-      router.replace(targetPath, { locale: lang });
+      router.push(targetPath, { locale: lang });
       router.refresh();
     }
   };
@@ -69,7 +80,7 @@ export const HashLanguageSwitcherDropdown = () => {
               key={`${lang}-${index}`}
               className={cn(
                 "cursor-pointer",
-                lang === locale && "text-primary"
+                lang === locale && "text-primary",
               )}
               onClick={() => handleLanguageChange(lang)}
             >
