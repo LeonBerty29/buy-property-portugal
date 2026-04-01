@@ -16,8 +16,10 @@ import { LanguageSwitcher } from "./language-switcher";
 
 export const PropertiesLanguageSwitcherDropdown = ({
   slugs,
+  propertyReference,
 }: {
   slugs: Property["seo"]["slugs"];
+  propertyReference: string;
 }) => {
   const locale = useLocale();
   const pathname = usePathname();
@@ -34,11 +36,11 @@ export const PropertiesLanguageSwitcherDropdown = ({
     if (lang !== locale) {
       const path = slugs[lang as keyof typeof slugs];
       const targetPath = {
-        pathname: "/properties/[slug]" as const,
-        params: { slug: path },
+        pathname: "/properties/[propertySlug]/[propertyReference]" as const,
+        params: { propertySlug: path, propertyReference: propertyReference },
       };
 
-      router.replace(targetPath, { locale: lang });
+      router.push(targetPath, { locale: lang });
       router.refresh();
     }
   };
@@ -69,7 +71,7 @@ export const PropertiesLanguageSwitcherDropdown = ({
               key={`${lang}-${index}`}
               className={cn(
                 "cursor-pointer",
-                lang === locale && "text-primary"
+                lang === locale && "text-primary",
               )}
               onClick={() => handleLanguageChange(lang)}
             >

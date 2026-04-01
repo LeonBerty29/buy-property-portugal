@@ -23,7 +23,7 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
       // @ts-expect-error -- Typescript will validate only known `params`
       // are used in combination with a given `pathname`. Since the two will
       // always match for the current route, we can skip runtime checks
-      router.replace(pathname, { locale: lang });
+      router.push(pathname, { locale: lang });
       router.refresh();
     }
   };

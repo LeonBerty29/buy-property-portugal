@@ -19,12 +19,11 @@ export const HashErrorPageLanguageSwitcherDropdown = () => {
   const pathname = usePathname();
   const params = useParams();
   const hash = params.hash as string;
-  const slug = params.hash as string;
   const router = useRouter();
 
   const isPropertiesHashPage =
     pathname === "/exclusive-listing/[hash]" ||
-    pathname === "/exclusive-listing/[hash]/[slug]";
+    pathname === "/exclusive-listing/[hash]/[propertySlug]/[propertyReference]";
 
   if (!isPropertiesHashPage) {
     return <LanguageSwitcher />;
@@ -39,14 +38,15 @@ export const HashErrorPageLanguageSwitcherDropdown = () => {
               pathname: "/exclusive-listing/[hash]" as const,
               params: { hash: hash },
             }
-          : pathname === "/exclusive-listing/[hash]/[slug]"
-          ? {
-              pathname: "/exclusive-listing/[hash]" as const,
-              params: { hash: hash, slug: slug },
-            }
-          : "/";
+          : pathname ===
+              "/exclusive-listing/[hash]/[propertySlug]/[propertyReference]"
+            ? {
+                pathname: "/exclusive-listing/[hash]" as const,
+                params: { hash: hash },
+              }
+            : "/";
 
-      router.replace(targetPath, { locale: lang });
+      router.push(targetPath, { locale: lang });
       router.refresh();
     }
   };
@@ -77,7 +77,7 @@ export const HashErrorPageLanguageSwitcherDropdown = () => {
               key={`${lang}-${index}`}
               className={cn(
                 "cursor-pointer",
-                lang === locale && "text-primary"
+                lang === locale && "text-primary",
               )}
               onClick={() => handleLanguageChange(lang)}
             >

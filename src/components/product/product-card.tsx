@@ -92,11 +92,11 @@ export const ProductCard = async ({
       <CardContent className="p-4 flex-1">
         <Link
           href={{
-            pathname: "/properties/[slug]",
+            pathname: "/properties/[propertySlug]/[propertyReference]",
             params: {
-              slug: property.seo.slugs[
-                locale as keyof typeof property.seo.slugs
-              ],
+              propertySlug:
+                property.seo.slugs[locale as keyof typeof property.seo.slugs],
+              propertyReference: property.reference,
             },
           }}
           className="flex flex-col gap-3 h-full justify-between"

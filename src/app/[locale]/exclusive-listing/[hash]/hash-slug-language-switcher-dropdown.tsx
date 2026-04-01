@@ -11,38 +11,34 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
-import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { useParams } from "next/navigation";
+import { LanguageSwitcher } from "@/components/shared/language-switcher";
 
-export const HashSlugLanguageSwitcherDropdown = ({
-  slugs,
-}: {
-  slugs: { [key: string]: string };
-}) => {
+export const HashLanguageSwitcherDropdown = () => {
   const locale = useLocale();
   const pathname = usePathname();
   const params = useParams()
   const hash = params.hash as string
   const router = useRouter();
 
-  const ishashSlugPage = pathname === "/exclusive-listing/[hash]/[slug]";
+  const isPropertiesHashPage = pathname.includes("/exclusive-listing/");
 
-  if (!ishashSlugPage) {
+  if (!isPropertiesHashPage) {
     return <LanguageSwitcher />;
   }
   const languages = routing.locales;
 
   const handleLanguageChange = (lang: string) => {
     if (lang !== locale) {
-      const path = slugs[lang];
+      const path = hash;
       const targetPath = path
         ? {
-            pathname: "/exclusive-listing/[hash]/[slug]" as const,
-            params: { slug: path, hash: hash },
+            pathname: "/exclusive-listing/[hash]" as const,
+            params: { hash: path },
           }
         : "/";
 
-      router.replace(targetPath, { locale: lang });
+      router.push(targetPath, { locale: lang });
       router.refresh();
     }
   };

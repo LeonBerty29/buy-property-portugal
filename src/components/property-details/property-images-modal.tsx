@@ -17,20 +17,18 @@ import {
 import { Button } from "@/components/ui/button";
 import { Camera } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { PropertyImage } from "@/types/property";
+import { Property } from "@/types/property";
 import { getTranslations } from "next-intl/server";
 import { RequestFloorPlan } from "../property/request-floor-plan";
 import PropertyImageCarousel from "./images-carousel";
+import { GenerateBrochure } from "../property/generate-brochure";
 
-const PropertyImagesModal = async ({
-  images,
-  propertyReference,
-}: {
-  images: PropertyImage[];
-  propertyReference: string;
-}) => {
+const PropertyImagesModal = async ({ property }: { property: Property }) => {
+  const images = property.assets.images.gallery;
+  const propertyReference = property.reference;
   const t = await getTranslations("propertyImagesModal");
   const totalImages = images.length;
+
   const remainingPhotos = totalImages - 3;
 
   return (
@@ -96,7 +94,11 @@ const PropertyImagesModal = async ({
 
               <TabsContent value="floorplan" className="mt-0">
                 <div className="flex items-center justify-center min-h-[60vh] p-8">
-                  <RequestFloorPlan propertyReference={propertyReference} />
+                  <GenerateBrochure
+                    property={property}
+                    buttonText={t("downloadBrochure")}
+                    className="text-xs rounded-none bg-black text-white px-6"
+                  />
                 </div>
               </TabsContent>
 

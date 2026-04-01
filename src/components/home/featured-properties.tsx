@@ -78,8 +78,12 @@ export default function FeaturedProperties({
                 >
                   <Link
                     href={{
-                      pathname: "/properties/[slug]",
-                      params: { slug: property.seo.slugs[language] },
+                      pathname:
+                        "/properties/[propertySlug]/[propertyReference]",
+                      params: {
+                        propertySlug: property.seo.slugs[language],
+                        propertyReference: property.reference,
+                      },
                     }}
                   >
                     {t("cta")}

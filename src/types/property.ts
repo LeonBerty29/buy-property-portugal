@@ -66,6 +66,10 @@ export interface Property {
   similar_properties: number[];
   created_at: string;
   updated_at: string;
+  banner: {
+    color: string | null;
+    name: string | null;
+  };
 }
 
 export interface DrivingDistance {
@@ -119,6 +123,7 @@ export interface PropertyListResponse {
     total: number;
     from: number;
     to: number;
+    property_aggregates: PropertyAggregates;
   };
   links: {
     first: string;
@@ -127,17 +132,13 @@ export interface PropertyListResponse {
     next: string | null;
   };
 }
-
 export interface PropertyResponse {
-  data: Property;
-  meta: {
-    current_page: number;
-    last_page: number;
-    per_page: number;
-    total: number;
-    from: number;
-    to: number;
-  };
+  data?: Property;
+  message?: string;
+  language?: string;
+  redirect?: boolean;
+  new_slug?: string;
+  property_reference?: string;
 }
 
 export interface PropertySearchParams {
@@ -145,7 +146,7 @@ export interface PropertySearchParams {
   location_area?: string;
   municipality?: string;
   zone?: string;
-  district?: string | number[]; // String from URL ("8,5") or number array internally
+  district?: string;
   min_price?: number;
   max_price?: number;
   price_ranges?: string[];
@@ -307,6 +308,7 @@ export interface PropertyMetadata {
   typologies: { id: number; name: string }[];
   features: FeatureCategory[];
   areas: LocationArea[];
+  active_property_count: number;
 }
 
 export interface PropertyMetadata {
@@ -329,5 +331,32 @@ export interface Ranges {
   private_area: {
     min: number;
     max: number;
+  };
+}
+
+// Add this to your existing types file
+
+export interface PropertyAggregates {
+  typologies: Array<{
+    id: number;
+    name: string;
+  }>;
+  areas: LocationArea[];
+  bedrooms: {
+    min: number;
+    max: number;
+  };
+  bathrooms: {
+    min: number;
+    max: number;
+  };
+  price: {
+    min: number;
+    max: number;
+    ranges: Array<{
+      min: number;
+      max: number | null;
+      count: number;
+    }>;
   };
 }

@@ -66,11 +66,14 @@ export const ProductImageCarousel: React.FC<ProductImageCarouselProps> = ({
                 {property ? (
                   <Link
                     href={{
-                      pathname: "/properties/[slug]",
+                      pathname:
+                        "/properties/[propertySlug]/[propertyReference]",
                       params: {
-                        slug: property.seo.slugs[
-                          locale as keyof typeof property.seo.slugs
-                        ],
+                        propertySlug:
+                          property.seo.slugs[
+                            locale as keyof typeof property.seo.slugs
+                          ],
+                        propertyReference: property.reference,
                       },
                     }}
                     className="relative w-full aspect-4/3 overflow-hidden block"

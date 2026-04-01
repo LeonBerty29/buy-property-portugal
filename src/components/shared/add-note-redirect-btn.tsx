@@ -18,8 +18,8 @@ export const AddNoteRedirectBtn = ({ propertyId }: { propertyId: number }) => {
   const paramsString = searchParams.toString();
 
   const url =
-    pathname === "/properties/[slug]"
-      ? `/properties/${params.propertyId}/?addNote=${propertyId}${
+    pathname === "/properties/[propertySlug]/[propertyReference]"
+      ? `/properties/${params.propertySlug}/${params.propertyReference}/?addNote=${propertyId}${
           paramsString ? `&${paramsString}` : ""
         }`
       : `/${pathname}/?addNote=${propertyId}${

@@ -1,6 +1,7 @@
 import { PropertyListResponse, PropertyResponse } from "@/types/property";
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { cache } from "react";
 
 function createBasicAuthHeader(): string {
   const credentials = btoa(
@@ -88,14 +89,18 @@ async function apiRequest<T>(
   }
 }
 
-export const getProperty = async (
-  propertyId: string
-): Promise<PropertyResponse> => {
-  const locale = await getLocale();
-  const endpoint = `/v1/properties/${propertyId}/?language=${locale}`;
+export const getProperty = cache(
+  async (
+    propertySlug: string,
+    propertyReference: string,
+  ): Promise<PropertyResponse> => {
+    const reference  = propertyReference.split('-')[1]
+    const locale = await getLocale();
+    const endpoint = `/v1/properties/${propertySlug}/${reference}/?language=${locale}`;
 
-  return apiRequest<PropertyResponse>(endpoint);
-};
+    return apiRequest<PropertyResponse>(endpoint);
+  },
+);
 
 export const getListOfProperties = async (
   propertyIds: number[]
